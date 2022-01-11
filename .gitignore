@@ -3,6 +3,6 @@ python_files/assignment_helper
 python_files/book_bot/models
 # python_files/extract
 python_files/search_engine/bert-base-multilingual-uncased
-python_files/word2vec
+python_files/word2vec/GoogleNews-vectors-negative300.bin.gz
 
 models
