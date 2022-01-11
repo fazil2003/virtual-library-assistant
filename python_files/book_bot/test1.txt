@@ -1,0 +1,248 @@
+Lord of the Rings series, visions of corrupt and totalitarian power. At Stanford, he started 
+a libertarian newspaper, the Stanford, to preach the gospel of freedom. 
+ 
+ 
+In 1998, Thiel cofounded the company that would become PayPal, which he sold 
+to eBay for $1.5 billion in 2002. Today Thiel runs a multi-billion-dollar hedge fund, 
+Clarium, and a venture capital firm, Founder’s Fund, which invests in software 
+companies throughout Silicon Valley. Thiel has made some legendarily good 
+picks—among them, Facebook, in which he was the first outside investor. (He’s also 
+made some bad ones—Clarium has lost billions in the last few years.) But for Thiel, 
+investing is more than a day job. It’s an avocation. “By starting a new Internet business, 
+an entrepreneur may create a new world,” Thiel says. “The hope of the Internet is that 
+these new worlds will impact and force change on the existing social and political order.” 
+ 
+ 
+His comments raise the question of what kind of change Thiel would like to see. 
+While many billionaires are fairly circumspect about their political views, Thiel has been 
+vocal—and it’s safe to say that there are few with views as unusual as Thiel’s. “Peter 
+wants to end the inevitability of death and taxes,” Thiel’s sometime collaborator Patri 
+Friedman (grandson of Milton) told Wired. “I mean, talk about aiming high!” 
+ 
+ 
+In an essay posted on the libertarian Cato Institute’s Web site, Thiel describes 
+why he believes that “freedom and democracy are no longer compatible.” “Since 1920,” 
+he writes, “the vast increase in welfare beneficiaries and the extension of the franchise to 
+women—two constituencies that are notoriously tough for libertarians—have rendered 
+the notion of ‘capitalist democracy’ into an oxymoron.” Then he outlines his hopes for 
+the future: space exploration, “sea-steading,” which involves building movable 
+microcountries on the open ocean, and cyberspace. Thiel has poured millions into 
+technologies to sequence genes and prolong life. He’s also focused on preparing for the 
+Singularity, the moment a few decades from now when some futurists believe that 
+humans and machines are likely to meld. 
+ 
+ 
+In an interview, he argues that should the Singularity arrive, one would be well 
+advised to be on the side of the computers: “Certainly we would hope that [an artificially 
+intelligent computer] would be friendly to human beings. At the same time, I don’t think 
+you’d want to be known as one of the human beings that is against computers and makes 
+a living being against computers.” 
+ 
+ 
+If all this sounds a little fantastical, it doesn’t worry Thiel. He’s focused on the 
+long view. “Technology is at the center of what will determine the course of the 21st 
+century,” he says. “There are aspects of it that are great and aspects that are terrible, and 
+there are some real choices humans have to make about which technologies to foster and 
+which ones we should be more careful about.” 
+ 
+ 
+Peter Thiel is entitled to his idiosyncratic views, of course, but they’re worth 
+paying attention to because they increasingly shape the world we all live in. There are 
+102 
+ 
+only four other people on the Facebook board besides Mark Zuckerberg; Thiel is one of 
+them, and Zuckerberg publicly describes him as a mentor. “He helped shape the way I 
+think about the business,” Zuckerberg said in a 2006 Bloomberg News interview. As 
+Thiel says, we have some big decisions to make about technology. And as for how those 
+decisions get made? “I have little hope,” he writes, “that voting will make things better.” 
+ 
+ 
+“What Game Are You Playing?”  
+ 
+ 
+ 
+Of course, not all engineers and geeks have the views about democracy and 
+freedom that Peter Thiel does—he’s surely an outlier. Craig Newmark, the founder of the 
+free Web site craigslist, spends most of his time arguing for “geek values” that include 
+service and public-spiritedness. Jimmy Wales and the editors at Wikipedia work to make 
+human knowledge free to everyone. The filtering goliaths make huge contributions here 
+as well: The democratic ideal of an enlightened, capable citizenry is well served by the 
+broader set of relationships Facebook allows me to manage and the mountains of 
+formerly hard-to-access research papers and other public information that Google has 
+freed. 
+ 
+ 
+But the engineering community can do more to strengthen the Internet’s civic 
+space. And to get a sense of the path ahead, I talked to Scott Heiferman. 
+ 
+ 
+Heiferman, the founder of MeetUp.com, is soft-spoken in a Midwestern sort of 
+way. That’s fitting, because he grew up in Homewood, Illinois, a small town on the 
+outskirts of Chicago. “It was a stretch to call it suburban,” he says. His parents operated a 
+paint store. 
+ 
+ 
+As a teenager, Heiferman devoured material about Steve Jobs, eating up the story 
+about how Jobs wooed a senior executive from Pepsi by asking him if he wanted to 
+change the world or sell sugar water. “Throughout my life,” he told me, “I’ve had a 
+love-hate relationship with advertising.” At the University of Iowa in the early 1990s, 
+Heiferman studied engineering and marketing but at night he ran a radio show called 
+Advertorial Infotainment in which he would remix and cut advertisements together to 
+create a kind of sound art. He put the finished shows online and encouraged people to 
+send in ads to remix, and the attention got him his first job, managing the Web site at 
+Sony .com. 
+ 
+ 
+After a few years as Sony’s “interactive-marketing frontiersman,” Heiferman 
+founded i-traffic, one of the major early advertising companies of the Web. Soon i-traffic 
+was the agency of record for clients like Disney and British Airways. But although the 
+company was growing quickly, he was dissatisfied. The back of his business card had a 
+mission statement about connecting people with brands they’d love, but he was 
+increasingly uncertain that was a worthy endeavor—perhaps he was selling sugar water 
+after all. He left the company in 2000. 
+ 
+ 
+For the remainder of the year and into 2001, Heiferman was in a funk. “I was 
+103 
+ 
+exhibiting what you could call being depressed,” he says. When he heard the first word of 
+the World Trade Center attacks on 9/11, he ran up to his lower-Manhattan rooftop and 
+watched in horror. “I talked to more strangers in the next three days,” he says, “than in 
+the previous five years of living in New York.” 
+ 
+ 
+Shortly after the attacks, Heiferman came across the blog post that changed his 
+life. It argued that the attacks, as awful as they were, might bring Americans back 
+together in their civic life, and referenced the bestselling book Bowling Alone. Heiferman 
+bought a copy and read it cover to cover. “I became captivated,” he says, “by the question 
+of whether we could use technology to rebuild and strengthen community.” MeetUp.com, 
+a site that makes it easy for local groups to meet face-to-face, was his answer, and today, 
+MeetUp serves over 79,000 local groups that do that. There’s the Martial Arts MeetUp in 
+Orlando and the Urban Spirituality MeetUp in Barcelona and the Black Singles MeetUp 
+in Houston. And Heiferman is a happier man. 
+ 
+ 
+“What I learned being in the ad business,” he says, “is that people can just go a 
+long time without asking themselves what they should put their talent towards. You’re 
+playing a game, and you know the point of the game is to win. But what game are you 
+playing? What are you optimizing for? If you’re playing the game of trying to get the 
+maximum downloads of your app, you’ll make the better farting app.” 
+ 
+ 
+“We don’t need more things,” he says. “People are more magical than iPads! 
+Your relationships are not media. Your friendships are not media. Love is not media.” In 
+his low-key way, Heiferman is getting worked up. 
+ 
+ 
+Evangelizing this view of technology—that it ought to do something meaningful 
+to make our lives more fulfilling and to solve the big problems we face—isn’t as easy as 
+it might seem. In addition to MeetUp more generally, Scott founded the New York Tech 
+MeetUp, a group of ten thousand software engineers who meet every month to preview 
+new Web sites. At a recent meeting, Scott made an impassioned plea for the assembled 
+group to focus on solving the problems that matter—education, health care, the 
+environment. It didn’t get a very good reception—in fact, he was just about booed off the 
+stage. “‘We just want to do cool stuff,’ was the attitude,” Scott told me later. “ ‘Don’t 
+bother me with this politics stuff.’ ” 
+ 
+ 
+Technodeterminists like to suggest that technology is inherently good. But despite 
+what Kevin Kelly says, technology is no more benevolent than a wrench or a screwdriver. 
+It’s only good when people make it do good things and use it in good ways. Melvin 
+Kranzberg, a professor who studies the history of technology, put it best nearly thirty 
+years ago, and his statement is now known as Kranzberg’s first law: “Technology is 
+neither good or bad, nor is it neutral.” 
+ 
+ 
+For better or worse, programmers and engineers are in a position of remarkable 
+power to shape the future of our society. They can use this power to help solve the big 
+problems of our age—poverty, education, disease—or they can, as Heifer-man says, 
+make a better farting app. They’re entitled to do either, of course. But it’s disingenuous to 
+104 
+ 
+have it both ways—to claim your enterprise is great and good when it suits you and claim 
+you’re a mere sugar-water salesman when it doesn’t. 
+ 
+ 
+Actually, building an informed and engaged citizenry—in which people have the 
+tools to help manage not only their own lives but their own communities and 
+societies—is one of the most fascinating and important engineering challenges. Solving it 
+will take a great deal of technical skill mixed with humanistic understanding—a real feat. 
+We need more programmers to go beyond Google’s famous slogan, “Don’t be evil.” We 
+need engineers who will do good. 
+ 
+ 
+And we need them soon: If personalization remains on its current trajectory, as 
+the next chapter describes, the near future could be stranger and more problematic than 
+many of us would imagine. 
+ 
+ 
+7 
+ 
+ 
+ 
+ What You Want, Whether You Want It or Not 
+ 
+ 
+There will always be plenty of things to compute in the detailed affairs of millions of 
+people doing complicated things. 
+—computing pioneer Vannevar Bush, 1945 
+ 
+ 
+ 
+All collected data had come to a final end. Nothing was left to be collected. But all 
+collected data had yet to be completely correlated and put together in all possible 
+relationships. —from Isaac Asimov’s short story “The Last Question” 
+ 
+ 
+ 
+ 
+I recently received a friend invitation on Facebook from someone whose name I 
+didn’t recognize, a curvy-figured girl with big eyes and thick lashes. Clicking to figure 
+out who she was (and, I’ll admit, to look more closely), I read over her profile. It didn’t 
+tell me a lot about her, but it seemed like the profile of someone I might plausibly know. 
+A few of our interests were the same. 
+ 
+ 
+I looked again at the eyes. They were a little too big. 
+ 
+ 
+In fact, when I looked more closely, I realized her profile picture wasn’t even a 
+photograph—it had been rendered by a 3-D graphics program. There was no such person. 
+My new attractive would-be friend was a figment of software, crawling through friend 
+connections to harvest data from Facebook users. Even the list of movies and books she 
+liked appeared to have been ripped from the lists of her “friends.” 
+ 
+ 
+For lack of a better word, let’s call her an advertar—a virtual being with a 
+105 
+ 
+commercial purpose. As the filter bubble’s membrane becomes thicker and harder to 
+penetrate, advertars could become a powerful adaptive strategy. If I only get the news 
+from my code and my friends, the easiest way to get my attention might be friends who 
+are code. 
+ 
+ 
+The technologies that support personalization will only get more powerful in the 
+years ahead. Sensors that can pick up new personal signals and data streams will become 
+even more deeply embedded in the surface of everyday life. The server farms that support 
+the Googles and Amazons will grow, while the processors inside them shrink; that 
+computing power will be unleashed to make increasingly precise guesses about our 
+preferences and even our interior lives. Personalized “augmented reality” technologies 
+will project an overlay over our experience of the real world, not just the digital one. 
+Even Nicholas Negroponte’s intelligent agents may make a comeback. “Markets are 
+strong forces,” says Bill Joy, the legendary programmer who cofounded Sun 
+Microsystems. “They take you somewhere very quickly. And if where they take you is 
+not where you want to go, you’ve got a problem.” 
+ 
+ 
+In 2002, the sci-fi movie Minority Report featured personalized holographic 
+advertisements that accosted pedestrians as they walked down the street. In Tokyo, the 
+first Minority Report–style personalized billboard has gone up outside of the NEC 
+corporation’s headquarters (minus, for now, the holography). It’s powered by the 
+company’s PanelDirector software, which scans the faces of passersby and matches them 
+to a database of ten thousand stored photos to make guesses about their age and gender. 
+When a young woman steps in front of the display, it responds instantly by showing her 
+ads tailored to her. IBM’s on the case, too; its prototype advertising displays use remotely 
+readable identity cards to greet viewers by name. 
+
+Thiel cofounded Paypal.
