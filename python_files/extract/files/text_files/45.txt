@@ -1,0 +1,2510 @@
+Python Artificial Intelligence
+Projects for Beginners
+������������������������������������������������������������
+����������������������������
+Joshua Eckroth
+BIRMINGHAM - MUMBAI
+Python Artificial Intelligence Projects for
+Beginners
+Copyright � 2018 Packt Publishing
+All rights reserved. No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form
+or by any means, without the prior written permission of the publisher, except in the case of brief quotations
+embedded in critical articles or reviews.
+Every effort has been made in the preparation of this book to ensure the accuracy of the information presented.
+However, the information contained in this book is sold without warranty, either express or implied. Neither the
+author(s), nor Packt Publishing or its dealers and distributors, will be held liable for any damages caused or alleged
+to have been caused directly or indirectly by this book.
+Packt Publishing has endeavored to provide trademark information about all of the companies and products
+mentioned in this book by the appropriate use of capitals. However, Packt Publishing cannot guarantee the accuracy
+of this information.
+Commissioning Editor: Pravin Dhandre
+Acquisition Editor: Joshua Nadar
+Content Development Editors: Prasad Ramesh, Karan Thakkar
+Technical Editor: Sagar Sawant
+Copy Editor: Safis Editing
+Project Coordinator: Nidhi Joshi
+Proofreader: Safis Editing
+Indexer: Pratik Shirodkar
+Graphics: Jisha Chirayil
+Production Coordinator: Arvindkumar Gupta
+First published: July 2018
+Production reference: 1300718
+Published by Packt Publishing Ltd.
+Livery Place
+35 Livery Street
+Birmingham
+B3 2PB, UK.
+ISBN 978-1-78953-946-2
+����������������
+�
+�������
+Mapt is an online digital library that gives you full access to over 5,000 books and videos, as
+well as industry leading tools to help you plan your personal development and advance
+your career. For more information, please visit our website.
+Why subscribe?
+Spend less time learning and more time coding with practical eBooks and Videos
+from over 4,000 industry professionals
+Improve your learning with Skill Plans built especially for you
+Get a free eBook or video every month
+Mapt is fully searchable
+Copy and paste, print, and bookmark content
+PacktPub.com
+Did you know that Packt offers eBook versions of every book published, with PDF and
+ePub files available? You can upgrade to the eBook version at ���������������� and as a
+print book customer, you are entitled to a discount on the eBook copy. Get in touch with us
+at �������������������� for more details.
+At ����������������, you can also read a collection of free technical articles, sign up for a
+range of free newsletters, and receive exclusive discounts and offers on Packt books and
+eBooks. 
+Contributors
+About the author
+Joshua Eckroth is assistant professor of computer science at Stetson University, where he
+teaches big data mining and analytics, artificial intelligence (AI), and software engineering.
+Dr. Eckroth joined the math and computer science department at Stetson University in fall
+2014. He earned his PhD from Ohio State University in AI and cognitive science, focusing
+on abductive reasoning and meta-reasoning.
+Packt is searching for authors like you
+If you're interested in becoming an author for Packt, please visit ��������������������
+and apply today. We have worked with thousands of developers and tech professionals,
+just like you, to help them share their insight with the global tech community. You can
+make a general application, apply for a specific hot topic that we are recruiting an author
+for, or submit your own idea.
+Table of Contents
+Preface
+1
+Chapter 1: Building Your Own Prediction Models
+5
+Classification overview and evaluation techniques
+6
+Evaluation
+7
+Decision trees
+10
+Common APIs for scikit-learn classifiers
+14
+Prediction involving decision trees and student performance data
+15
+Summary
+23
+Chapter 2: Prediction with Random Forests
+24
+Random forests
+24
+Usage of random forest
+26
+Predicting bird species with random forests
+26
+Making a confusion matrix for the data
+35
+Summary
+45
+Chapter 3: Applications for Comment Classification
+46
+Text classification
+47
+Machine learning techniques
+48
+Bag of words
+49
+Detecting YouTube comment spam
+51
+Word2Vec models
+63
+Doc2Vec
+65
+Document vector
+66
+Detecting positive or negative sentiments in user reviews
+67
+Summary
+76
+Chapter 4: Neural Networks
+77
+Understanding neural networks
+77
+Feed-forward neural networks
+80
+Identifying the genre of a song with neural networks
+84
+Revising the spam detector to use neural networks
+95
+Summary
+103
+Chapter 5: Deep Learning
+104
+Deep learning methods
+105
+Convolutions and pooling
+105
+Identifying handwritten mathematical symbols with CNNs
+113
+Revisiting the bird species identifier to use images
+131
+Summary
+142
+Table of Contents
+[ ii ]
+Other Books You May Enjoy
+143
+Index
+146
+Preface
+Artificial Intelligence (AI) is the newest emerging and disruptive technology among
+varied businesses, industries, and sectors. This book demonstrates AI projects in Python,
+covering modern techniques that make up the world of AI.
+This book begins with building your first prediction model using the popular Python
+library, scikit-learn. You will understand how to build a classifier using effective machine
+learning techniques: random forest and decision trees. With exciting projects on predicting
+bird species, analyzing student performance data, song genre identification, and spam
+detection, you will learn the fundamentals and various algorithms and techniques that
+foster the development of such smart applications. You will also understand deep learning
+and the neural network mechanism through these projects with the use of the Keras library.
+By the end of this book, you will be confident to build your own AI projects with Python
+and be ready to take on more advanced content as you go ahead.
+Who this book is for
+This book is for Python developers who want to take their first step in the world of artificial
+intelligence using easy-to-follow projects. Basic working knowledge of Python
+programming is expected so that you can play around with the code.
+What this book covers
+���������, Building Your Own Prediction Models, introduces classification and techniques for
+evaluation, and then explains decision trees, followed by a coding project in which a
+predictor for student performance is built.
+���������, Prediction with Random Forests, looks at random forests and uses them in a
+coding project for classifying bird species.
+���������, Applications for Comment Classification, introduces text processing and the bag-of-
+words technique. Then shows how this technique can be used to build a spam detector for
+YouTube comments. Next, you will learn about the sophisticated Word2Vec model and
+practice it with a coding project that detects positive and negative product, restaurant, and
+movie reviews.
+Preface
+[ 2 ]
+���������, Neural Networks, covers a brief introduction to neural networks, proceeds with
+feedforward neural networks, and looks at a program to identify the genre of a song with
+neural networks. Finally, you will revise the spam detector from earlier to make it work
+with neural networks.
+���������, Deep Learning, discusses deep learning and CNNs. You will practice
+convolutional neural networks and deep learning with two projects. First, you will build a
+system that can read handwritten mathematical symbols and then revisit the bird species
+identifier and change the implementation to use a deep convolutional neural network that
+is significantly more accurate.
+To get the most out of this book
+You need to have a basic understanding of Python and its scientific computing
+1.
+libraries
+Get Jupyter Notebook installed, preferably via Anaconda
+2.
+Download the example code files
+You can download the example code files for this book from your account at
+����������������. If you purchased this book elsewhere, you can visit
+������������������������ and register to have the files emailed directly to you.
+You can download the code files by following these steps:
+Log in or register at ����������������.
+1.
+Select the SUPPORT tab.
+2.
+Click on Code Downloads & Errata.
+3.
+Enter the name of the book in the Search box and follow the onscreen
+4.
+instructions.
+Once the file is downloaded, please make sure that you unzip or extract the folder using the
+latest version of:
+WinRAR/7-Zip for Windows
+Zipeg/iZip/UnRarX for Mac
+7-Zip/PeaZip for Linux
+Preface
+[ 3 ]
+The code bundle for the book is also hosted on GitHub
+at ����������������������������������������������������������������������������
+������������. In case there's an update to the code, it will be updated on the existing
+GitHub repository.
+We also have other code bundles from our rich catalog of books and videos available
+at �����������������������������������. Check them out!
+Download the color images
+We also provide a PDF file that has color images of the screenshots/diagrams used in this
+book. You can download it here: ��������������������������������������������
+��������������������������������������������������������������������������.
+Conventions used
+There are a number of text conventions used throughout this book.
+����������: Indicates code words in text, database table names, folder names, filenames,
+file extensions, pathnames, dummy URLs, user input, and Twitter handles. Here is an
+example: "The ����������� file shows class IDs with the bird species names."
+Bold: Indicates a new term, an important word, or words that you see onscreen. For
+example, words in menus or dialog boxes appear in the text like this.
+Warnings or important notes appear like this.
+Tips and tricks appear like this.
+Preface
+[ 4 ]
+Get in touch
+Feedback from our readers is always welcome.
+General feedback: Email ��������������������� and mention the book title in the
+subject of your message. If you have questions about any aspect of this book, please email
+us at ����������������������.
+Errata: Although we have taken every care to ensure the accuracy of our content, mistakes
+do happen. If you have found a mistake in this book, we would be grateful if you would
+report this to us. Please visit ������������������������������, selecting your book,
+clicking on the Errata Submission Form link, and entering the details.
+Piracy: If you come across any illegal copies of our works in any form on the Internet, we
+would be grateful if you would provide us with the location address or website name.
+Please contact us at ���������������������� with a link to the material.
+If you are interested in becoming an author: If there is a topic that you have expertise in
+and you are interested in either writing or contributing to a book, please visit
+��������������������.
+Reviews
+Please leave a review. Once you have read and used this book, why not leave a review on
+the site that you purchased it from? Potential readers can then see and use your unbiased
+opinion to make purchase decisions, we at Packt can understand what you think about our
+products, and our authors can see your feedback on their book. Thank you!
+For more information about Packt, please visit ������������.
+1
+Building Your Own Prediction
+Models
+Our society is more technologically advanced than ever. Artificial Intelligence (AI)
+technology is already spreading throughout the world, replicating humankind. The
+intention of creating machines that could emulate aspects of human intelligence such as
+reasoning, learning, and problem solving gave birth to the development of AI technology.
+AI truly rivals human nature. In other words, AI makes a machine think and behave like a
+human. An example that can best demonstrate the power of this technology would be the
+tag suggestions or face-recognition feature of Facebook. Looking at the tremendous impact
+of this technology on today's world, AI will definitely become one of the greatest
+technologies out there in the coming years.
+We are going to be experimenting with a project based on AI technology, exploring
+classification using machine learning algorithms along with the Python programming
+language. We will also explore a few examples for a better understanding.
+In this chapter, we are going to explore the following interesting topics:
+An overview of the classification technique
+The Python scikit library
+Building Your Own Prediction Models
+Chapter 1
+[ 6 ]
+Classification overview and evaluation
+techniques
+AI provides us with various amazing classification techniques, but machine learning
+classification would be the best to start with as it is the most common and easiest
+classification to understand for the beginner. In our daily life, our eyes captures millions of
+pictures: be they in a book, on a particular screen, or maybe something that you caught in
+your surroundings. These images captured by our eyes help us to recognize and classify
+objects. Our application is based on the same logic.
+Here, we are creating an application that will identify images using machine learning
+algorithms. Imagine that we have images of both apples and oranges, looking at which our
+application would help identify whether the image is of an apple or an orange. This type of
+classification can be termed as binary classification, which means classifying the objects of
+a given set into two groups, but techniques do exist for multiclass classification as well. We
+would require a large number of images of apples and oranges, and a machine learning
+algorithm that would be set in such a way that the application would be able to classify 
+both image types. In other words, we make these algorithms learn the difference between
+the two objects to help classify all the examples correctly. This is known as supervised
+learning.
+Now let's compare supervised learning with unsupervised learning. Let's assume that we
+are not aware of the actual data labels (which means we do not know whether the images
+are examples of apples or oranges). In such cases, classification won't be of much help. The
+clustering method can always ease such scenarios. The result would be a model that can be
+deployed in an application, and it would function as seen in the following diagram. The
+application would memorize facts about the distinction between apples and oranges and
+recognize actual images using a machine learning algorithm. If we took a new input, the
+model would tell us about its decision as to whether the input is an apple or orange. In this
+example, the application that we created is able to identify an image of an apple with a 75%
+degree of confidence:
+Building Your Own Prediction Models
+Chapter 1
+[ 7 ]
+Sometimes, we want to know the level of confidence, and other times we just want the final
+answer, that is, the choice in which the model has the most confidence.
+Evaluation
+We can evaluate how well the model is working by measuring its accuracy. Accuracy
+would be defined as the percentage of cases that are classified correctly. We can analyze the
+mistakes made by the model, or its level of confusion, using a confusion matrix. The
+confusion matrix refers to the confusion in the model, but these confusion matrices can
+become a little difficult to understand when they become very large. Let's take a look at the
+following binary classification example, which shows the number of times that the model
+has made the correct predictions of the object:
+In the preceding table, the rows of True apple and True orange refers to cases where the
+object was actually an apple or actually an orange. The columns refer to the prediction
+made by the model. We see that in our example, there are 20 apples that were predicted
+correctly, while there were 5 apples that were wrongly identified as oranges.
+Building Your Own Prediction Models
+Chapter 1
+[ 8 ]
+Ideally, a confusion matrix should have all zeros, except for the diagonal. Here we can
+calculate the accuracy by adding the figures diagonally, so that these are all the correctly
+classified examples, and dividing that sum by the sum of all the numbers in the matrix:
+Here we got the accuracy as 84%. To know more about confusion matrices, let's go through
+another example, which involves three classes, as seen in the following diagram:
+�������������������������
+There are three different species of iris flowers. The matrix gives raw accounts of correct
+and incorrect predictions. So, setosa was correctly predicted 13 times out of all the
+examples of setosa images from the dataset. On the other hand, versicolor was predicted
+correctly on 10 occasions, and there were 6 occasions where versicolor was predicted as
+virginica. Now let's normalize our confusion matrix and show the percentage of the cases
+that predicted image corrected or incorrectly. In our example we saw that the setosa species
+was predicted correctly throughout:
+Building Your Own Prediction Models
+Chapter 1
+[ 9 ]
+�������������������������
+During evaluation of the confusion matrix, we also saw that the system got confused
+between two species: versicolor and virginica. This also gives us the conclusion that the
+system is not able to identify species of virginica all the time.
+For further instances, we need to be more aware that we cannot have really high accuracy
+since the system will be trained and tested on the same data. This will lead to memorizing
+the training set and overfitting of the model. Therefore, we should try to split the data into
+training and testing sets, first in either 90/10% or 80/20%. Then we should use the training
+set for developing the model and the test set for performing and calculating the accuracy of
+the confusion matrix.
+Building Your Own Prediction Models
+Chapter 1
+[ 10 ]
+We need to be careful not to choose a really good testing set or a really bad testing set to get
+the accuracy. Hence to be sure we use a validation known as K-fold cross validation. To
+understand it a bit better, imagine 5-fold cross validation, where we move the testing set by
+20 since there are 5 rows. Then we move the remaining set with the dataset and find the
+average of all the folds:
+Quite confusing, right? But scikit-learn has built-in support for cross validation. This
+feature will be a good way to make sure that we are not overfitting our model and we are
+not running our model on a bad testing set.
+Decision trees
+In this section, we will be using decision trees and student performance data to predict
+whether a child will do well in school. We will use the previous techniques with some
+scikit-learn code. Before starting with the prediction, let's just learn a bit about what
+decision trees are.
+Building Your Own Prediction Models
+Chapter 1
+[ 11 ]
+Decision trees are one of the simplest techniques for classification. They can be compared
+with a game of 20 questions, where each node in the tree is either a leaf node or a question
+node. Consider the case of Titanic survivability, which was built from a dataset that
+includes data on the survival outcome of each passenger of the Titanic.
+Consider our first node as a question: Is the passenger a male? If not, then the passenger most
+likely survived. Otherwise, we would have another question to ask about the male
+passengers: Was the male over the age of 9.5? (where 9.5 was chosen by the decision tree
+learning procedure as an ideal split of the data). If the answer is Yes, then the passenger
+most likely did not survive. If the answer is No, then it will raise another question: Is the
+passenger a sibling? The following diagram will give you a brief explanation:
+Understanding the decision trees does not require you to be an expert in the decision tree
+learning process. As seen in the previous diagram, the process makes understanding data
+very simple. Not all machine learning models are as easy to understand as decision trees.
+Building Your Own Prediction Models
+Chapter 1
+[ 12 ]
+Let us now dive deep into decision tree by knowing more about decision tree learning
+process. Considering the same titanic dataset we used earlier, we will find the best attribute
+to split on according to information gain, which is also known as entropy:
+Information gain is highest only when the outcome is more predictable after knowing the
+value in a certain column. In other words, if we know whether the passenger is male or
+female, we will know whether he or she survived, hence the information gain is highest for
+the sex column. We do not consider age column best for our first split since we do not know
+much about the passengers ages, and is not the best first split because we will know less
+about the outcome if all we know is a passenger's age.
+After splitting on the sex column according to the information gain, what we have now
+is female and male subsets, as seen in the following screenshot:
+Building Your Own Prediction Models
+Chapter 1
+[ 13 ]
+After the split, we have one internode and one question node, as seen in the previous
+screenshot, and two paths that can be taken depending on the answer to the question. Now
+we need to find the best attribute again in both of the subsets. The left subset, in which all
+passengers are female, does not have a good attribute to split on because many passengers
+survived. Hence, the left subset just turns into a leaf node that predicts survival. On the
+right-hand side, the ��� attribute is chosen as the best split, considering the value 9.5 years
+of age as the split. We gain two more subsets: age greater than 9.5 and age lower than 9.5:
+Repeat the process of splitting the data into two new subsets until there are no good splits,
+or no remaining attributes, and leaf nodes are formed instead of question nodes. Before we
+start with our prediction model, let us know a little more about the scikit-learn package.
+Building Your Own Prediction Models
+Chapter 1
+[ 14 ]
+Common APIs for scikit-learn classifiers
+In this section, we will be learn how to create code using the scikit-learn package to build
+and test decision trees. Scikit-learn contains many simple sets of functions. In fact, except
+for the second line of code that you can see in the following screenshot, which is specifically
+about decision trees, we will use the same functions for other classifiers as well, such as
+random forests:
+Before we jump further into technical part, let's try to understand what the lines of code
+mean. The first two lines of code are used to set a decision tree, but we can consider this as
+not yet built as we have not pointed the tree to any trained set. The third line builds the tree
+using the ��� function. Next, we score a list of examples and obtain an accuracy number.
+These two lines of code will be used to build the decision tree. After which, we predict
+function with a single example, which means we will take a row of data to train the model
+and predict the output with the survived column. Finally, we runs cross-validation,
+splitting the data and building an entry for each training split and evaluating the tree for
+each testing split. On running these code the result we have are the scores and the we
+average the scores.
+Here you will have a question: When should we use decision trees? The answer to this can be
+quite simple as decision trees are simple and easy to interpret and require little data
+preparation, though you cannot consider them as the most accurate techniques. You can
+show the result of a decision tree to any subject matter expert, such as a Titanic historian
+(for our example). Even experts who know very little about machine learning
+would presumably be able to follow the tree's questions and gauge whether the tree is
+accurate.
+Building Your Own Prediction Models
+Chapter 1
+[ 15 ]
+Decision trees can perform better when the data has few attributes, but may perform poorly
+when the data has many attributes. This is because the tree may grow too large to be
+understandable and could easily overfit the training data by introducing branches that are
+too specific to the training data and don't really bear any relation to the test data created,
+this can reduce the chance of getting an accurate result. As, by now, you are aware of the
+basics of the decision tree, we are now ready to achieve our goal of creating a prediction
+model using student performance data.
+Prediction involving decision trees and
+student performance data
+In this section, we're going to use decision trees to predict student performance using the
+students, past performance data. We'll use the student performance dataset, which is
+available on the UC Irvine machine learning repository at ����������������������������
+�������������������������������. Our final goal is to predict whether the student has
+passed or failed. The dataset contains the data of about 649 students, with and 30 attributes
+for each student. The attributes formed are mixed categorically � word and phrase, and
+numeric attributes. These mixed attributes cause a small problem that needs to be fixed. We
+will need to convert those word and phrase attributes into numbers.
+The following screenshot shows the  first half of the attributes from the data:
+Building Your Own Prediction Models
+Chapter 1
+[ 16 ]
+You must have noticed how some of the attributes are categorical, such as the name of the
+school; sex; Mjob, which is the mother's occupation; Fjob, which is the father's occupation;
+reason; and guardian. Others, such as age and traveltime, are numeric. The following
+screenshot shows the second half of the attributes from the data:
+It is clear that some of the attributes are better predictors, such as absences and the number
+of past failures, while others attributes are probably less predictive, such as whether or not
+the student is in a romantic relationship or whether the student's guardian is the mother,
+father, or someone else. The decision tree will attempt to identify the most important or
+predictive attributes using this information gain provided. We'll be able to look at the
+resulting tree and identify the most predictive attributes because the most predictive
+attributes will be the earliest questions.
+The original dataset had three test scores: ��, ��, and ��. Where �� would be first grade,
+�� being the second grade, and �� being the final grade. We will simplify the problem by
+just providing pass or fail. This can be done by adding these three scores and checking
+whether the sum is sufficiently large enough which is 35. That brings us to about a 50%
+split of students passing and failing, giving us a balanced dataset. Now let's look at the
+code:
+Building Your Own Prediction Models
+Chapter 1
+[ 17 ]
+We import the dataset (���������������), which comes with semicolons instead of
+commas; hence, we mention the separators as semicolons. To cross verify, we will find the
+number of rows in the dataset. Using the length variable, we can see that there are ���
+rows.
+Next we add columns for pass and fail. The data in these columns would contain 1 or 0,
+where 1 means pass and 0 means fail. We are going to do that by computing with every
+row what the sum of the test scores would be. This will be calculated as if the sum of three
+score is greater than or equal to 35, 1 is given to the student and failing to that rule 0 is
+given to the student. 
+We need to ����� this rule on every row of the dataset, and this will be done using
+the ����� function, which is a feature of Pandas. Here ������ means use apply per row
+and ������ would mean apply per column. The next line means that a variable needs to be
+dropped: either ��, ��, ��. The following screenshot of the code will provide you with an
+idea of what we just learned:
+The following screenshot shows the first 5 rows of the dataset and 31 columns. There are 31
+columns because we have all the attributes plus our pass and fail columns: 
+Building Your Own Prediction Models
+Chapter 1
+[ 18 ]
+As mentioned before, some of these columns are words or phrases, such as Mjob, Fjob,
+internet, and romantic. These columns need to be converted into numbers, which can be
+done using the ����������� function, which is a Pandas feature, and we need to mention
+which columns are the ones that we want to turn into numeric form.
+In the case of Mjob, for example, the function it is going to look at all the different possible
+answers or the values in that column and it's going to give each value a column name.
+These columns will receive names such as rename the columns to Mjob at_home, Mjob
+health, or Mjob. These new columns, for example, the Mjob at_home column will have
+value 1 and the rest will have 0. This means only one of the new columns generated will
+have one.
+This is know as one-hot encoding. The reason this name was given is for example, imagine
+some wires going into a circuit. Suppose in the circuit there are five wires, and you want
+use one-hot encoding method, you need to activate only one of these wires while keeping
+the rest of wires off.
+On performing ����������� function on our dataset, You can notice for example
+activities_no and activities_yes columns. The originally associated columns that said no
+had 1 as value under activies_no column followed by 0. The same as for activities_yes had
+yes it would have a value 0 followed by 1 for others. This led to creation of many more new
+columns around 57 in total but this made our dataset full of numeric data. The following
+screenshot shows the columns activities_yes and activities_no columns:
+Building Your Own Prediction Models
+Chapter 1
+[ 19 ]
+Here we need to shuffle the rows and produce a training set with first 500 rows and rest 149
+rows for test set and then we just need to get attributes form the training set which means
+we will get rid of the pass column and save the pass column separately. The same is
+repeated for the testing set. We will apply the attributes to the entire dataset and save the
+pass column separately for the entire dataset. 
+Now we will find how many passed and failed from the entire dataset. This can be done by
+computing the percentage number of passed and failed which will give us a result of 328
+out of 649. This being the pass percentage which is roughly around 50% of the dataset. This
+constitutes a well-balanced dataset:
+Next, we start building the decision tree using the ���������������������� function
+from the scikit-learn package, which is a class capable of performing multi-class
+classification on a dataset. Here we will use the entropy or information gain metric to
+decide when to split. We will split at a depth of five questions, by using ����������� as an
+initial tree depth to get a feel for how the tree is fitting the data:
+Building Your Own Prediction Models
+Chapter 1
+[ 20 ]
+To get an overview of our dataset, we need to create a visual representation of the tree. This
+can be achieved by using one more function of the scikit-learn
+package: ����������������. The following screenshot shows the representation of the
+tree in a Jupyter Notebook:
+���������������������������������������������������������������������������
+It is pretty much easy to understand the previous representation that the dataset is divided
+into two parts. Let's try to interpret the tree from the top. In this case if failure is greater
+than or equal to 0.5, that means it is true and it placed on left-hand side of the tree.
+Consider tree is always true on left side and false on right side, which means there are no
+prior failures. In the representation we can see left side of the tree is mostly in blue which
+means it is predicting a pass even though there are few questions as compared to the failure
+maximum of 5 questions. The tree is o n right side if failure is less than 0.5, this makes the
+student fail, which means the first question is false. Prediction is failure if in orange color
+but as it proceeds further to more questions since we have used �������������.
+The following code block shows a method to export the visual representation which by
+clicking on Export and save to PDF or any format if you want to visualize later:
+Building Your Own Prediction Models
+Chapter 1
+[ 21 ]
+Next we check the score of the tree using the testing set that we created earlier:
+The result we had was approximately 60%. Now let's cross verify the result to be assured
+that the dataset is trained perfectly:
+Performing cross-validation on the entire dataset which will split the data on a of
+20/80 basis, where 20% is the on testing set and 80% is on the training set. The average
+result is 67%. This shows that we have a well-balanced dataset. Here we have various
+choices to make regarding ���������:
+Building Your Own Prediction Models
+Chapter 1
+[ 22 ]
+We use various ��������� values from 1 to 20, Considering we make a tree with one
+question or with 20 questions having depth value of 20 which will give us questions more
+than 20 which is you will have to go 20 steps down to reach a leaf node. Here we again
+perform cross- validation and save and print our answer. This will give different accuracy
+and calculations. On analyzing it was found that on have depth of 2 and 3 the accuracy is
+the best which was compared accuracy from the average we found earlier.
+The following screenshot shows the data that we will be using to the create graph:
+The error bars shown in the following screenshot are the standard deviations in the score,
+which concludes that a depth of 2 or 3 is ideal for this dataset, and that our assumption of 5
+was incorrect:
+Building Your Own Prediction Models
+Chapter 1
+[ 23 ]
+More depth doesn't give any more power, and just having one question, which would be
+did you fail previously?, isn't going to provide you with the same amount of information as
+two or three questions would.
+Our model shows that having more depth does not necessarily help, nor does having a
+single question of did you fail previously? provide us with the same amount of information as
+two or three questions would give us. 
+Summary
+In this chapter we learned about classification and techniques for evaluation, and learned in
+depth about decision trees. We also created a model to predict student performance. 
+In the next chapter, we will learn more about random forests and use machine learning and
+random forests to predict bird species.
+2
+Prediction with Random Forests
+In this chapter, we're going to look at classification techniques with random forests. We're
+going to use scikit-learn, just like we did in the previous chapter. We're going to look at
+examples of predicting bird species from descriptive attributes and then use a confusion
+matrix on them.
+Here's a detailed list of the topics:
+Classification and techniques for evaluation
+Predicting bird species with random forests
+Confusion matrix
+Random forests
+Random forests are extensions of decision trees and are a kind of ensemble method. 
+Ensemble methods can achieve high accuracy by building several classifiers and running a
+each one independently. When a classifier makes a decision, you can make use of the most
+common and the average decision. If we use the most common method, it is called voting.
+Prediction with Random Forests
+Chapter 2
+[ 25 ]
+Here's a diagram depicting the ensemble method:
+You can think of each classifier as being specialized for a unique perspective on the data.
+Each classifier may be a different type. For example, you can combine a decision tree and a
+logistic regression and a neural net, or the classifiers may be the same type but trained on
+different parts or subsets of the training data.
+A random forest is a collection or ensemble of decision trees. Each tree is trained on a
+random subset of the attributes, as shown in the following diagram:
+Prediction with Random Forests
+Chapter 2
+[ 26 ]
+These decision trees are typical decision trees, but there are several of them. The difference,
+compared with a single decision tree, particularly in a random forest, is that each tree is
+only allowed to look at some of the attributes, typically a small number relative to the total
+number of attributes available. Each tree is specialized to just those attributes. These
+specialized trees are collected and each offers a vote for its prediction. Whichever outcome
+gets the most votes from the ensemble of specialized trees is the winner. That is the final
+prediction of the random forest.
+Usage of random forest
+We should consider using a random forest when there is a sufficient number of attributes to
+make trees and the accuracy is paramount. When there are fewer trees, the interpretability
+is difficult compared to a single decision tree. You should avoid using random forests if
+interpretability is important because if there are too many trees, the models are quite large
+and can take a lot of memory during training and prediction. Hence, resource-limited
+environments may not be able to use random forests. The next section will explain the
+prediction of bird species using random forests.
+Predicting bird species with random forests
+Here we will be using random forests to predict a bird's species. We will use the Caltech-
+UC San Diego dataset (���������������������������������������������������������),
+which contains about 12,000 photos of birds from 200 different species. Here we are not
+going to look at the pictures because that would need a convolutional neural network
+(CNN) and this will be covered in later chapters. CNNs can handle pictures much better
+than a random forest. Instead, we will be using attributes of the birds such as size, shape,
+and color.
+Prediction with Random Forests
+Chapter 2
+[ 27 ]
+Here are just some of the species in the dataset:
+Some, such as the American Crow and the Fish Crow, are almost indistinguishable, at least
+visually. The attributes for each photo, such as color and size, have actually been labeled by
+humans. Caltech and UCSD used human workers on Amazon's Mechanical Turk to label
+the dataset. Researchers often use Mechanical Turk, which is a website service in which a
+person gets paid a tiny amount of money for each photo they label to improve the dataset
+using human insight rather than machine predictions.
+If you have your own dataset that needs lots of human-provided labels,
+you might consider spending some money on Mechanical Turk to
+complete that task.
+Prediction with Random Forests
+Chapter 2
+[ 28 ]
+Here's an example of a single photo and its labels:
+������������������������������������������������������������������������������������
+We can see that the Summer Tanager is marked as having a red throat, a solid belly pattern,
+a perching-like shape, and so on. The dataset includes information about how long it took
+each person to decide on the labels and how confident the person is with their decisions,
+but we're not going to use that information.
+The data is split into several files. We'll discuss those files before jumping into the code:
+Prediction with Random Forests
+Chapter 2
+[ 29 ]
+The ����������� file shows class IDs with the bird species names. The ���������� file
+shows image IDs and filenames. The species for each photo is given in the
+���������������������� file, which connects the class IDs with the image IDs.
+The �������������� file gives the name of each attribute, which ultimately is not going to
+be that important to us. We're only going to need the attribute IDs:
+Finally, the most important file is ��������������������������:
+Prediction with Random Forests
+Chapter 2
+[ 30 ]
+It connects each image with its attributes in a binary value that's either present or absent for
+that attribute. Users on Mechanical Turk produced each row in this file.
+Now, let's look at the code:
+We will first load the CSV file with all the image attribute labels.
+Here are few things that need to be noted:
+Space separation for all the values
+No header column or row
+Ignore the messages or warnings, such as ���������������������� and
+���������������������
+Use columns �, �, and �, which have the image ID, the attribute ID, and the
+present or non-present value
+You don't need to worry about the attributes and the time taken to select them.
+Prediction with Random Forests
+Chapter 2
+[ 31 ]
+Here, at the top of that dataset:
+Image ID number 1 does not have attributes 1, 2, 3, or 4, but it does have attribute 5.
+The shape will tell us how many rows and columns we have:
+It has 3.7 million rows and three columns. This is not the actual formula that you want. You
+want attributes to be the columns, not rows.
+Therefore, we have to use pivot, just like Excel has a pivot method:
+Pivot on the image ID and make one row for each image ID. There will be only
+1.
+one row for image number one.
+Turn the attributes into distinct columns, and the values will be ones or twos.
+2.
+We can now see that each image ID is just one row and each attribute is its own column,
+and we have the ones and the twos:
+Prediction with Random Forests
+Chapter 2
+[ 32 ]
+Let's feed this data into a random forest. In the previous example, we have 312 columns
+and 312 attributes, which is ultimately about 12,000 images or 12,000 different examples of
+birds:
+Now, we need to load the answers, such as whether it's a bird and which species it is. Since
+it is an image class labels file, the separators are spaces. There is no header row and the two
+columns are ����� and �����. We will be using ������������������ to have the same
+result produced by ��������������, where the rows are identified by the image ID:
+Prediction with Random Forests
+Chapter 2
+[ 33 ]
+Here's what it looks like:
+The ����� column has �, �, �, �, and �, all are labeled as �. They're all albatrossed at the
+top of the file. As seen, there are about 12,000 rows, which is perfect:
+This is the same number as the attributes data. We will be using join.
+In the join, we will use the index on the image ID to join the two data frames. Effectively,
+what we're going to get is that the label is stuck on as the last column.
+We will be now shuffling and then be splitting off the attributes. In other words, we want to
+drop the label from the label. So, here are the attributes, with the first 312 columns and the
+last column being a label:
+Prediction with Random Forests
+Chapter 2
+[ 34 ]
+After shuffling, we have the first row as image 527, the second row as image 1532, and so
+forth. The attributes in the label data are in agreement. On the first row, it's image 527,
+which is the number 10. You will not know which bird it is, but it's of the kind, and these
+are its attributes. But it is finally in the right form. We need to do a training test split.
+There were 12,000 rows, so let's take the first 8,000 and call them training, and the call rest
+of them testing (4,000). We'll get the answers using ����������������������:
+Max features show the number of different columns each tree can look at.
+Prediction with Random Forests
+Chapter 2
+[ 35 ]
+For an instance, if we say something like, look at two attributes, that's probably not enough to
+actually figure out which bird it is. Some birds are unique, so you might need a lot more
+attributes. Later if we say ��������������� and the number of estimators denote the
+number of trees created. The fit actually builds it.
+Let's predict a few cases. Let's use attributes from the first five rows of the training set,
+which will predict species 10, 28, 156, 10, and 43. After testing, we get 44% accuracy:
+Even 44% accuracy is not the best result. There are 200 species, so having 0.5% accuracy is
+much better than randomly guessing.
+Making a confusion matrix for the data
+Let's make a confusion matrix to see which birds the dataset confuses. The
+���������������� function from scikit-learn will produce the matrix, but it's a pretty big
+matrix:
+Prediction with Random Forests
+Chapter 2
+[ 36 ]
+Two hundred by two hundred is not easy to understand in a numeric form like this.
+Here's some code from the scikit-learn documentation that allows us to plot the matrix and
+the color in the matrix:
+Prediction with Random Forests
+Chapter 2
+[ 37 ]
+We will need the actual names of the birds on the matrix so that we know the species that
+are being confused for each other. So, let's load the classes file:
+Prediction with Random Forests
+Chapter 2
+[ 38 ]
+Plot the matrix. This is the confusion matrix for this dataset:
+The output looks like the following:
+Prediction with Random Forests
+Chapter 2
+[ 39 ]
+The output is unreadable because there are 200 rows and columns. But if we open it
+separately and then start zooming in, on the y axis you will see the actual birds, and on the
+x axis, you will see the predicted birds:
+Prediction with Random Forests
+Chapter 2
+[ 40 ]
+For example, the common yellow throat is the true one. Looking at the following graph, we
+can see that the common yellow throat is confused with the black-footed albatross. When
+we zoom out, we will see the confusion:
+It's like a square of confusion that was there between the common yellow throat and the
+black-footed albatross. Some features are terns, such as the arctic tern, black tern, Caspian
+tern, and the common tern. Terns are apparently easy to confuse because they look similar.
+Prediction with Random Forests
+Chapter 2
+[ 41 ]
+This set is a little bit confused too:
+This is the set regarding sparrows. The confusion matrix tells us the things that we expect,
+that is, birds that look similar are confused with each other. There are little squares of
+confusion, as seen in the previous screenshot.
+For the most part, you don't want to confuse an albatross with a common yellow throat
+because this means that the dataset doesn't know with what it's doing.
+Prediction with Random Forests
+Chapter 2
+[ 42 ]
+Since the bird's names are sorted, lesser is the square of confusion. Let's compare this with
+the simple decision tree:
+Here, the accuracy is 27%, which is less than the previous 44% accuracy. Therefore, the
+decision tree is worse. If we use a Support Vector Machine (SVM), which is the neural
+network approach, the output is 29%:
+The random forest is still better.
+Let's perform cross-validation to make sure that we split the training test in different ways.
+The output is still 44% for the random forest, 25% for our decision tree, and 27% for SVM,
+as shown in the following screenshot:
+Prediction with Random Forests
+Chapter 2
+[ 43 ]
+The best results are reflected through random forests since we had some options and
+questions with random forests.
+For example, how many different questions can each tree ask? How many attributes does it
+look at, and how many trees are there? Well, there are a lot of parameters to look through,
+so let's just make a loop and try them all:
+Prediction with Random Forests
+Chapter 2
+[ 44 ]
+These are all the accuracies, but it would be better to visualize this in a graph, as shown
+here:
+We can see that increasing the number of trees produces a better outcome. Also, increasing
+the number of features produces better outcomes if you are able to see more features, but
+ultimately, if you're at about 20 to 30 features and you have about 75 to 100 trees, that's
+about as good as you're going to get an accuracy of 45%.
+Prediction with Random Forests
+Chapter 2
+[ 45 ]
+Summary
+In this chapter, we learned about random forests and classify bird species . Later, we
+discussed the confusion matrix and different graphs that gave us output based on random
+trees, decision trees, and SVM.
+In the next chapter, we'll go look at comment classification using bag-of-words models and
+Word2Vec models.
+3
+Applications for Comment
+Classification
+In this chapter, we'll overview the bag-of-words model for text classification. We will look
+at predicting YouTube comment spam with the bag-of-words and the random forest
+techniques. Then we'll look at the Word2Vec models and prediction of positive and
+negative reviews with the Word2Vec approach and the k-nearest neighbor classifier. 
+In this chapter, we will particularly focus on text and words and classify internet comments
+as spam or not spam or to identify internet reviews as positive or negative. We will also
+have an overview for bag of words for text classification and prediction model to predict
+YouTube comments are spam or not using bag of words and random forest techniques. We
+will also look at Word2Vec models an k-nearest neighbor classifier.
+But, before we start, we'll answer the following question: what makes text classification an
+interesting problem?
+Applications for Comment Classification
+Chapter 3
+[ 47 ]
+Text classification
+To find the answer to our question, we will consider the famous iris flower dataset as an
+example dataset. The following image is of iris versicolor species. To identify the species,
+we need some more information other than just an image of the species, such as
+the flower's Petal length, Petal width, Sepal length, and Sepal width would help us
+identify the image better:
+The dataset not only contains examples of versicolor but also contains examples of setosa
+and virginica as well. Every example in the dataset contains these four measurements. The
+dataset contains around 150 examples, with 50 examples of each species. We can use a
+decision tree or any other model to predict the species of a new flower, if provided with the
+same four measurements. As we know same species will have almost similar
+measurements. Since similarity has different definition all together but here we consider
+similarity as the closeness on a graph, if we consider each point is a flower. The following
+graph is a comparison between sepal width versus petal width:
+Applications for Comment Classification
+Chapter 3
+[ 48 ]
+If we had no way of measuring similarity, if, say, every flower had different measurements,
+then there'd be no way to use machine learning to build a classifier.
+As we are aware of the fact that flowers of same species have same measurement and that
+helps us to distinguish different species. Consider what if every flower had different
+measurement, it would of no use to build classifier using machine learning to identify
+images of species.
+Machine learning techniques
+Before to that we considered images, let's now consider text. For example, consider the
+following sentences and try to find what makes the first pair of phrases similar to the
+second pair:
+Applications for Comment Classification
+Chapter 3
+[ 49 ]
+I hope you got the answer to that question, otherwise we will not be able to build a decision
+tree, a random forest or anything else to predict the model. To answer the question, notice
+that the top pair of phrases are similar as they contain some words in common, such
+as subscribe and channel, while the second pair of sentences have fewer words in
+common, such as to and the. Consider the each phrase representing vector of numbers in a
+way that the top pair is similar to the numbers in the second pair. Only then we will be able
+to use random forest or another technique for classification, in this case, to detect YouTube
+comment spam. To achieve this, we need to use the bag-of-words model.
+Bag of words
+The bag-of-words model does exactly we want that is to convert the phrases or sentences
+and counts the number of times a similar word appears. In the world of computer science, a
+bag refers to a data structure that keeps track of objects like an array or list does, but in such
+cases the order does not matter and if an object appears more than once, we just keep track
+of the count rather we keep repeating them.
+For example, consider the first phrase from the previous diagram, it has a bag of words that
+contents words such as channel, with one occurrence, plz, with one occurrence, subscribe,
+two occurrences, and so on. Then, we would collect all these counts in a vector, where one
+vector per phrase or sentence or document, depending on what you are working with.
+Again, the order in which the words appeared originally doesn't matter.
+The vector that we created can also be used to sort data alphabetically, but it needs to be
+done consistently for all the different phrases. However, we still have the same problem.
+Each phrase has a vector with different columns, because each phrase has different words
+and a different number of columns, as shown in the following two tables:
+Applications for Comment Classification
+Chapter 3
+[ 50 ]
+If we make a larger vector with all the unique words across both phrases, we get a proper
+matrix representation. With each row representing a different phrase, notice the use of 0 to
+indicate that a phrase doesn't have a word:
+If you want to have a bag of words with lots of phrases, documents, or  we would need to
+collect all the unique words that occur across all the examples and create a huge matrix, N x
+M, where N is the number of examples and M is the number of occurrences. We could
+easily have thousands of dimensions compared in a four-dimensional model for the iris
+dataset. The bag of words matrix is likely to be sparse, meaning mostly zeros, since most
+phrases don't have most words.
+Before we start building our bag of words model, we need to take care of a few things, such
+as the following:
+Lowercase every word
+Drop punctuation
+Drop very common words (stop words)
+Remove plurals (for example, bunnies => bunny)
+Perform lemmatization (for example, reader => read, reading = read)
+Use n-grams, such as bigrams (two-word pairs) or trigrams
+Keep only frequent words (for example, must appear in >10 examples)
+Keep only the most frequent M words (for example, keep only 1,000)
+Record binary counts (1 = present, 0 = absent) rather than true counts
+There are many other combinations for best practice, and finding the best that suits the
+particular data needs some research.
+The problem that we face with long documents is that they will have higher word counts
+generally, but we may still want to consider long documents about some topic to be
+considered, similar to a short document about the same topic, even though the word counts
+will differ significantly.
+Furthermore, if we still wanted to reduce very common words and highlight the rare ones,
+what we would need to do is record the relative importance of each word rather than its
+raw count. This is known as term frequency inverse document frequency (TF-IDF), which
+measures how common a word or term is in the document. 
+Applications for Comment Classification
+Chapter 3
+[ 51 ]
+We use logarithms to ensure that long documents with many words are very similar to
+short documents with similar words. TF-IDF has two components that multiply, that is
+when TF is high, the result is high but IDF measures how common the word is among all
+the documents and that will affect the common words. So, a word that is common in other
+documents will have a low score, regardless of how many times it appeared.
+If a document has a low score which means the word appeared rarely and if the score is
+high it means the word appears frequently in the document. But if the word is quite
+common in all the documents then it becomes irrelevant to score on this document. It is
+anyhow considered to have low score. This shows that the formula for TF-IDF exhibits in a
+way we want our model to be. The following graph explains our theory:
+We will be using the bag-of-words method to detect whether YouTube comments are spam
+or .
+Detecting YouTube comment spam
+In this section, we're going to look at a technique for detecting YouTube comment spam
+using bags of words and random forests. The dataset is pretty straightforward. We'll use a
+dataset that has about 2,000 comments from popular YouTube videos (����������������
+�����������������������������������������������). The dataset is formatted in a way
+where each row has a comment followed by a value marked as 1 or 0 for spam or not spam.
+Applications for Comment Classification
+Chapter 3
+[ 52 ]
+First, we will import a single dataset. This dataset is actually split into four different files.
+Our set of comments comes from the PSY-Gangnam Style video:
+Then we will print a few comments as follows:
+Here we are able to see that there are more than two columns, but we will only require the
+content and the class columns. The content column contains the comments and the class
+column contains the values 1 or 0 for spam or not spam. For example, notice that the first
+two comments are marked as not spam, but then the comment subscribe to me for call of
+duty vids is spam and hi guys please my android photo editor download yada yada is
+spam as well. Before we start sorting comments, let's look at the count of how many rows in
+the dataset are spam and how many are not spam. The result we acquired is 175 and 175
+respectively, which sums up to 350 rows overall in this file:
+Applications for Comment Classification
+Chapter 3
+[ 53 ]
+In scikit-learn, the bag of words technique is actually called ���������������, which
+means counting how many times each word appears and puts them into a vector. To create
+a vector, we need to make an object for ���������������, and then perform the fit and
+transform simultaneously:
+This performed in two different steps. First comes the fit step, where it discovers which
+words are present in the dataset, and second is the transform step, which gives you the bag
+of words matrix for those phrases. The result obtained in that matrix is 350 rows by 1,418
+columns:
+There are 350 rows, which means we have 350 different comments and 1,418 words. 1418
+word apparently are word that appear across all of these phrases. 
+Now let's print a single comment and then run the analyzer on that comment so that we can
+see how well the phrases breaks it apart. As seen in the following screenshot, the comment
+has been printed first and then we are analyzing it below, which is just to see how it broke
+it into words:
+Applications for Comment Classification
+Chapter 3
+[ 54 ]
+We can use the vectorizer feature to find out which word the dataset found after
+vectorizing. The following is the result found after vectorizing where it starts with numbers
+and ends with regular words:
+Applications for Comment Classification
+Chapter 3
+[ 55 ]
+Execute the following command to shuffle the dataset with fraction 100% that is adding
+������:
+Now we will split the dataset into training and testing sets. Let's assume that the first 300
+will be for training, while the latter 50 will be for testing:
+In the preceding code, �������������������������������������������� is an
+important step. At that stage, you have a training set that you want to perform a fit
+transform on, which means it will learn the words and also produce the matrix. However,
+for the testing set, we don't perform a fit transform again, since we don't want the model to
+learn different words for the testing data. We will use the same words that it learned on the
+training set. Suppose that the testing set has different words out of which some of them are
+unique to the testing set that might have never appeared in the training set. That's perfectly
+fine and anyhow we are going to ignore it. Because we are using the training set to build a
+random forest or decision tree or whatever would be the case, we have to use a certain set
+of words, and those words will have to be the same words, used on the testing set. We
+cannot introduce new words to the testing set since the random forest or any other model
+would not be able to gauge the new words.
+Now we perform the transform on the dataset, and later we will use the answers for
+training and testing. The training set now has 300 rows and 1,287 different words or
+columns, and the testing set has 50 rows, but we have the same 1,287 columns:
+Applications for Comment Classification
+Chapter 3
+[ 56 ]
+Even though the testing set has different words, we need to make sure it is transformed in
+the same way as the training set with the same columns. Now we will begin with the
+building of the random forest classifier. We will be converting this dataset into 80 different
+trees and we will fit the training set so that we can score its performance on the testing set:
+Applications for Comment Classification
+Chapter 3
+[ 57 ]
+The output of the score that we received is 98%; that's really good. Here it seems it got
+confused between spam and not-spam. We need be sure that the accuracy is high; for that,
+we will perform a cross validation with five different splits. To perform a cross validation,
+we will use all the training data and let it split it into four different groups: 20%, 80%, and
+20% will be testing data, and 80% will be the training data:
+We will now perform an average to the scores that we just obtained, which comes to about
+95% accuracy. Now we will print all the data as seen in the following screenshot:
+Applications for Comment Classification
+Chapter 3
+[ 58 ]
+The entire dataset has five different videos with comments, which means all together we
+have around 2,000 rows. On checking all the comments, we noticed that there are ����
+spam comments and ��� not-spam comments, that quite close enough to split it in to even
+parts:
+Here we will shuffle the entire dataset and separate the comments and the answers:
+We need to perform a couple of steps here with ��������������� followed by the
+random forest. For this, we will use a feature in scikit-learn called a Pipeline. Pipeline is
+really convenient and will bring together two or more steps so that all the steps are treated
+as one. So, we will build a pipeline with the bag of words, and then use ���������������
+followed by the random forest classifier. Then we will print the pipeline, and it the steps
+required:
+Applications for Comment Classification
+Chapter 3
+[ 59 ]
+We can let the pipeline name of each step by itself by adding ��������������� in
+our ���������������������� and it will name
+them ��������������� and ����������������������:
+Once the pipeline is created you can just call it fit and it will perform the rest that is first it
+perform the fit and then transform with the ���������������, followed by a fit with the
+������������ classifier. That's the benefit of having a pipeline:
+Now you call score so that it knows that when we are scoring it will to run it through the
+bag of words ���������������, followed by predicting with the
+����������������������:
+This whole procedure will produce a score of about 94. We can only predict a single
+example with the pipeline. For example, imagine we have a new comment after the dataset
+has been trained, and we want to know whether the user has just typed this comment or
+whether it's spam:
+Applications for Comment Classification
+Chapter 3
+[ 60 ]
+As seen, it's detected correctly; but what about the following comment:
+To overcome this and deploy this classifier into an environment and predict whether it is a
+��� or not when someone types a new comment. We will use our pipeline to figure out
+how accurate our cross-validation was. We find in this case that the average accuracy was
+about 94:
+It's pretty good. Now let's add TF-IDF to our model to make it more precise:
+This will be placed after ���������������. After we have produced the counts, we can
+then produce a TF-IDF score for these counts. Now we will add this in the pipeline and
+perform another cross-validation check with the same accuracy:
+Applications for Comment Classification
+Chapter 3
+[ 61 ]
+This show the steps required for the pipeline:
+The following output got us ���������������, a TF-IDF transformer,
+and ����������������������. Notice that ��������������� can be lower case or
+upper case in the dataset; it is on us to decide how many words you want to have. We can
+either use single words or bigrams, which would be pairs of words, or trigrams, which can
+be triples of words. We can also remove stop words, which are really common English
+words such as and, or, and the. With TF-IDF, you can turn off the ��� component and just
+keep the �� component, which would just be a log of the count. You can use ��� as well.
+With random forests, you've got a choice of how many trees you use, which is the number
+of estimators.
+There's another feature of scikit-learn available that allows us to search all of these
+parameters. For that, it finds out what the best parameters are:
+Applications for Comment Classification
+Chapter 3
+[ 62 ]
+We can make a little dictionary where we say the name of the pipeline step and then
+mention what the parameter name would be and this gives us our options. For
+demonstration, we are going to try maximum number of words or maybe just a maximum
+of 1,000 or 2,000 words. 
+Using ������, we can mention just single words or pairs of words that are stop words, use
+the English dictionary of stop words, or don't use stop words, which means in the first case
+we need to get rid of common words, and in the second case we do not get rid of common
+words. Using TF-IDF, we use ��� to state whether it's yes or no. The random forest we
+created uses 20, 50, or 100 trees. Using this, we can perform a grid search, which runs
+through all of the combinations of parameters and finds out what the best combination is.
+So, let's give our pipeline number 2, which has the TF-IDF along with it. We will use ��� to
+perform the search and the outcome can be seen in the following screenshot:
+Applications for Comment Classification
+Chapter 3
+[ 63 ]
+Since there is a large number of words, it takes a little while, around 40 seconds, and
+ultimately finds the best parameters. We can get the best parameters out of the grid search
+and print them to see what the score is:
+So, we got nearly 96% accuracy. We used around 1,000 words, only single words, used yes
+to get rid of stop words, had 100 trees in the random forest, and used yes and the IDF and
+the TF-IDF computation. Here we've demonstrated not only bag of words, TF-IDF, and
+random forest, but also the pipeline feature and the parameter search feature known as grid
+search.
+Word2Vec models
+In this section, we'll learn about Word2Vec, a modern and popular technique for working
+with text. Usually, Word2Vec performs better than simple bag of words models. A bag of
+words model only counts how many times each word appears in each document. Given
+two such bag of words vectors, we can compare documents to see how similar they are.
+This is the same as comparing the words used in the documents. In other words, if the two
+documents have many similar words that appear a similar number of times, they will be
+considered similar.
+But bag of words models have no information about how similar the words are. So, if two
+documents do not use exactly the same words but do use synonyms, such as please and
+plz, they're not regarded as similar for the bag of words model. Word2Vec can figure out
+that some words are similar to each other and we can exploit that fact to get better
+performance when doing machine learning with text.
+Applications for Comment Classification
+Chapter 3
+[ 64 ]
+In Word2Vec, each word itself is a vector, with perhaps 300 dimensions. For example, in a
+pre-trained Google Word2Vec model that examined millions or billions of pages of text, we
+can see that cat, dog, and spatula are 300-dimensional vectors:
+Cat = <0.012, 0.204, ..., -0.275, 0.056> (300 dimensions)
+Dog = <0.051, -0.022, ..., -0.355, 0.227>
+Spatula = <-0.191, -0.043, ..., -0.348, 0.398>
+Similarity (distance) between cat and dog�0.761
+Similarity between cat and spatula�0.124
+If we compare the similarity of the dog and cat vectors, we will get 0.761 or 76% of
+similarity. If we do the same with cat and spatula, we get 0.124. It's clear that Word2Vec
+learned that dog and cat are similar words but cat and spatula are not. Word2Vec uses
+neural networks to learn these word vectors. At a high level, a neural network is similar to
+random forest or a decision tree and other machine learning techniques because they're
+given a bunch of inputs and a bunch of outputs, and they learn how to predict the outputs
+from the inputs.
+For Word2Vec, the input is a single word, the word whose vector we want to learn, and the
+output is its nearby words from the text. Word2Vec also supports the reverse of this input-
+output configuration. Thus, Word2Vec learns the word vectors by remembering its context
+words. So, dog and cat will have similar word vectors because these two words are used in
+similar ways, like she pet the dog and she pet the cat. Neural networking with Word2Vec can
+take one of two forms because Word2Vec supports two different techniques for training.
+The first technique is known as continuous bag of words, where the context words are the
+input, leaving out the middle word and the word whose vector we're learning, the middle
+word, is the output. In the following diagram, you can see three words before and after the
+word channel:
+Applications for Comment Classification
+Chapter 3
+[ 65 ]
+Those are the context words. The continuous bag of words model slides over the whole
+sentence with every word acting as a center word in turn. The neural network learns the
+300-dimensional vectors for each word so that the vector can predict the center word given
+the context words. In other words, it can predict the output given its inputs.
+In the second technique, we're going to flip this. This is known as skip-gram, and the center
+word is the input and the context words are the outputs:
+In this technique, the center word vector is used to predict the context words given that
+center word.
+Both of these techniques perform well for most situations. They each have minor pros and
+cons that will not be important for our use case.
+Doc2Vec
+We're going to use Word2Vec to detect positive and negative product, restaurant, and
+movie reviews. We will do so with a slightly different form of Word2Vec known as
+Doc2Vec. In this case, the input is a document name, such as the filename, and the output is
+the sliding window of the words from the document. This time, we will not have a center
+word:
+Applications for Comment Classification
+Chapter 3
+[ 66 ]
+In this case, as a vector that helps us predict the words, from knowing the filename. In fact,
+the input is not very important, which in this case is the filename. We just need to keep
+track of the words on the right side, and that they all came from the same document. So, all
+of those words will be connected to that filename, but the actual content of that filename is
+not important. Since we can predict the document's words based on its filename, we can
+effectively have a model that knows which words go together in a document. In other
+words, that documents usually talk about just one thing, for example, learning that a lot of
+different positive words are used in positive reviews and a lot of negative words are used
+in negative reviews.
+Document vector
+After training, we have a new document and we want to find its document vector. We'll use
+the word similarities learned during training to construct a vector that will predict the
+words in the new document. We will use a dummy filename since the actual name is not
+important. What's important is that it's just one name. So, all of these words get connected
+together under that one name:
+Once we get that new document vector, we can compare it with other document vectors
+and find which known document from the past is the most similar, as follows:
+Applications for Comment Classification
+Chapter 3
+[ 67 ]
+Thus, we can use ������� to find which documents are most similar to each other. This
+will help us detect positive and negative reviews because, ideally, the positive reviews will
+have document vectors that are similar to each other and this will be the same for negative
+reviews. We expect ������� to perform better than bag of words because ������� learns
+the words that are used together in the same document, so those words that are similar to
+bag of words never actually learned any information about how similar the words are
+different.
+Detecting positive or negative sentiments in
+user reviews
+In this section, we're going to look at detecting positive and negative sentiments in user
+reviews. In other words, we are going to detect whether the user is typing a positive
+comment or a negative comment about the product or service. We're going to use
+�������� and ������� specifically and the ������ Python library for those services.
+There are two categories, which are positive and negative, and we have over 3,000 different
+reviews to look at. These come from Yelp, IMDb, and Amazon. Let's begin the code by
+importing the ������ library, which provides �������� and ������� for logging to note
+status of the messages:
+First, we will see how to load a pre-built �������� model, provided by Google, that has
+been trained on billions of pages of text and has ultimately produced 300-dimensional
+vectors for all the different words. Once the model is loaded, we will look at the vector for
+���. This shows that the model is a 300-dimensional vector, as represented by the word
+���:
+Applications for Comment Classification
+Chapter 3
+[ 68 ]
+The following screenshot shows the 300-dimensional vector for the word ���:
+Applications for Comment Classification
+Chapter 3
+[ 69 ]
+The following screenshot shows the 300-dimensional vector for the word �������:
+We obtain a result of 76% when computing the similarity of dog and cat, as follows:
+The similarity between cat and spatula is 12%; it is a bit lower, as it should be:
+Applications for Comment Classification
+Chapter 3
+[ 70 ]
+Here we train our �������� and ������� model using the following code:
+We are using ������� because we want to determine a vector for each document, not
+necessarily for each word in the document, because our documents are reviews and we
+want to see whether these reviews are positive or negative, which means it's similar to
+positive reviews or similar to negative reviews. ������� is provided by ������ and the
+library has a class called �������������� that allows us to use "�������������������
+�����������������������������������������".
+Now we create a utility function that will take a sentence or a whole paragraph and
+lowercase it and remove all the HTML tags, apostrophes, punctuation, spaces, and repeated
+spaces, and then ultimately break it apart by words:
+Now it's time for our training set. We are not going to use the 3,000 Yelp, IMDb, and
+Amazon reviews because there's simply not enough data to train for a good �������
+model. If we had millions reviews, then we could take a good portion of that to train with
+and use the rest for testing, but with just 3,000 reviews it's not enough. So, instead, I've
+gathered reviews from IMDb and other places, including Rotten Tomato. This will be
+enough to train a ������� model, but none of these are actually from the dataset that we're
+going to use for our final prediction. These are simply reviews. They're positive; they're
+negative. I don't know which, as I'm not keeping track of which. What matters is that we
+have enough text to learn how words are used in these reviews. Nothing records whether
+the review is positive or negative.
+Applications for Comment Classification
+Chapter 3
+[ 71 ]
+So, ������� and �������� are actually being used for unsupervised training. That means
+we don't have any answers. We simply learn how words are used together. Remember the
+context of words, and how a word is used according to the words nearby:
+So, in each case, in each file, we simply make a �������������� object with the words
+from that document or that review plus a tag, which is simply the filename. This is
+important so that it learns that all these words go together in the same document, and that 
+these words are somehow related to each other. After loading, we have 175,000 training
+examples from different documents:
+Now let's have a look at the first 10 sentences in the following screenshot:
+Applications for Comment Classification
+Chapter 3
+[ 72 ]
+We shuffle these documents and then feed them into our ������� trainer,
+using ��������������������������������������, where we finally do the training of
+the ������� model and where it learns the document vectors for all the different
+documents. ���� and ���� are just parameters to say how to do the training. These are just
+things that I found were the most accurate. ���� is where we are using the model that was
+shown in the last section, which means it receives a filename and it predicts the words:
+Here ������� means that we found that 50-dimensional vectors for each document was
+best, and 300-dimensional vectors are optimal, because we don't have enough training
+examples. Since we don't have millions or billions of data. This is a good 300 dimensional
+vector, and 50 seemed to work better. Running this code uses the processor and all the
+cores you have, so it will takes some time to execute. You will see that it's going through all
+the percentages of how much it got through. Ultimately, it takes 300 seconds to get this
+information in my case, which is definitely not bad. That's pretty fast, but if you have
+millions or billions of training documents, it could take days.
+Applications for Comment Classification
+Chapter 3
+[ 73 ]
+Once the training is complete, we can delete some stuff to free up some memory:
+We do need to keep the inference data, which is enough to bind a new document vector for
+new documents, but we don't need it to keep all the data about all the different words.
+You can save the model and then load it later with the �������
+��������������������������� command, if you want to put it in a product and deploy
+it, or put it on a server:
+After the model's been trained, you can infer a vector, which is regarding what the
+document vector is for this new document. So, let's extract the words with the utility
+function. Here we are using an example phrase that was found in a review. This is the 50-
+dimensional vector it learned for that phrase:
+Now the question that rises is what about a negative phrase? And another negative
+phrases. Are they considered similar? Well, they're considered 48% similar, as seen in the
+following screenshot:
+Applications for Comment Classification
+Chapter 3
+[ 74 ]
+What about different phrases? ������������������ and �������������. They're less
+similar:
+The model learned about how words are used together in the same review and that these
+words go together in one way and that other words go together in a different way.
+Finally, we are ready to load our real dataset for prediction:
+To summarize, we used Yelp, Amazon, and IMDb reviews. We loaded different files and in
+each file, each line had a review. As a result, we get the words from the line and found out
+what the vector was for that document. We put that in a list, shuffle, and finally built a
+classifier. In this case, we're going to use k-nearest neighbors, which is a really simple
+technique.
+Applications for Comment Classification
+Chapter 3
+[ 75 ]
+It's just a technique that says find all the similar documents, in this case, the nine closest
+documents to the one that we're looking at, and count votes:
+We will be using nine reviews for the purposes of this example, and if you have a majority,
+let's say of positive reviews, then we will say that this is a positive review too. If the
+majority says negative, then this is a negative too. We don't want a tie regarding the
+reviews, which is why we say that there's nine instead of eight.
+Now we will compare the outcome with a random forest:
+Now we need to perform cross-validation with the 9 nearest neighbors; we get 76%
+accuracy for detecting positive/negative reviews with �������. For experimental purposes,
+if we use a random forest without really trying to choose an amount of trees, we just get an
+accuracy of 70%:
+In such cases, k-nearest neighbors is both simpler and more accurate. Ultimately, is it all
+worth it? Well, let's comparing it to the bag of words model. Let's make a little pipeline
+with ���������������, TF-IDF, and random forest, and at the end, do cross-validation on
+the same data, which in this case is the reviews. Here, we get 74%, as seen in the following
+screenshot:
+Applications for Comment Classification
+Chapter 3
+[ 76 ]
+The outcome that we found after executing the model build we found ������� was better.
+������� can be a lot more accurate than bag of words if we add a lot of training examples
+that are of the same style as the testing set. Hence, in our case, the testing set was pretty
+much the Yelp, Amazon, and IMDb reviews, which are all one sentence or one line of text
+and are pretty short. However, the training set that we found came from different reviews
+from different places, and we got about 175,000 examples. Those were often like paragraphs
+or just written in different ways.
+Ideally, we will train a ������� or �������� model on examples that are similar to what
+we're going to predict on later, but it can be difficult to find enough examples, as it was
+here so we did our best. Even so, it still turned out better than bag of words.
+Summary
+In this chapter, we introduced text processing and the bag of words technique. We then
+used this technique to build a spam detector for YouTube comments. Next, we learned
+about the sophisticated Word2Vec model and put it to task with a coding project that
+detects positive and negative product, restaurant, and movie reviews. That's the end of this
+chapter about text.
+In the next chapter, we're going to look at deep learning, which is a popular technique
+that's used in neural networks.
+4
+Neural Networks
+In this chapter, we will get an overview on neural networks. We will see what a simple
+shallow neural network is and get some familiarity with how they work. We will do this by
+trying to identify the genre of a song using a shallow neural network. We will also recall
+our previous work on the spam detector to use the neural network. Further on, we will take
+a look at larger neural networks, known as deep learning, and apply what is known as a
+convolutional neural network to identify handwritten mathematical symbols. Finally we
+will revisit the bird species identifier covered previously and use deep learning to produce
+a much more accurate identifier.
+The topics that we will be covering in this chapter are as follows:
+Understanding neural networks
+Identifying the genre of a song using neural networks
+Recalling our work on the spam detector to use neural networks
+Understanding neural networks
+Neural networks, which were originally called artificial neural networks, are inspired by
+actual neurons found in animal's brains and other parts of the nervous system. Neurons are
+connected to each other and they receive and send impulses throughout the animal's body,
+or in the case of computing, the network.
+Neural Networks
+Chapter 4
+[ 78 ]
+The following diagram shows the components of a single neuron:
+�����������������������������
+The following graph shows how a neuron fires:
+�����������������
+Neural Networks
+Chapter 4
+[ 79 ]
+It is all or nothing, meaning, when the neuron gets enough input from its neighbors, it
+quickly fires and sends a signal down its axon to each forward-connected neuron.
+Here, we can see actual neurons in a brain:
+�������������������������
+A human brain has about 100 billion neurons all together, and has about 100 trillion
+connections. It is worth noting that the neural networks we create in software have at least
+1 million times less complexity.
+Neural Networks
+Chapter 4
+[ 80 ]
+Feed-forward neural networks
+Most of the neural networks that we design are feed forward and fully connected. This
+means that every neuron connects to every neuron in the next layer. The first layer receives
+inputs and the last layer gives outputs. The structure of the network, meaning the neuron
+counts and their connections, is decided ahead of time and cannot change, at least not
+during training. Also, every input must have the same number of values. This means that
+images, for example, may need to be resized to match the number of input neurons. The
+number of neurons in each layer is that layer's shape:
+��������������������������
+Each individual neuron adds up the values it receives from the prior layer. Each connection
+from one neuron to the next has a weight. When adding the inputs, the inputs are
+multiplied by the respective weights. Each neuron also has an extra input called a bias,
+which is not connected to any other neurons. Once the weighted inputs have been added,
+an activation function is applied to the sum.
+Neural Networks
+Chapter 4
+[ 81 ]
+There are several common activation functions, for example, the hyperbolic tangent, whose
+shape is shown here:
+������������������
+The output of each neuron is whatever comes out of the activation function.
+The connection waits in a network start random and are adjusted during training. The
+purpose of training is to examine hundreds, or thousands, or even more example cases and
+adjust the network's weights until the network is sufficiently accurate.
+After training, we have a network structure that we have already defined, and all the
+weights that were learned during training. As such, the following is true:
+A trained neural network = Structure + Learned weights
+Neural Networks
+Chapter 4
+[ 82 ]
+This is shown here:
+���������������������������������������������
+Now the network is ready to use on new data outside the training set.
+Neural Networks
+Chapter 4
+[ 83 ]
+Training proceeds in batches, which means that several training cases are sent through the
+network and the outputs, called predictions, are collected. Then, the loss is computed for
+each batch, which is the measure of the overall error:
+����������������������������������������������������������������
+Each weight in the network is then adjusted depending on whether and how much that
+weight contributed to the overall loss. With very gradual adjustments, it should be the case
+that when examples in this batch are visited again, predictions will be more accurate.
+The network is often trained over several epochs. By an epoch, we mean all the training
+data having been processed once. So, 10 epochs means looking at the same training data 10
+times. We often segregate 20% or so of the training data as a validation set. This is data that
+we don't use during training and instead only use to evaluate the model after each epoch.
+Ideally, we want the network to become more accurate, which means we want to decrease
+loss, and this should be true for both the training set and the validation set.
+Neural Networks
+Chapter 4
+[ 84 ]
+The following set of graph shows this ideal kind of behavior:
+��������������
+Note the signs of overfitting, meaning training loss goes down but validation loss goes up.
+If the network is not designed correctly, for example, if it has too many layers, the network
+may overfit, meaning it performs very well in the training set but poorly on the validation
+set. This is an issue because ultimately we want to use the neural network on new data
+from the real world, which will probably be a little different than the training set, hence we
+use a validation set to see how well the network performs on data it didn't see for training.
+Identifying the genre of a song with neural
+networks
+In this section, we're going to build a neural network that can identify the genre of a song.
+We will use the GTZAN Genre Collection (���������������������������������������
+���������������������������������). It has 1,000 different songs from over 10 different
+genres. There are 100 songs per genre and each song is about 30 seconds long.
+We will use the  Python library, ������� to extract features from the songs. We will use
+Mel-frequency cepstral coefficients (MFCC). MFCC values mimic human hearing and
+they are commonly used in speech recognition applications as well as music genre
+detection. These MFCC values will be fed directly into the neural network.
+Neural Networks
+Chapter 4
+[ 85 ]
+To help us understand the MFCC, let's use two examples. Download Kick Loop 5 by Stereo
+Surgeon. You can do this by visiting ����������������������������������������������
+��������������, and download Whistling by cmagar by visiting ����������������������
+��������������������������������. One of them is a low-bass beat and the other is a
+higher pitched whistling. They are clearly different and we are going to see how they look
+different with MFCC values.
+Let's go to the code. First, we have to import the ������� library. We will also import ����
+because we are going to list the files in the different genre directories. Also, import �����
+as usual. We will import ���������� to draw the MFCC graphs. Then, will import the
+Sequential model from Keras. This is a typical feed-forward neural network. Finally, we
+will import the dense neural network layer, which is just a layer that has a bunch of
+neurons in it:
+Unlike a convolution, for example, it's going to have 2D representations. We are going to
+use import activation, which allows us to give each neuron layer an activation function, and
+we will also import ��������������, which allows us to turn the class names into things
+such as rock, disco, and so forth, which is what's called one-hot encoding.
+We have officially developed a helper function to display the MFCC values:
+Neural Networks
+Chapter 4
+[ 86 ]
+First, we will load the song and then extract the MFCC values from it. Then, we'll use the
+��������, which is a spectrogram show from the ������� library.
+Here's the kick drum:
+We can see that at low frequency, the bass is very obvious and the rest of the time it's kind
+of like a wash. Not many other frequencies are represented.
+However, if we look at the whistling, it's pretty clear that there's higher frequencies being
+represented:
+Neural Networks
+Chapter 4
+[ 87 ]
+The darker the color, or closer to red, the more power is in that frequency range at that
+time. So, you can even see the kind of change in frequency with the whistles.
+Now, here is the frequency for disco songs:
+This is the frequency output:
+You can sort of see the beats in the preceding outputs, but they're only 30 seconds long, so
+it is a little bit hard to see the individual beats.
+Neural Networks
+Chapter 4
+[ 88 ]
+Compare this with classical where there are not so much beats as a continuous kind of
+bassline such as one that would come from a cello, for example:
+Here is the frequency for hip-hop songs:
+Neural Networks
+Chapter 4
+[ 89 ]
+It looks kind of similar to disco, but if it were required that we could tell the difference with
+our own eyes, we wouldn't really need a neural network because it'd probably be a
+relatively simple problem. So, the fact that we can't really tell the difference between these
+is not our problem, it's the neural network's problem.
+We have another auxiliary function here that again just loads the MFCC values, but this
+time we are preparing it for the neural network:
+We have loaded the MFCC values for the song, but because these values are between
+maybe negative 250 to positive 150, they are no good for a neural network. We don't want
+to feed in these large and small values. We want to feed in values near negative 1 and
+positive 1 or from 0 to 1. Therefore, we are going to figure out what the max is, the absolute
+value for each song, and then divide all the values by that max. Also, the songs are a
+slightly different length, so we want to pick just 25,000 MFCC values. We have to be super
+certain that what we feed into the neural network is always the same size, because there are
+only so many input neurons and we can't change that once we've built the network.
+Neural Networks
+Chapter 4
+[ 90 ]
+Next, we have a function called �����������������������������, which will go
+through all the different genres and go through all the songs in the dataset and produce
+those MFCC values and the class names:
+As shown in the preceding screenshot, we will prepare a list for all the features and all the
+labels. Go through each of the 10 genres. For each genre, we will look at the files in that
+folder. The ������������������������ folder shows how the dataset is organized.
+When we are processing that folder, there will be 100 songs each for each file, we will
+extract the features and put those features in the ����������������������������� list.
+The name of the genre for that song needs to be put  in a list also. So, at the end, all features
+will have 1,000 entries and all labels will have 1,000 entries. In the case of all features, each
+of those 1,000 entries will have 25,000 entries. That will be a 1,000 x 25,000 matrix.
+For all labels at the moment, there is a 1,000 entry-long list, and inside are words such
+as �����, ���������, �������, �����, ������, ����, �����, ���, ������, and ����.
+Now, this is going to be a problem because a neural network is not going to predict a word
+or even letters. We need to give it a one-hot encoding, which means that each word here is
+going to be represented as ten binary numbers. In the case of the blues, it is going to be one
+and then nine zeros. In the case of classical, it is going to be zero followed by one, followed
+by nine zeros, and so forth. First, we have to figure out all the unique names by using the
+������������������������������������������ command to get them back as
+integers. Then, we have to use ��������������, which turns those integers into one-hot
+encoding. So, what comes back is 1000 x 10 dimensions. 1,000 because there are 1,000 songs,
+and each of those has ten binary numbers to represent the one-hot encoding. Then, return
+all the features stacked together by the command return �����������������������
+������������� into a single matrix, as well as the one-hot matrix. So, we will call that
+upper function and save the features and labels:
+Neural Networks
+Chapter 4
+[ 91 ]
+Just to be sure, we will print the shape of the features and the labels as shown in the
+following screenshot. So, it is 1,000 by 25,000 for the features and 1,000 by 10 for the labels.
+Now, we will split the dataset into a train and test split. Let's decide the 80% mark defined
+as ������������������� to perform a split:
+Neural Networks
+Chapter 4
+[ 92 ]
+Before that, we will shuffle, and before we shuffle, we need to put the labels with the
+features so that they don't shuffle in different orders. We will call
+�������������������������� and do the shuffle, split it using ���������
+��������������������������������, and then we will have train and testsets, as
+shown in the snapshot earlier. Looking at the shape of the train and the testsets, the train is
+800, so 80% of the 1,000 for the rows: we have 25,010 features. Those aren't really all
+features, though. It is actually the 25,000 features plus the 10 for the one-hot encoding
+because, remember, we stacked those together before we shuffled. Therefore, we're going to
+have to strip that back off. We can do that with ���������������������������. For
+both the train input and the test input, we take everything but the last 10 columns, and for
+the labels, we take the 10 columns to the end, and then we can see what the shapes of the
+train input and train labels are. So now, we have the proper 800 by 25,000 and 800 by 10.
+Next, we'll build the neural network:
+Neural Networks
+Chapter 4
+[ 93 ]
+We are going to have a sequential neural network. The first layer will be a dense layers of
+100 neurons. Now, just on the first layer, it matters that you give the input dimensions or
+the input shape, and that's going to be 25,000 in our case. This says how many input values
+are coming per example. Those 25,000 are going to connect to the 100 in the first layer. The
+first layer will do its weighted sum of its inputs, its weights, and bias term, and then we are
+going to run the ���� activation function. ����, if you recall, states that anything less than
+0 will turn out to be a 0. Anything higher than 0 will just be the value itself. These 100 will
+then connect to 10 more and that will be the output layer. It will be 10 because we have
+done someone-hot encoding and we have 10 binary numbers in that encoding.
+The activation used in the code, �������, says to take the output of the 10 and normalize
+them so that they add up to 1. That way, they end up being probabilities and whichever
+one of the 10 is the highest scoring, the highest probability, we take that to be the prediction
+and that will directly correspond to whichever position that highest number is in. For
+example, if it is in position 4, that would be disco (look in the code).
+Next, we will compile the model, choose an optimizer such as Adam, and define the ����
+function. Any time you have multiple outputs like we have here (we have 10), you
+probably want to do categorical cross-entropy and metrics accuracy to see the accuracy as
+it's training and during evaluation, in addition to the loss, which is always shown:
+however, accuracy makes more sense to us. Next, we can print �������������, which tells
+us details about the layers.
+It will look something like the following:
+Neural Networks
+Chapter 4
+[ 94 ]
+The output shape of the first 100 neuron layer is definitely 100 values because there are 100
+neurons, and the output of the dense second layer is 10 because there are 10 neurons. So,
+why are there 2.5 million parameters, or weights, in the first layer? That's because we have
+25,000 inputs. Well, we have 25,000 inputs and each one of those inputs is going to each one
+of the 100 dense neurons. So that's 2.5 million, and then plus 100, because each of those
+neurons in the 100 has its own bias term, its own bias weight, and that needs to be learned
+as well.
+Overall, we have about 2.5 million parameters or weights. Next, we run the fit. It takes the
+training input and training labels, and takes the number of epochs that we want. We want
+10, so that's 10 repeats over the trained input; it takes a batch size which says how many, in
+our case, songs to go through before updating the weights; and a ���������������� of
+0.2 says take 20% of that trained input, split it out, don't actually train on that, and use that to
+evaluate how well it's doing after every epoch. It never actually trains on the validation split,
+but the validation split lets us look at the progress as it goes.
+Finally, because we did separate the training and test ahead of time, we're going to do an
+evaluation on the test, the test data, and print the loss and accuracy of that. Here it is with
+the training results:
+Neural Networks
+Chapter 4
+[ 95 ]
+It was printing this as it went. It always prints the loss and the accuracy. This is on the
+training set itself, not the validation set, so this should get pretty close to 1.0. You actually
+probably don't want it to go close to 1.0 because that could represent overfitting, but if you
+let it go long enough, it often does reach 1.0 accuracy on the training set because it's
+memorizing the training set. What we really care about is the validation accuracy because
+that's letting us use the test set. It's data that it's just never looked at before, at least not for
+training, and indeed it's relatively close to the validation accuracy, which is our final
+accuracy. This final accuracy is on the test data that we separated ahead of time. Now we're
+getting an accuracy of around 53%. That seems relatively low until we realize that there are
+10 different genres. Random guessing would give us 10% accuracy, so it's a lot better than
+random guessing.
+Revising the spam detector to use neural
+networks
+In this section, we're going to update the spam detector from before to use neural networks.
+Recall that the dataset used was from YouTube. There was an approximate of 2,000
+comments with around half being spam and the other half not. These comments were of
+five different videos.
+In the last version, we used a bag of words and a random forest. We carried out a
+parameter search to find the parameters best suited for the bag of words, which was the
+CountVectorizer that had 1,000 different words in it. These 1000 words were the top used
+words. We used unigrams instead of bigrams or trigrams. It would be good to drop the
+common and the stop words from the English language. The best way is to use TF-IDF. It
+was also found that using a 100 different trees would be best for the random forest. Now,
+we are going to use a bag of words but we're going to use a shallow neural network instead
+of the random forest. Also remember that we got 95 or 96 percent accuracy for the previous
+version.
+Neural Networks
+Chapter 4
+[ 96 ]
+Let's look at the code:
+We start with importing. We'll use pandas once more to load the dataset. This time, we're
+going to use the Keras Tokenizer. There's no particular reason to use Tokenizer, except to
+show an alternative technique. We will import NumPy and then proceed to import the
+sequential model for the neural networks, which is the typical feed-forward network. We
+then have dense layers that are the typical neuron layers. We're also going to add the
+dropout feature, which helps prevent over-fitting, and we're going to decide on the
+activation for each layer. We are going to use the �������������� method from the
+�������� library from Keras to produce one-hot encoding, and we're going to introduce
+��������������� to perform our cross-validation.
+First, we load the datasets:
+There are five different CSV files. We will stack them on top of each other so that we have
+one big dataset. We then shuffle it by running a sample which picks random rows. We're
+going to say that we want to keep 100% of the data so that it effectively shuffles all of the
+data.
+Neural Networks
+Chapter 4
+[ 97 ]
+Now, the ��������������� technique takes a number of splits, say five, and produces the
+indexes of the original dataset for those splits:
+We're going to get an 80%/20% split for training and testing. This 20% testing will differ
+with each split. It's an iterator, hence, we can use a ��� loop to look at all the different
+splits. We will print the testing positions to see that they don't overlap for each split:
+Here's the first split:
+Neural Networks
+Chapter 4
+[ 98 ]
+Here's the second split:
+Here's the third:
+Neural Networks
+Chapter 4
+[ 99 ]
+Here's the fourth:
+And finally, the fifth:
+It is now obvious that they don't overlap.
+Neural Networks
+Chapter 4
+[ 100 ]
+We then define a function that receives these indexes for the different splits and does the
+bag of words, builds a neural net, trains it, and evaluates it. We then return the score for
+that split. We begin by taking the positions for the train and test sets and extract the
+comments:
+We then proceed to build our Tokenizer. At this point, we can mention the number of
+words we want it to support in the Tokenizer. A general research led us to the conclusion
+that using 2,000 words was better than a 1000 words. For the random forest, using a 1,000
+words is better and is supported by doing the GridSearch for all the different parameters.
+There's no particular reason to believe that because the bag of words works best with a
+1,000 words in comparison to the random forest, that it is what is necessarily best for the 
+neural network as well. So, we're going to use 2,000 words in this case. This is just a
+constructor. Nothing has really happened with the bag of words yet. The next thing we
+need to do is learn what the words are and that's going to happen by using the
+������������ method.
+Neural Networks
+Chapter 4
+[ 101 ]
+Now, ������������ should only be used on the training set. We only want to learn the
+words in the training set. This helps us simulate the real world where you've only trained
+your model on a certain set of data and then the real world presents possibly something
+new that you've never seen before. To do this, we have a training testing split. We only
+want to learn the words on the training set. If there are words in the testing set that we've
+never seen before in the training set, they'll be ignored. This is good because that's how it's
+going to work in the real world.
+We'll learn the words on the training set but then transform both the training and the
+testing comments into the bag of words model. The �����������������is used for the
+same. It produces a matrix which can be fed directly into the neural network. We give it the
+�������������, which are the comments, and the ������������. Then, we can then
+decide if we want ����� scores, binary scores, or frequency counts. We're going to go with
+����� in this case. ����� is a number between 0 and any random integer, possibly a large
+number, and in most cases it's not a good idea to give a neuron in a neural network very
+large numbers or very small numbers, meaning negative numbers. Here, we want to kind
+of scale these numbers between maybe 0 and 1, and -1 and 1. To scale between 0 and 1, we
+can divide by the max. So, we have to look at all the training examples, all the training
+numbers for TF-IDF, and divide each number by the maximum among those. We have to
+do the same for the test. Now, the train inputs and test inputs are ����� scores that have
+been rescaled to 0 to 1.
+We also shift it between -1 and 1 by subtracting the average from each score. Now, for the
+outputs, even though we could use binary, we're going to use categorical in this case for no
+particular reason, except just to show it. We're going to take all of the desired outputs, the
+classes, which is spam, not spam, and turn them into 1, 0 and 0, 1 encodings.
+Now, we can build our network. We're going to build the network all over again for each
+train/test split so it starts randomly. We're going to build a sequential network, which is a
+typical feed-forward network. We're going to have a first layer of 512 neurons. They're
+going to receive 2,000 different inputs. There's 2,000 because that's the size of the bag of
+words.
+We then use a ReLU activation. We could also use Tanh. ReLU is common in neural
+networks today. It's pretty fast as well as accurate. There's a 512 layer and then a 2 layer.
+The 2 is very specific because that's the output. We have one-hot encoding, so it's 1, 0, 0, 1,
+so that's two neurons. It has to match the number of outputs we have. Each of the two has
+links to 512 neurons from before. That's a lot of edges connecting the first layer to the
+second layer.
+Neural Networks
+Chapter 4
+[ 102 ]
+To prevent overfitting, we add a dropout. A 50% dropout means that every time it goes to
+update the weights, it just refuses to update half of them, a random half. We then find the
+weighted sum of their inputs.
+We take that sum and run the softmax. Softmax takes these different outputs and turns
+them into probabilities so that one of them is highest and they're all between 0 and 1. Then,
+we compile the model to compute the loss as �������������������������. This is
+usually something one uses when they use one-hot encoding. Let's use the Adamax
+optimizer. There are different optimizers that are available in Keras, and you can look at the
+Keras documentation at �����������������.
+Accuracy is an essential measure to work on while we train the network, and we also want
+to compute accuracy at the very end to see how well it's done.
+We then run fit on the training set. �������������� is the train inputs,
+and �������������� is the matrix bag of words model, train outputs, and the one -hot
+encoding. We are going to say that we want 10 epochs, which means it'll go through the
+entire training set ten times, and a batch size of 16, which means it will go through 16 rows
+and compute the average loss and then update the weight.
+After it's been fit, which indirectly means it's been trained, we evaluate the test. It's not until
+this point that it actually looks at the test. The scores that come out are going to be the loss
+and whatever other metrics we have, which in this case is accuracy. Therefore, we'll just
+show the accuracy times 100 to get a percent and we'll return the scores.
+Now, let's build that split again, which is the k-fold split with five different folds:
+Neural Networks
+Chapter 4
+[ 103 ]
+We collect the scores. For each split, we're going to run our �������������� function and
+save the scores. Here, it is running on each split. If you scroll, you will see that you get the
+epochs going. We can see that the accuracy on the training input increases per epoch. Now,
+if this gets really high, you might start worrying about over-fitting, but after the 10 epochs,
+use the testing set which it's never seen before. This helps us obtain the accuracy number
+for the testing set. Then, we'll do it all again for the next split and we'll get a different
+accuracy. We'll do this a few more times until we have five different numbers, one for each
+split.
+The average is found as follows: :
+Here, we get 95%, which is very close to what we got by using random forest. We didn't use
+this neural network example to show that we can get 100%. We used this method to
+demonstrate an alternative way to detect spam instead of the random forest method.
+Summary
+In this chapter, we covered a brief introduction to neural networks, proceeded with feed-
+forward neural networks, and looked at a program to identify the genre of a song with
+neural networks. Finally, we revised our spam detector from earlier to make it work with
+neural networks.
+In the next chapter, we'll look at deep learning and learn about convolutional neural
+networks.
+5
+Deep Learning
+In this chapter, we'll cover some of the basics of deep learning. Deep learning refers to
+neural networks with lots of layers. It's kind of a buzzword, but the technology behind it is
+real and quite sophisticated.
+The term has been rising in popularity along with machine learning and artificial
+intelligence, as shown in this Google trend chart:
+As stated by some of the inventors of deep learning methods, the primary advantage of
+deep learning is that adding more data and more computing power often produces more
+accurate results, without the significant effort required for engineering.
+In this chapter, we are going to be looking at the following:
+Deep learning methods
+Identifying handwritten mathematical symbols with CNNs
+Revisiting the bird species identifier to use images
+Deep Learning
+Chapter 5
+[ 105 ]
+Deep learning methods
+Deep learning refers to several methods which may be used in a particular application.
+These methods include convolutional layers and pooling. Simpler and faster activation
+functions, such as ReLU, return the neuron's weighted sum if it's positive and zero if
+negative. Regularization techniques, such as dropout, randomly ignore weights during the
+weight update base to prevent overfitting. GPUs are used for faster training with the order
+that is 50 times faster. This is because they're optimized for matrix calculations that are used
+extensively in neural networks and memory units for applications such as speech
+recognition.
+Several factors have contributed to deep learning's dramatic growth in the last five years.
+Large public datasets, such as ImageNet, that holds millions of labeled images covering a
+thousand categories and Mozilla's Common Voice Project, that contain speech samples are
+now available. Such datasets have satisfied the basic requirement for deep learning-lot of
+training data. GPUs have transitioned to deep learning and clusters while also focusing on
+gaming. This helps make large-scale deep learning possible.
+Advanced software frameworks that were released open source and are undergoing rapid
+improvement are also available to everyone. These include TensorFlow, Keras, Torch, and
+Caffe. Deep architectures that achieve state-of-the-art results, such as Inception-v3 are being
+used for the ImageNet dataset. This network actually has an approximate of 24 million
+parameters, and a large community of researchers and software engineers quickly
+translating research prototypes into open source software that anyone can download,
+evaluate, and extend.
+Convolutions and pooling
+This sections takes a closer look at two fundamental deep learning technologies, namely,
+convolution and pooling. Throughout this section, we will be using images to understand
+these concepts. Nevertheless, what we'll be studying can also be applied to other data, such
+as, audio signals. Let's take a look at the following photo and begin by zooming in to
+observe the pixels:
+Deep Learning
+Chapter 5
+[ 106 ]
+Convolutions occur per channel. An input image would generally consist of three channels;
+red, green, and blue. The next step would be to separate these three colors. The following
+diagram depicts this: 
+Deep Learning
+Chapter 5
+[ 107 ]
+A convolution is a kernel. In this image, we apply a 3 x 3 kernel. Every kernel contains a
+number of weights. The kernel slides around the image and computes the weighted sum of
+the pixels on the kernel, each multiplied by their corresponding kernel weights:
+A bias term is also added. A single number, the weighted sum, is produced for each
+position that the kernel slides over. The kernel's weights start off with any random value
+and change during the training phase. The following diagram shows three examples of
+kernels with different weights:
+Deep Learning
+Chapter 5
+[ 108 ]
+You can see how the image transforms differently depending on the weights. The rightmost
+image highlights the edges, which is often useful for identifying objects. The stride helps us
+understand how the kernel slides across the image. The following diagram is an example of
+a 1 x 1 stride:
+Deep Learning
+Chapter 5
+[ 109 ]
+The kernel moves by one pixel to the right and then down. Throughout this process, the
+center of the kernel will hit every pixel of the image whilst overlapping the other kernels. It
+is also observed that some pixels are missed by the center of the kernel. The following 
+image depicts a 2 x 2 stride:
+Deep Learning
+Chapter 5
+[ 110 ]
+In certain cases, it is observed that no overlapping takes place. To prove this, the following
+diagram contains a 3 x 3 stride: 
+In such cases, no overlap takes place because the kernel is the same size as the stride.
+Deep Learning
+Chapter 5
+[ 111 ]
+However, the borders of the image need to be handled differently. To affect this, we can use
+padding. This helps avoid extending the kernel across the border. Padding consists of extra
+pixels, which are always zero. They don't contribute to the weighted sum. The padding
+allows the kernel's weights to cover every region of the image while still letting the kernels
+assume the stride is 1. The kernel produces one output for every region it covers. Hence, if
+we have a stride that is greater than 1, we'll have fewer outputs than there were original
+pixels. In other words, the convolution helped reduce the image's dimensions. The formula
+shown here tells us the dimensions of the output of a convolution:
+It is a general practice to use square images. Kernels and strides are used for simplicity.
+This helps us focus on only one dimension, which will be the same for the width and
+height. In the following diagram, a 3 x 3 kernel with a (3, 3) stride is depicted: 
+Deep Learning
+Chapter 5
+[ 112 ]
+The preceding calculation gives the result of 85 width and 85 height. The image's width and
+height have effectively been reduced by a factor of three from the original 256. Rather than
+use a large stride, we shall let the convolution hit every pixel by using a stride of 1. This
+will help us attain a more practical result. We also need to make sure that there is sufficient
+padding. However, it is beneficial to reduce the image dimensions as we move through the
+network. This helps the network train faster as there will be fewer parameters. Fewer
+parameters imply a smaller chance of over-fitting.
+We often use max or average pooling between convolution dimensionality instead of
+varying the stride length. Pooling looks at a region, which, let us assume, is 2 x 2, and keeps
+only the largest or average value. The following image depicts a 2 x 2 matrix that depicts
+pooling: 
+A pooling region always has the same-sized stride as the pool size. This helps avoid
+overlapping. 
+Pooling doesn't use any weights, which means there is nothing to train.
+Deep Learning
+Chapter 5
+[ 113 ]
+Here's a relatively shallow convolutional neural networks (CNNs) representation:
+������������������������������������
+We observe that the input image is subjected to various convolutions and pooling layers
+with ReLU activations between them before finally arriving at a traditionally fully
+connected network. The fully connected network, though not depicted in the diagram, is
+ultimately predicting the class. In this example, as in most CNNs, we will have multiple
+convolutions at each layer. Here, we will observe 10, which are depicted as rows. Each of
+these 10 convolutions have their own kernels in each column so that different convolutions
+can be learned at each resolution. The fully connected layers on the right will determine
+which convolutions best identify the car or the truck, and so forth. 
+Identifying handwritten mathematical
+symbols with CNNs
+This sections deals with building a CNN to identify handwritten mathematical symbols.
+We're going to use the ������ dataset. This contains 168,000 images from 369 different
+classes where each represents a different symbol. This dataset is a more complex analog
+compared to the popular MNIST dataset, which contains handwritten numbers.
+Deep Learning
+Chapter 5
+[ 114 ]
+The following diagram depicts the kind of images that are available in this dataset:
+Deep Learning
+Chapter 5
+[ 115 ]
+And here, we can see a graph showing how many symbols have different numbers of
+images:
+It is observed that many symbols have few images and there are a few that have lots of
+images. The code to import any image is as follows:
+Deep Learning
+Chapter 5
+[ 116 ]
+We begin by importing the ����� class from the ������� library. This allows us to show
+images inside Jupyter Notebook. Here's one image from the dataset:
+This is an image of the alphabet A. Each image is 30 x 30 pixels. This image is in the RGB
+format even though it doesn't really need to be RGB. The different channels are
+predominately black and white or grayscale. We're going to use these three channels. We
+then proceed to import CSV, which allows us to load the dataset:
+�
+This CSV file states all the different filenames and the class names. We import the image
+class from ���, which allows us to load the image. We import
+�������������������, which then allows us to convert the images into ����� arrays.
+Let's us then go through the data file, taking a closer look at every filename and loading it,
+while recording which class it belongs to:
+Deep Learning
+Chapter 5
+[ 117 ]
+The immediate next step would be to save the images and the classes and use the CSV
+reader. We need to set a counter to make sure we skip the first row, which is the header of
+the CSV file. Only after this, we proceed to open the image, which is in the first column of
+each row. This is converted into an array. The achieved result will have dimensions of 30 x
+30 x 3, which is interpreted as 30 width, 30 height, and 3 channels (RGB).
+These three channels will have numbers between 0 and 255. These are typical pixel values,
+which are not good for a neural network. We need values that lie between 0 and 1 or -1 and
+1. To do this, we divide each pixel value by 255. To make things easier, we're going to
+collect the filename, the class name, and the image matrix and put them into our images
+list. We will also make a note of the name of the class. The following snippet will make us
+understand the concept to a greater depth:
+Deep Learning
+Chapter 5
+[ 118 ]
+The file is named ����������������������. � is the name of the class followed by the
+array. The array has dimensions 30 x 30 x 3. The innermost and last dimension, is 3. Each
+1.0 depicts the color white. We understand this because we divided everything by 255 as
+mentioned earlier. 
+We have 168,000 images in the ������ dataset:
+We then proceed to shuffle and then split the data on an 80% train, 20% test basis. As seen
+in the following codeblock, we first shuffle, then proceed to split the image: 
+Because we use these tuples with three different values, we're going to need to ultimately
+collect all that into a matrix:
+We need to collect the images as well as the labels. To collect the images, we go through
+each row and take each third element. This element is the image matrix. We stick it all
+together into a ����� array. The same is done for the train and test datasets.
+For the outputs, we need to go and pick out the second value. These are still strings, such
+as � and �. We need to convert the second value into one-hot encoding before it can be used
+for a neural network.
+Deep Learning
+Chapter 5
+[ 119 ]
+We proceed to use scikit-learn's preprocessing label encoder and one-hot encoder:
+We're going to make a ������������ object and we're going to both fit and transform on
+the classes:
+The ��� function learns which classes exist. It learns that there are 369 different class
+names. The �������� function turns them into integers. This is done by sorting the classes
+and giving each class an integer ID. ��������������� helps to reproduce the list of
+classes as integer IDs. The one-hot encoder takes these integers and fits on them; this too
+learns how many different integers are represented. Just as ������������ learned about
+the class names, �������������� is going to learn that there are 369 different integers.
+The code then moves to ������������ which transforms ������������ into integers.
+These integers are then transformed into one-hot encoding. The one-hot encoding returns a
+369-dimension with the first dimension of 369 values and a vector of 369 values. All values
+are zeros except for a single 1. The position of this 1 depends on which class it
+is. ����������� undergoes the same process. When the training data for input and output
+is ready, we proceed to build a neural network.
+Deep Learning
+Chapter 5
+[ 120 ]
+To do this, we are going to use ���������� again:
+Sequential is a feed-forward network. Even though there are convolutions that still feed
+forward and are not recurrent, there are no cycles. Dense layers are used at the end of the
+network. We also use ������� to try to prevent overfitting. When we switch from
+convolutions to dense layers, we need to use the ������� command, since convolutions are
+two-dimensional and dense layers are not. We also need to use ������ and
+������������.
+The following code block is our network design:
+This is modeled after MNIST design, which handles handwritten numbers. We start by
+making a sequential model. We need to add a convolution layer that has 32 different
+convolutions. The kernel size will be 3 x 3 and the activation will be ReLU. Since this is the
+first layer, we need to mention the input shape. If you recall, the dimensions were 30 x 30 x
+3.
+We use the kernel size of 3 x 3 and the stride as 1 as it is the default value. Having the stride
+as 1 will require padding. This is going to produce a 30 x 30 x 32 shape because there are 32
+convolutions. The 30 x 30 dimensions remain constant. WE now observe that we haven't
+really reduced dimensions just by doing this convolution.
+Deep Learning
+Chapter 5
+[ 121 ]
+���������� is used to reduce the dimensions by half. This is possible because it has a 2 x 2
+pool size. We then follow with another convolution layer, which is another dimensionality
+reduction.
+After all the convolutions have taken place, we flatten everything. This converts a two-
+dimensional representation into a one-dimensional representation. This is then fed into a
+dense layer with more than 1,000 neurons.
+This dense layer will then have a ���� activation. This is then fed into another dense layer
+of neurons. This time around, there are 369 of them for the class outputs. This is the
+��������������� output. We're not going to do any particular activation except for
+softmax. So, the original values will be rescaled to be between 0 and 1. This means that the
+sum of all the values across the 369 different neurons is 1.0. Softmax basically turns the
+output into a probability.
+Proceeding to compiling ������������������������� again helps us predict one of
+multiple classes. You would want to do this on the ���� optimizer and observe it's
+accuracy. Here's the model's summary:
+Deep Learning
+Chapter 5
+[ 122 ]
+It is observed that the convolution layer doesn't change the dimensions, but the pooling
+does. It reduces it by half because of the odd dimension size, that is, 15. The next layer is at
+13 output, which also gets reduced by half. The ����������������� parameters are used
+for learning the convolutions. The ��������������� parameters are used for learning the
+weights connected to the prior layer. In a similiar fashion, the ���������������
+parameters are for the weights for the prior layer. Ultimately, we have about 1.6 million
+parameters.
+We're going to visualize the performance's accuracy and validation's accuracy with
+TensorBoard. We're going to save all the results into a directory called ������
+����� because that's the style of the network we built earlier. The following is a callback:
+Keras supports callbacks of various types. The callback is used in the ��� method, so after
+every epoch, it calls the callback. It passes information to the callback, such as the
+validation loss and the training loss. We use 10 epochs and a batch size of 32, with a 0.2,
+20%, validation split.
+Here's the result of the training:
+Deep Learning
+Chapter 5
+[ 123 ]
+Now, there are a lot of choices, but ultimately we need to check them. We got about 76%
+validation accuracy, and when we test this out on the test set, we get the same 76%
+accuracy. Now, there were a lot of decisions in this design, including how many
+convolution layers to have and what size they should be, what kernel should be used or
+what size of kernel, what kind of stride, what the activation was for the convolutions,
+where the max pooling showed up, if it ever did, what the pooling size was, how many
+dense layers we have, when do they appear, what is the activation, and so on and so forth.
+A lot of decisions. It's quite difficult to know how to choose these different designs. These
+are actually called hyperparameters.
+The weights that can be learned during the fit procedure are just called parameters, but the
+decisions you have to make about how to design the network and the activation functions
+and so forth we call hyperparameters, because they can't be learned by the network. In
+order to try different parameters, we can just do some loops:
+We will time how long it takes to train each of these. We will collect the results, which
+would be the accuracy numbers. Then, we will try a convolution 2D, which will have one or
+two such layers. We're going to try a dense layer with 128 neurons. We will try a dropout as
+������������������������������������, which will be either yes or no, and means
+0-25%, 50%, 75%. So, for each of these combinations, we make a model depending on how
+many convolutions we're going to have, with convolution layers either one or two. We're
+going to add a convolution layer.
+Deep Learning
+Chapter 5
+[ 124 ]
+If it's the first layer, we need to put in the input shape, otherwise we'll just add the layer.
+Then, after adding the convolution layer, we're going to do the same with max pooling.
+Then, we're going to flatten and add a dense layer of whatever size that comes from ���
+�����������������������������������������������. It will always be ����,
+though.
+If ������� is used, we're going to add a dropout layer. Calling this dropout means, say it's
+50%, that every time it goes to update the weights after each batch, there's a 50% chance for
+each weight that it won't be updated, but we put this between the two dense layers to kind
+of protect it from overfitting. The last layer will always be the number of classes because it
+has to be, and we'll use softmax. It gets compiled in the same way.
+Set up a different log directory for TensorBoard so that we can distinguish the different
+configurations. Start the timer and run fit. Do the evaluation and get the score, stop the
+timer, and print the results. So, here it is running on all of these different configurations:
+Deep Learning
+Chapter 5
+[ 125 ]
+0.74 is the actual test set accuracy. So, you can see that there are a lot of different numbers
+for accuracy. They go down to low point sevens up to the high point sevens, and the time
+differs depending on how many parameters there are in the network. We can visualize
+these results because we are using the callback function.
+Here's the accuracy and loss, which are from the training set:
+And here's the validation accuracy and validation loss:
+Deep Learning
+Chapter 5
+[ 126 ]
+Zoom out a bit so that we can see the configurations on the side, and then we can turn them
+all off. Turn ����������� back on. This was the first one we tried:
+You can see that the accuracy goes up and the loss goes down. That's pretty normal.
+Validation accuracy goes up and loss goes down, and it mostly stays consistent. What we
+don't want to see is validation loss skyrocketing after a while, even though the accuracy is
+going way up. That's pretty much by-definition overfitting. It's learning the training
+examples really well, but it's getting much worse on the examples it didn't see. We really
+don't want that to happen. So, let's compare a few things. First, we'll compare different
+dropouts. Let's go to ��������-��������� but with different dropouts.
+As far as loss goes:
+We can see that with a very low dropout, such as 0 or 0.25, the loss is minimized. That's
+because if you want to really learn that training set, don't refuse to update weights. Instead,
+update all of them all the time. With that same run, by looking at the dark blue line, we can
+see that it definitely overfit after just two epochs because the validation loss, the examples it
+did not see, started to get much worse. So, that's where the overfitting started. It's pretty
+clear that dropout reduces overfitting. Look at the 0.75 dropout. That's where the validation
+loss just got better and better, which means lower and lower.
+Deep Learning
+Chapter 5
+[ 127 ]
+It doesn't make it the most accurate, though, because we can see that the accuracy is not
+necessarily the best for our training set or the validation set:
+Actually, about 0.5 seems pretty good for a validation set. Now, let's just make sure it's the
+same for other layers. Again, with no dropouts (0.0), we get the lowest training loss but the
+highest validation loss. Likewise, we get a 0.75 dropout for the lowest validation loss but
+not necessarily the best training.
+Now, let's compare how many dense layers they have. We're just going to stick with
+dropout 0.5, so we'll use ��������. So, we have one convolution layer, �������, and a
+dropout of 0.50:
+So the choice here is, does the dense layer have 128, 256, 512, 1,024, or 2,048? In the previous
+graph, we can see that there are some clear cases of overfitting. Pretty much anything that's
+not the 128 starts to suffer from overfitting. So, a dense layer of 128 is probably the best
+choice. Now, let's compare one convolution layer to two convolution layers:
+Deep Learning
+Chapter 5
+[ 128 ]
+Not a big difference, actually. For validation, we get two convolution layers and receive the
+lowest loss, which is usually the same as the highest accuracy. This means that we've
+narrowed down. This is called model selection, which is all about figuring out what the best
+model is, as well as the best hyperparameters. We've narrowed this down to the two-
+dimensional convolution, two layers of that, 128 dense in the first dense layer, and 50%
+dropout. Given that, let's retrain on all the data so that we have the best trained model we
+could possibly have:
+We get our two convolution layers, we do our dense 128 dropout 0.5, and in this case we
+take all the data we have, the entire dataset trained and tested, and stick it all together.
+Now, we can't really evaluate this model because we just lost our testing set, so what we're
+going to do instead is use this model to predict other images. Actually, we're going to save
+the model after it's fit and we're going to show how to load in a minute. If you're going to
+load this in another file, you're also going to want to know what those labels were called
+because all we know is the one-hot encoding. From the one-hot encoding, we can get back
+the integer number, but still that's not the same as the actual name of the symbol. So, we
+have to save the classes from ������������ and we're just going to use a ����� file to
+save that.
+Deep Learning
+Chapter 5
+[ 129 ]
+Let's train the model:
+This could actually be all in a separate file. You can load everything again:
+Import ������������ and you can use the ����������� feature. The model file there
+actually saves the structure as well as the weights. That's all you need to do to recover the
+network. You can print the summary again. For ������������, we need to call the
+constructor again and give it the classes that we saved ahead of time.
+Now, we can make a function called predict takes an image. We do a little bit of
+preprocessing to turn the image into an array, we divide it by 255, and we predict. If you
+have a whole set of images, you won't need to do this reshape, but since we just have one,
+we can put it in an array that has a single row. We will get the prediction out of this, and
+using ������������, we can reverse the prediction to the actual name of the class, the
+name of the symbol, and which prediction? Well, it's one-hot encoding, so you can figure
+out the position of the highest number. This takes all the neuron outputs, the 369, figures
+out what the largest confidence number is, and says that's the one that was predicted.
+Therefore, one-hot encoding would tell you this particular symbol, and then we can print it:
+Deep Learning
+Chapter 5
+[ 130 ]
+Here's how we can use that function:
+We're actually using the training images for this purpose instead of making new ones, but
+you get the idea. You take an image that says that's an �, and I'm 87% confident about it.
+For pi prediction, we're 58% confident and for alpha prediction, we're 88% confident. Next,
+we'll look at the bird species example we used previously, and instead of using all of the
+attributes that humans created, we're going to use the images themselves.
+Deep Learning
+Chapter 5
+[ 131 ]
+Revisiting the bird species identifier to use
+images
+In this section, we're going to revisit the bird species identifier from before. This time, we're
+going to update it to use neural networks and deep learning. Can you recall the birds
+dataset? It has 200 different species of birds across 12,000 images. Unlike last time, we won't
+be using the human-labeled attributes, and instead we'll use the actual images without any
+pre-processing. In our first attempt, we're going to build a custom convolutional neural
+network, just like we did for the mathematical symbols classifier.
+Let's go to the code. We will start with the typical imports:
+We'll make some convenience variables, the rows and columns of the image, the width and
+height, and the number of channels, RGB, though every bird image will be equal. Even
+though they're not all necessarily the same size, we're going to resize them to this size so
+that they're all consistent:
+Deep Learning
+Chapter 5
+[ 132 ]
+Now, this project introduces an interesting feature on Keras called an image data
+generator:
+The data generator can produce new images from the existing training set and these new
+images can have various differences; for example, they can be rotated, they can be flipped 
+horizontally or vertically, and so forth. Then, we can generate more examples than we
+actually started with. This is a great thing to do when you have a small number of training
+examples. We have, in our case, about 6,000 training sets. That's relatively small in deep
+learning, so we want to be able to generate more; the data generator will just keep
+generating them as long as we keep asking for them. For the training images, we want to
+also generate versions with the horizontal flip. We don't want to do a vertical flip because I
+don't expect any bird images to be upside down. We also want to support rotations of up to
+45 degrees, and we want to rescale all the pixel values to divide by 255. Actually,
+������������������ just calls the constructor, so nothing's actually happened yet. What
+you want to do next is use �������������������, so that your images can be organized
+into directories or subdirectories.
+We have a ����� directory, and inside that there's going to be a folder for each bird class.
+So, there's 200 different folders inside train and inside those folders are the images for that
+particular bird. We want all the images to be resized to 256 x 256 and we can indicate that
+instead of using binary, we want to use categorical classes, meaning that we will have lots
+of different classes (200, in this case). We're going to use the data generator for the test set
+too, just because ������������������� is a convenient function. We don't want to do any
+flips, though, or rotations. We just want to use the testing set as is so we can compare it
+with other people. The other really convenient thing about �������������������� is that
+it's automatically going to produce a ����� matrix with the image data, and it's also going
+to give the class values in one-hot encoding.
+So, what was several steps before is now being done all at once.
+Deep Learning
+Chapter 5
+[ 133 ]
+Now, I don't really need to do a reset, but since these are technically iterators, if you're
+constantly fixing the model and trying to retrain, then you might want to do a reset so that
+you get all the same images in the same order. In any event, it's an iterator, so you can call
+next, reset, and so forth:
+Now, we will build a sequential model, which is going to be a convolutional model. We
+have a convolution kernel of 3 x 3, 64 of this. We also have a ���� and another convolution
+built by ����, which we can do a max pooling with, and just from experimentation, I
+discovered that this works relatively well: 3 x 3 followed by 3 x 3, each 64. By having a
+pretty dramatic max point of 4 x 4, so we repeat this process and then we flatten. We have a
+dropout of 50% just to reduce overfitting, a dense of 400 neurons, another dropout, and
+then 200 for the output because there are 200 different classes, and because it's categorical
+one-hot encoding, we want to use softmax so that only one of those 200 has the highest
+value. We also want to ensure that they all add up to 1.0.
+Deep Learning
+Chapter 5
+[ 134 ]
+Here's the summary of the model. Ultimately, we have about 5 million parameters:
+The different variations I did that had far more parameters, such as, say, 100 million
+performed worse because there were just too many parameters. There's either too many
+parameters, meaning it's really hard to train it to learn anything because obviously all the
+parameters start random, so it's really hard to make those parameters trend toward the
+right values, or there are so few that it's not going to learn anything either. There's kind of a
+balance that you have to find, and 5 million, I think, is somewhere near that balance.
+Deep Learning
+Chapter 5
+[ 135 ]
+Now, if you use a generator, you don't have all the data for the training prepared ahead of
+time; it's going to produce those images as it goes:
+That makes it actually quite memory-efficient. You don't have to load the whole dataset
+ahead of time. It'll just make it as needed, but you have to call �������������� instead of
+just using fit. What you give instead of the train input and train output is the generator. The
+generator knows how to produce the image matrices and it knows how to produce one-hot
+encoding. So, again, that's extremely convenient when you have images. There's other
+kinds of generators, too. Look at the Keras documentation for these.
+��������������� shows how many images to produce per epoch, or how many batches
+to produce. The generator, by default, produces batches of 32 images. Regarding the
+number of epochs, and if you want to do some statistics on TensorBoard, you can set up a
+callback and verbose 2 so that we can see some output here.
+There are 10 epochs:
+Deep Learning
+Chapter 5
+[ 136 ]
+We can see that the training accuracy is on the images that is training on. It's not very
+accurate for what the accuracy is going to be on the test set, so we do this separately. The
+test images are also in a generator. You don't just evaluate�you use ������������������
+and you say, how many images do you want to evaluate? We'll just do 1,000, and we'll get 22%
+accuracy.
+That's not so bad. Random guessing would yield 0.5%, so 22% is pretty good, and that's just
+from a handcrafted model starting from scratch that had to learn everything from those
+bird images. The reason I'm saying things like this is because the next thing we're going to
+do is extend a pre-trained model to get a good boost in accuracy.
+This model was built by hand, but it would be even better to extend something such
+as �����������, which is shown here:
+It's quite deep; it has a lot of convolutional layers and, like most CNNs, it ends with a fully-
+connected layer or perhaps multiple fully connected layers. The ����������� model was
+designed for ImageNet. Well, it's the dataset, and there's competitions associated with it
+where there are millions of images and 1,000 different classes, such as insects, houses, cars,
+and so on. The ����������� model is state-of-the-art, or it was at one point. It was
+ImageNet's competition to combat other databases. We're going to use most of this network
+all the way up until the fully-connected layers. We don't want the final fully-connected or
+dense layers because those are designed for ImageNet. Specifically, there are 1,000 outputs
+and that's not good for us. We don't need to recognize the ImageNet images. We do need to
+recognize our bird images however, and there's only 200 different classes.
+Deep Learning
+Chapter 5
+[ 137 ]
+So, we just chop off the front of that and replace it with our own fully-connected layer, or
+multiple layers. We're going to use all the convolutions that it learned, and all of the kernels
+that it learned based on those ImageNet images. Let's go to the code. To do this, import
+����������� from Keras's applications. There's other models that you can choose from
+that Keras has available as well:
+We're going to use the data generator just like we did previously.
+This is where it starts to become different:
+First, load the ����������� model using the ImageNet weights. ������������������
+means to drop off the dense fully connected layers at the top. That's what they call the top.
+That's where it finally produces 1,000 different outputs. We don't want that. We want just
+the convolutions. This would be called the ����������. Call �, which is the output of the
+base model, add a ��������������������, which means that it's computing the average
+across the whole convolution, and then put in some dense layers, with 1,024 dense neurons
+and another layer of 200. Of course, the 200 is because we have 200 different bird species,
+and the 1,024 is just to learn how the convolutions can match the bird species and then
+produce a model with those layers. The input of the model is the input of �����������
+and the output is �����������������������������������������������.
+At this point, you can call regular model functions such as compile, but before we compile,
+we want to mark all of the base model layers and all of the convolutions as not trainable.
+Deep Learning
+Chapter 5
+[ 138 ]
+We're going to perform two steps here. When we attached our new two dense layers, the
+1,024 dense and the 200 dense, those have random weights, so they're pretty much useless
+so far. The convolutions have been learned on ImageNet, so they're good. We don't want to
+change the convolutions below all those kernels by training on our bird images until we get
+that new pair of dense layers in the right order. So, we're first going to mark those layers
+from the inception model as not trainable; just keep those numbers as they are�we're only
+going to train our two new layers:
+That happens next on the fit generator, just like before.
+We will do 100 epochs to start off:
+Deep Learning
+Chapter 5
+[ 139 ]
+And we'll do an evaluation:
+So, now, we're up to 44% accuracy. So just by using the inception v3 weights and structure
+or ImageNet but replacing the top two layers with our own fully-connected network, we
+get a 20% boost from what we had with our own custom convolutional neural network. But
+we can do even better.
+We can use what we just got so that the model has now trained the top two layers and
+marked everything as trainable:
+So, now that the top two layers are kind of massaged into a form that is reasonable, with
+44% accuracy, we're going to let the entire network update all of our bird images. We're
+going to do it very slowly using stochastic gradient descent with a very slow learning rate
+and a high momentum. Going through 100 epochs, we now have 64%:
+Deep Learning
+Chapter 5
+[ 140 ]
+So, we basically did a 20% boost each time. With the custom CNN, we got 22% accuracy
+just by starting from scratch. Now, of course, this is not as big of a network as the inception
+model, but it kind of shows what happens if you just start from scratch. Then, we started
+with inception, all the kernels, but then added our own random 2 layers on top, with
+random weights, trained those weights but did not change the kernels, and we got 44%
+accuracy. Finally, we went through and updated all the weights, kernels, and the top layer,
+and we got 64% accuracy.
+So, this is far far better than what random guessing would be, which is 0.5%, and it's been
+an increasing gain in accuracy each time we've improved the model. You can save the
+result and then you can load it into a separate file, perhaps by loading the model:
+You also want to know what the class names are if you want to print the name of the bird to
+the user:
+Deep Learning
+Chapter 5
+[ 141 ]
+In this case, we can just list the subdirectories in a sorted form because that's going to match
+the one -hot encoding, and we can define a function called ������� where you give it a
+filename with an image in it and it loads that image. Make sure it resizes it and converts it
+into an array, divides it by 255, and then runs the predictor. All this was done for us before
+with the image generator:
+But now, because we're doing this one at a time, we're just going to do it by hand instead.
+Run the prediction, find out what the best score was, the position, and retrieve the class
+name and then print it, plus the confidence. There's a couple of examples of just birds that I
+found on the internet:
+I can't guarantee that these were not part of the training set, but who knows. In the case of
+the hummingbird, they got it right. The house wren was also predicted correctly. However,
+the goose was not predicted correctly. This is an example of letting the user type in
+filenames. So if you have your own images that are relatively close to photography type
+images, you should consider using a pre-trained model like ����������� to get a major
+gain in accuracy.
+Deep Learning
+Chapter 5
+[ 142 ]
+Summary
+In this chapter, we discussed deep learning and CNNs. We practiced with convolutional
+neural networks and deep learning with two projects. First, we built a system that can read
+handwritten mathematical symbols and then revisited the bird species identifier form and
+changed the implementation to use a deep convolutional neural network that is
+significantly more accurate. This concludes the Python AI projects for beginners.
+Other Books You May Enjoy
+If you enjoyed this book, you may be interested in these other books by Packt:
+Artificial Intelligence By Example
+Denis Rothman
+ISBN: 9781788990547
+Use adaptive thinking to solve real-life AI case studies
+Rise beyond being a modern-day factory code worker
+Acquire advanced AI, machine learning, and deep learning designing skills
+Learn about cognitive NLP chatbots, quantum computing, and IoT and
+blockchain technology
+Understand future AI solutions and adapt quickly to them
+Develop out-of-the-box thinking to face any challenge the market presents
+Other Books You May Enjoy
+[ 144 ]
+Artificial Intelligence with Python
+Prateek Joshi
+ISBN: 9781786464392
+Realize different classification and regression techniques
+Understand the concept of clustering and how to use it to automatically segment
+data
+See how to build an intelligent recommender system
+Understand logic programming and how to use it
+Build automatic speech recognition systems
+Understand the basics of heuristic search and genetic programming
+Develop games using Artificial Intelligence
+Learn how reinforcement learning works
+Discover how to build intelligent applications centered on images, text, and time
+series data
+See how to use deep learning algorithms and build applications based on it
+Other Books You May Enjoy
+[ 145 ]
+Leave a review - let other readers know what
+you think
+Please share your thoughts on this book with others by leaving a review on the site that you
+bought it from. If you purchased the book from Amazon, please leave us an honest review
+on this book's Amazon page. This is vital so that other potential readers can see and use
+your unbiased opinion to make purchasing decisions, we can understand what our
+customers think about our products, and our authors can see your feedback on the title that
+they have worked with Packt to create. It will only take a few minutes of your time, but is
+valuable to other potential customers, our authors, and Packt. Thank you!
+Index
+A
+APIs
+   for scikit-learn classifiers  ��, ��
+Artificial Intelligence (AI)
+   about  �
+   classification overview  �
+   evaluation techniques  �, �, �, ��
+B
+binary classification  �
+bird species identifier
+   revisiting, images used  ���, ���, ���, ���,
+���, ���, ���, ���
+C
+clustering method  �
+convolutional neural network (CNN)  ��, ���
+D
+decision trees
+   about  ��, ��, ��, ��
+   used, for predicting student performance data 
+��, ��, ��, ��, ��, ��, ��
+deep learning methods
+   about  ���
+   convolutions  ���, ���, ���, ���, ���, ���, ���
+   pooling  ���, ���, ���, ���, ���, ���, ���
+Doc2Vec
+   about  ��, ��
+   document vector  ��, ��
+document vector  ��, ��
+H
+handwritten mathematical symbols
+   identifying, with CNNs  ���, ���, ���, ���, ���,
+���, ���, ���, ���, ���
+hyperparameters  ���
+K
+K-fold cross validation  ��
+M
+Mel-frequency cepstral coefficients (MFCC)  ��
+N
+neural networks
+   about  ��, ��, ��
+   feed-forward  ��, ��, ��, ��, ��, ��, ��, ��, ��,
+��, ��
+   genre of song, identifying  ��, ��, ��
+   used, for revising spam detector  ��, ��, ��,
+���, ���, ���
+O
+one-hot encoding  ��
+P
+Pipeline  ��
+predictions  ��
+R
+random forests
+   about  ��, ��, ��
+   confusion matrix, creating for data  ��, ��, ��,
+��, ��, ��
+   usage  ��
+   used, for predicting bird species  ��, ��, ��, ��,
+��, ��, ��, ��
+S
+Skip-gram  ��
+spam detector
+   revising, neural networks used  ��, ��, ��, ���,
+���, ���
+student performance dataset
+   reference link  ��
+supervised learning  �
+T
+term frequency inverse document frequency (TF-
+IDF)  ��
+text classification
+   about  ��
+   bag of words  ��, ��, ��
+   machine learning techniques  ��, ��
+U
+user reviews
+   negative sentiments, detecting  ��, ��, ��, ��,
+��
+   positive sentiments, detecting  ��, ��, ��, ��, ��
+V
+voting  ��
+W
+Word2Vec models
+   about  ��, ��, ��
+   Doc2Vec  ��, ��
+Y
+YouTube comment spam
+   detecting  ��, ��, ��, ��, ��, ��, ��, ��, ��, ��
+

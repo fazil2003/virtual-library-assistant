@@ -1,0 +1,3331 @@
+Data Structure 
+with "c"  in hinDi 
+B c c F a l n a . c o m
+0 9 7 9 9 4 - 5 5 5 0 5
+Kuldeep 
+If you are really interested in Professional 
+Development, you will sure have to learn various 
+types of Data Structures and Algorithms propery 
+so that you can create Well Performing Application 
+Softwares. 
+In this EBook, I have covered various important 
+espects of Data Structures and Algorithms like 
+Array, Linked List, Stack, Queue, Tree, Graph, 
+etc… which are very important to learn not only for 
+Degree Level Cources but also for Efficient and 
+Well Performing Professional Development.  
+In this EBook, I have covered various Data 
+Strucutre Concepts with “C” Programming 
+Language, but I have also described Algorithm of 
+each concept, which can be easily implemented in 
+any Programming Language.  
+ 
+1 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+ 
+■■■ 
+Kuldeep Chand 
+ 
+ 
+ 
+Betalab Computer Center 
+Falna 
+ 
+2 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Data Structure and Algorithms with “C” in Hindi  
+Copyright © 2011 by Kuldeep Chand 
+All rights reserved. No part of this work may be reproduced or transmitted in any form 
+or by any means, electronic or mechanical, including photocopying, recording, or by 
+any information storage or retrieval system, without the prior written permission of the 
+copyright owner and the publisher. 
+ 
+Trademarked names may appear in this book. Rather than use a trademark symbol 
+with every occurrence of a trademarked name, we use the names only in an editorial 
+fashion and to the benefit of the trademark owner, with no intention of infringement of 
+the trademark. 
+ 
+Lead Editors: Kuldeep Chand 
+ 
+Distributed to the book trade worldwide by Betalab Computer Center, Behind of 
+Vidhya Jyoti School, Falna Station Dist. Pali (Raj.) Pin 306116  
+ 
+e-mail bccfalna@gmail.com   
+ 
+or  
+ 
+visit http://www.bccfalna.com  
+ 
+For information on translations, please contact Betalab Computer Center, Behind of 
+Vidhya Jyoti School, Falna Station Dist. Pali (Raj.) Pin 306116  
+ 
+Contact: 097994-55505  
+ 
+The information in this book is distributed on an “as is” basis, without warranty. 
+Although every precaution has been taken in the preparation of this work, the author 
+shall not have any liability to any person or entity with respect to any loss or damage 
+caused or alleged to be caused directly or indirectly by the information contained in 
+this book. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+This book is dedicated to those  
+ 
+who really wants to be  
+ 
+a 
+ 
+ProfeSSional DeveloPer  
+ 
+ 
+ 
+4 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+inDex 
+of 
+contentS 
+ 
+ 
+ 
+5 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+Table of Contents 
+Data Structure Fundamentals and Arrays ........................................ 10 
+Data - Field, Record and File ............................................................................... 10 
+Data Structures .................................................................................................... 13 
+Linear Data Structure ....................................................................................... 13 
+Non-Linear Data Structure ................................................................................ 13 
+Algorithm : Time – Space Tradeoff and Complexity ............................................. 14 
+Algorithms ............................................................................................................ 17 
+Analysis of Algorithm ........................................................................................ 18 
+Rate of Growth ................................................................................................. 18 
+Complexity ( Big O Notation ) ........................................................................... 21 
+Properties of “O” Notation ................................................................................. 22 
+Analyzing Algorithms ........................................................................................... 28 
+Inserting and Deleting .......................................................................................... 33 
+Algorithm of Inserting ........................................................................................ 34 
+Sorting ................................................................................................................. 37 
+Bubble Sort ...................................................................................................... 37 
+Selection Sort ................................................................................................... 39 
+Insertion Sort .................................................................................................... 40 
+Searching ............................................................................................................ 43 
+Internal Search ................................................................................................. 44 
+External Search ................................................................................................ 44 
+Linear Searching .............................................................................................. 44 
+Binary Searching .............................................................................................. 47 
+String Operations and Data Structure .................................................................. 52 
+Pattern Matching Algorithms ................................................................................ 55 
+Algebra of Matrix .................................................................................................. 58 
+Addition of Matrixes .......................................................................................... 58 
+Subtraction of Matrixes ..................................................................................... 59 
+Multiplication of Matrix ...................................................................................... 61 
+Transpose of Matrix .......................................................................................... 63 
+Orthogonal Matrix ............................................................................................. 64 
+Symmetric Matrix .............................................................................................. 64 
+Sparse Matrix ................................................................................................... 65 
+ 
+Linked Lists ......................................................................................... 68 
+Linked List............................................................................................................ 70 
+Creating Linked List ............................................................................................. 77 
+Memory Allocation ............................................................................................... 78 
+Garbage Collection .............................................................................................. 80 
+Overflow and Underflow ....................................................................................... 80 
+INSERTING New NODE at the End of the LIST ................................................... 81 
+INSERTING New NODE at the BEGINNING of the LIST ..................................... 90 
+INSERTING New NODE at any MIDDLE Position of the LIST ............................. 94 
+Searching in a Linked List .................................................................................... 99 
+LIST is Unsorted ............................................................................................... 99 
+LIST is Sorted................................................................................................. 101 
+ 
+6 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Sorting ............................................................................................................... 102 
+Inserting into a Sorted Linked List ...................................................................... 113 
+Deleting from a Linked List ................................................................................. 114 
+Deletion of First Node ..................................................................................... 115 
+Deletion of Last Node ..................................................................................... 116 
+Deletion Any NODE from a Linked List ........................................................... 118 
+Deleting the Node with a Given ITEM of Information ...................................... 120 
+Header Linked List ............................................................................................. 124 
+Grounded Header .............................................................................................. 124 
+Circular Header .................................................................................................. 126 
+Creating a Circular Linked List ........................................................................ 127 
+Traversing a Circular Linked List .................................................................... 128 
+Two – Way Lists OR Doubly Linked List ............................................................ 130 
+CREATION of Doubly Linked List ................................................................... 132 
+INSERTING NODE After Specific Node Number ............................................ 136 
+DELETION In Doubly Linked List.................................................................... 139 
+DELETION of Specified NODE of the Doubly Linked List ............................... 139 
+Circular Doubly Linked List ................................................................................ 151 
+ 
+Stack and Queue ............................................................................... 154 
+STACK ............................................................................................................... 154 
+PUSH ............................................................................................................. 155 
+POP ............................................................................................................... 155 
+Postponed Decisions ...................................................................................... 156 
+ARRAY Representation of Stack .................................................................... 156 
+PUSH Algorithm For Array Stack .................................................................... 157 
+POP Algorithm For Array Stack ...................................................................... 157 
+Linked List Representation of STACK ............................................................ 164 
+Arithmetic Expressions and POLISH Notations .................................................. 173 
+Evaluation of a Postfix Expression .................................................................. 176 
+Transforming Infix Expression into Postfix Expression .................................... 178 
+Quick Sort .......................................................................................................... 179 
+Complexity fo the Quick Sort Algorithm .......................................................... 184 
+Queues .............................................................................................................. 185 
+Representation of Queues .............................................................................. 186 
+PUSH Algorithm For Array Queue .................................................................. 187 
+POP Algorithm For Array Queue .................................................................... 187 
+Linked Representation of Queues .................................................................. 196 
+Circular QUEUE ................................................................................................. 200 
+DEQUE .............................................................................................................. 212 
+Priority Queue .................................................................................................... 216 
+ 
+Trees ................................................................................................... 219 
+Binary Tree ........................................................................................................ 219 
+Terminology ....................................................................................................... 221 
+A Complete Binary Tree ..................................................................................... 222 
+Extended Binary Tree or 2 – Tree ...................................................................... 224 
+Representation of Binary Tree ........................................................................... 224 
+Sequential Representation ............................................................................. 224 
+Linked List Representation ............................................................................. 225 
+Traversing Binary Tree....................................................................................... 225 
+ 
+7 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Preorder Traversing........................................................................................ 226 
+Inorder Traversing .......................................................................................... 230 
+Postorder Traversing ...................................................................................... 231 
+CREATING Binary Tree ..................................................................................... 232 
+INSERTING in a Binary Tree ............................................................................. 233 
+Creating Binary Tree Array Representation ........................................................ 240 
+Binary Search Tree (BST) .................................................................................. 250 
+SEARCHING and INSERTING in Binary Search Tree .................................... 254 
+Complexity of the Searching Algorithm ........................................................... 259 
+DELETING from Binary Search Tree .............................................................. 261 
+Complexity of Binary Search Tree .................................................................. 274 
+Balanced Binary Tree ........................................................................................ 275 
+AVL Tree ( Height Balanced Tree ) ................................................................. 277 
+Tree Rotation.................................................................................................. 282 
+Insertion a Node in AVL Tree ......................................................................... 284 
+Deletion From an AVL Tree ............................................................................ 288 
+M – Way Search Tree ........................................................................................ 288 
+Searching in M – Way Tree ............................................................................ 291 
+Insertion in M – Way Tree .............................................................................. 291 
+Deletion from M – Way Tree ........................................................................... 292 
+B – Tree ............................................................................................................. 293 
+ 
+Graph .................................................................................................. 296 
+Basic Concepts and Definitions .......................................................................... 296 
+Path ................................................................................................................... 302 
+Sequential Representation ................................................................................. 303 
+Adjacency Matrix................................................................................................ 303 
+Path Matrix......................................................................................................... 307 
+Shortest Path Algorithm ..................................................................................... 308 
+Warshall Algorithm ............................................................................................. 309 
+Warshall’s Modified Algorithm ............................................................................ 314 
+Dijkstra’s Algorithm ............................................................................................ 321 
+Floyd’s Technique .............................................................................................. 327 
+Linked List Representation of Graph (Adjacency List) ........................................ 337 
+Operations on GRAPHS .................................................................................... 340 
+Inserting in a GRAPH ..................................................................................... 341 
+Deleting From a GRAPH ................................................................................ 342 
+Traversing A GRAPH ..................................................................................... 345 
+Breadth First Search .......................................................................................... 346 
+Depth First Search ............................................................................................. 358 
+Partially Ordered Set (POSETS) ........................................................................ 367 
+Topological Sorting ............................................................................................ 369 
+Minimum Spanning Tree (MST) ......................................................................... 373 
+Kruskal’s Algorithm ............................................................................................ 374 
+ 
+Searching and Sorting ...................................................................... 379 
+Searching .......................................................................................................... 380 
+Data Modification ............................................................................................... 380 
+Sorted Array ................................................................................................... 381 
+Linked List ...................................................................................................... 381 
+Binary Search Tree ........................................................................................ 381 
+ 
+8 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Linear and Binary Searching .............................................................................. 382 
+Hash Table ........................................................................................................ 383 
+Hashing .......................................................................................................... 385 
+Hash Function ................................................................................................ 386 
+Collision Resolution ........................................................................................... 394 
+Open Addressing : Linear Probing(Key Comparisons) and Modifications ........... 395 
+Clustering ....................................................................................................... 397 
+Quadratic Probing .......................................................................................... 397 
+Double Hashing .............................................................................................. 398 
+Deletion .......................................................................................................... 398 
+Rehashing ...................................................................................................... 400 
+Bucket And Chaining ...................................................................................... 401 
+Selecting Good Hash Function ....................................................................... 403 
+ 
+File Structure ..................................................................................... 405 
+File System ........................................................................................................ 408 
+Basic Concepts of File and File System ............................................................. 410 
+File Data Storage and Retrieval ...................................................................... 410 
+File Naming and File Attribute Maintenance ................................................... 410 
+File System Application Program Interface (API) ............................................ 411 
+Disk Space Allocation ........................................................................................ 411 
+FAT File System (MS-DOS) ............................................................................... 412 
+Directory System................................................................................................ 414 
+UNIX File System ............................................................................................... 416 
+i-node File System (Flat File System) ............................................................. 417 
+Directory File System ..................................................................................... 418 
+Primary Key .................................................................................................... 422 
+System Architecture ....................................................................................... 423 
+Primary and Secondary Structure ...................................................................... 425 
+Secondary Storage Devices ............................................................................... 426 
+Hard Disk Drives ............................................................................................ 429 
+Disk Capacity ................................................................................................. 430 
+Disk Access .................................................................................................... 432 
+ 
+Last but not Least. There is more… ................................................ 433 
+ 
+ 
+ 
+ 
+9 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+Data, fielD, 
+recorD  
+& 
+file 
+ 
+ 
+10 
+www.BccFalna.com 
+Data Structure with “c” in hinDi 
+Data Structure Fundamentals and Arrays 
+Data - Field, Record and File 
+fdlh Hkh leL;k ds lek/kku ds fy, Computer dks fofHkUu izdkj ds ekuksa dh t:jr gksrh gSA 
+Computer esa fdlh eku ;k ekuksa ds lewg dks Data dgk tkrk gS vkSj ekuksa ds lewg ds fdlh 
+Single Item dks Data Item dgk tkrk gSA  
+ftl Data Item dks Sub Item esa foHkkftr fd;k tk ldrk gS] ml Data Item dks Group 
+Item ;k Composite Data Item dgrs gSa vkSj ftl Data Item dks Sub Item esa foHkkftr 
+ugha fd;k tk ldrk] ml Data Item dks Elementary Data Item ;k Primary Data Item 
+dgrs gSaA  
+mnkgj.k ds fy, fdlh School esa tks fofHkUu Students Study djrs gSa mu lHkh Students dk 
+dksbZ uk dksbZ uke gksrk gSA gj Student dk uke Computer ds fy, ,d Data gSA ge gj 
+Student ds uke dks rhu Sub Items First Name, Middle Name o Last Name foHkkftr 
+dj ldrs gSaA blfy, Name ,d Group Data Item gSA  
+blh rjg tc Hkh dksbZ Student fdlh School esa Admission ysrk gS rks ml Student dks ,d 
+Unique Serial Number iznku fd;k tkrk gSA ,d Student dks tks Number Allot fd;k 
+tkrk gS og Number fdlh nwljs Student dks Allot ugha fd;k tkrkA ;s Number fdlh veqd 
+fo/kkFkhZ dh Unique igpku gksrh gSA fofHkUu Students dks fn, tkus okys Serial Number dks 
+ge vU; Data Items esa foHkkftr ugha dj ldrs gSaA blfy, Serial Number ,d Elementary 
+Data Item dgykrk gSA 
+Data ds fdlh lewg dks Fields, Records o Files dh Hierarchy ds :i esa Organize fd;k 
+tk ldrk gSA ge ftl fdlh Hkh pht dks Computer esa Manage djuk pkgrs gSa] mls ,d 
+Entity ;k bdkbZ ds :i esa ysrs gSaA nqfu;k dh gj pht Computer ds fy, ,d Object ;k 
+Entity gSA tSls Table, Chair, Computer, CPU, RAM vkfnA  
+blh rjg ls fdlh Company ds fofHkUu Employees ml Company ds fy, Entities ;k 
+Objects gSa vkSj fdlh School ds fofHkUu Teachers, ml School ds Objects ;k Entities 
+gSaA blh rjg fdlh Class ds fofHkUu Students ml Class ds Objects ;k Entities gSaA  
+;kuh nqfu;k dh gj oLrq Computer ds fy, ,d Object ;k Entity gS ftls Computer esa 
+Data Item ds :i esa Organize fd;k tk ldrk gSA gj Object ;k Entity dh dqN fo”ks’krk,a 
+gksrh gSa] tks mls vU; Object ;k Entity ls vyx cukrh gSA tSls ,d Student dh fofHkUu 
+fo”ks’krk,a mldk uke] mldk Serial Number, mldh mez] mldk Color mldk Sex vkfn gks 
+ldrh gSaA  
+blh rjg ls fdlh Company ds fofHkUu Employees dh Hkh viuh fo”ks’krk,a gks ldrh gSaA 
+fdlh Hkh Entity ;k Object dh fofHkUu fo”ks’krkvksa dks Entity dh Characteristics ;k 
+ 
+11 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Properties ;k Attributes dgrs gSaA bu Attributes esa dksbZ uk dksbZ eku Assign fd;k tk 
+ldrk gSA ;s eku Numeric ;k Non - Numeric gks ldrs gSaA tSls fdlh Student ds fofHkUu 
+Attributes dks fuEukuqlkj eku iznku fd;k tk ldrk gS% 
+ 
+Sr_No 
+Name 
+Age 
+Sex 
+Class 
+123 
+Amit Sharma 
+15 
+Male 
+10 
+234 
+Rahul Varma 
+16 
+Male 
+10 
+121 
+Salini Bohra 
+15 
+Female 
+9 
+544 
+Silpa Roy 
+14 
+Female 
+8 
+534 
+Prince Mishra 
+13 
+Male 
+6 
+532 
+Devendra Bhati 
+14 
+Male 
+9 
+ 
+Entity dk og lewg tks fd Similar Attributes dks Share djrk gS] Entity Set dgykrk gSA 
+tSls Table 1 esa fofHkUu Students leku Attributes dks Share dj jgs gSa blfy, ;s lewg 
+Students Entities dk ,d Set dgykrk gSA Entity ds gj Attribute dks iznku fd, tk ldus 
+okys eku dh ,d Range gksrh gSA ge Table 1 esa ns[k ldrs gSa fd gesa gj Row esa fdlh 
+Students dh fofHkUu tkudkfj;ka izkIr gks jgh gSaA ;gka fdlh Attribute dks iznku fd;k tkus 
+okyk eku ,d Processed Data gksrk gSA bl Table esa dbZ Attributes feydj fdlh ,d 
+Student ds ckjs esa iwjh Information iznku dj jgs gSaA  
+ 
+og rjhdk ftlesa Data dks Fields, Records o Files ds Hierarchy ds :i esa Organized 
+djrs gSa] Data, Entity o Entity Set ds chp esa ,d Relationship dks Represent djrk gSA 
+Field fdlh Single Entity ds fdlh Attribute dks Represent djrk gSA fdlh Entity ds 
+fofHkUu Attributes dks iznku fd;k tkus okyk eku Record dks Represent djrk gS vkSj fdlh 
+Entity Set ds fofHkUu Entities dks File Represent djrk gSA fdlh Record esa fdlh Entity 
+ds dbZ Fields gks ldrs gSa ysfdu tks Field fdlh Record dks Uniquely Identify djrk gS 
+mls Primary Key Field dgrs gSaA tSls fdlh School ds fofHkUu Students dks Uniquely 
+Identify djus ds fy, gj Student dk ,d Serial Number gksrk gSA 
+ 
+Data dks Fields, Records o Files ds :i esa vPNh rjg Organized djus ds ckn Hkh Data 
+dks Maintain o Process djuk dkQh tfVy gksrk gSA bl otg ls Data dks vkSj vf/kd 
+tfVy Structure esa Organize fd;k tkrk gSA fdlh Hkh Data Structure dks le>rs le; gesa 
+fuEu ckrksa ij /;ku nsuk gksrk gS& 
+ 
+1 Structure dh Logical ;k Mathematical Description 
+2 Structure dh Computer ij Processing 
+3 
+Structure dk Analysis ftlds vk/kkj ij ;s r; fd;k tkrk gS fd dksbZ Data 
+Structure Memory esa fdruh Space ysxk vkSj Data dks Process djus esa fdruk 
+le; yxsxkA 
+4 
+Memory esa lwpuk,a fdl izdkj ls laxfBr gks dj jgsaxhA 
+ 
+ 
+12 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+fdlh Hkh Program dh lkFkZdrk lwpukvksa ds laxBu ds vk/kkj ij fuHkZj gksrh gSA izksxzke dh 
+;ksX;rk bl ckr ij fuHkZj djrh gS] fd Data Memory esa fdl izdkj ls laxfBr (Organized) 
+gSa o mudk vkil esa D;k lEca/k gSA ;fn Data lgh izdkj ls Memory esa laxfBr uk gksa] rks 
+izksxzke ds Execution esa vf/kd le; yxrk gSA  
+ 
+vr% fdlh Hkh izksxzke ds Fast Execution ds fy;s mfpr Data Structure dk p;u cgqr gh 
+t:jh gSA Data dk og lewg] tks Memory esa de ls de LFkku ysrk gks vkSj lkeqfgd :i ls 
+vkil esa lEcaf/kr gksa rFkk izksxzke es Fast Execution esa lg;ksx djrs gksa] Data Structure 
+dgykrs gaSA  
+ 
+Data Structure okLro esa Program cukrs le; viuk, tkus okys fofHkUu rjhdksa esa ls lcls 
+ljy o vPNk rjhdk mi;ksx esa ysuk gksrk gSA ;s mi;ksx esa fy;s tkus okys rjhds ij fuHkZj djrk 
+gS fd gekjk Program o ml Program ds Data Memory esa fdruk Space yssaxsA  
+ 
+tSls fd ge ,d Array esa <sj lkjs Data j[k ldrs gSa] ysfdu ;fn Array dh Size vf/kd j[kh 
+tk,] rks Array }kjk Qkyrw esa gh Memory dk nq:i;ksx gksrk gSA bl Array ds LFkku ij ;fn 
+Dynamic Memory Allocation dk iz;ksx fd;k tk,] rks ;s mruh gh Memory Use djrk gS] 
+ftruh t:jr gksrh gSA  
+ 
+bl izdkj ls Data] Array ds ctk; Dynamic Memory Allocation ls Memory esa vf/kd 
+vPNh rjg ls Organized jgrs gSaA blfy;s Dynamic Memory Allocation ,d vf/kd vPNk 
+Data Structure ;k Data ds lkFk izfØ;k djus dk ek/;e gSA 
+ 
+dksbZ Hkh Data Structure Data lnL;ksa ds chp Relationship Hkh iznf”kZr djrk gSA tSls fd 
+,d Telephone Directory esa mu lHkh O;fDr;ksa ds uke] irs o Phone Number fy[ks gksrs gSa] 
+ftuds ikl Phone gSA ;s lHkh ,d Øe esa gksrs gSaA ;s Øe Data Structure gS vkSj lHkh 
+Phone Numbers dks mlds ekfyd ds uke o irs ds lkFk fy[kk tkrk gS] ftlls fdlh Hkh 
+Phone Number ls ml Phone ds ekfyd dk uke irk vkfn tkuk tk ldrk gSA bl izdkj 
+ls lHkh Phone Numbers dk mlds ekfyd ls lEca/k gSA  
+ 
+blfy;s ge dg ldrs gSa fd Data Structure ds lnL; vkil esa Related gksrs gSaA fdlh Hkh 
+Program dks nks dlkSfV;ksa ij vPNk ;k cqjk dgk tk ldrk gS% Program ds Execution }kjk 
+fy;k tkus okyk le; vkSj Program }kjk Memory esa fy;k tkus okyk LFkkuA ;fn Program 
+Execute gksus esa dkQh le; yxkrk gS] rks Program dks vPNk ugha dgk tk ldrkA  
+ 
+lkFk gh ;fn Program Memory esa dkQh vf/kd LFkku ysrk gS] rks ;s Program dh deh gSA 
+,d vPNk Program Memory esa de ls de LFkku ysrk gS vkSj de ls de le; esa vPNk ls 
+vPNk ifj.kke iznku djrk gSA ge ,d mfpr Data Structure dk iz;ksx djds ;kuh ,d ljy 
+o mfpr rjhdk viuk dj ;s nksuksa t:jrsa iwjh dj ldrs gSaA  
+ 
+ 
+ 
+13 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Data Structures 
+Data dks Organize djus ds dbZ rjhds gks ldrs gSaA Data dks Organize djus ds Logical 
+;k Mathematical Model dks Data Structure dgk tk ldrk gSA ge fdl Data Structure 
+dks Choose djsa ;s ckr nks rF;ksa ij fuHkZj djrh gS%  
+ 
+1 
+Structure bruk l{ke gksuk pkfg, fd og mlh rjg ls Logically Data ds fofHkUu 
+Elements ds chp Relationship iznf”kZr dj lds ftl rjg ls okLrfod thou esa 
+fofHkUu Data Items vkil esa Related gksrs gSaA  
+ 
+2 
+Data Structure bruk ljy gksuk pkfg, fd dksbZ Hkh Programmer fdlh Hkh 
+Computer Language esa Coding fy[k dj Data dks vklkuh ls Process dj ldsA  
+ 
+ 
+Linear Data Structure 
+tc fdlh Data Structure ds lHkh Items ,d Continuous Memory Locations ij miyC/k 
+gksa] rks  bls Linear Data Structure ;k Linear List dgrs gSaA tSls fd ,d Array ds lHkh 
+Elements yxkrkj Memory Locations ij miyC/k jgrs gSaA fofHkUu Memory Locations ij 
+miyC/k fofHkUu Data Items ds chp Relationship Represent djus dk ,d rjhdk ;s gS fd 
+ge Array dk iz;ksx djsaA Array ,d Linear Data Structure gSA nwljs rjhds esa fofHkUu Data 
+Items ds chp ds Relation dks ,d Linked List ds :i esa Represent fd;k tkrk gSA bl 
+rjhds ds Data Structure esa ge Linked Lists dk iz;ksx djrs gSaA 
+ 
+Non-Linear Data Structure 
+tc fdlh Data Structure esa lHkh bdkbZ;ka ,d Continues Memory Locations ij miyC/k 
+uk gksa] rks ;s ,d Non-Linear Data Structure dgykrk gSA Non–Linear Data Structures 
+ds :i esa ge Trees o Graphs dk iz;ksx djrs gSaA fdlh Hkh Data Structure ij ge fuEu 
+fØ;k,a dj ldrs gSa% 
+ 
+1 ubZ bdkbZ tksMukA 
+2 fdlh bdkbZ dks Delete djukA 
+3 
+Processing ds fy;s gj bdkbZ ij Move djukA 
+4 fdlh eku dks lHkh bdkbZ;ksa esa [kkstukA 
+5 bdkbZ;ksa dh Sorting djukA  
+6 nks Structures dks tksM dj ,d Structure cukukA 
+ 
+tc ge fdlh Data Structure dks Choose djrs gSa rc fdlh Data Item ds lkFk fdl izdkj 
+ls izfØ;k djuh gS] ;s rF; ml Data Structure ij fuHkZj djrk gS fd geus fdl izdkj dk 
+Data Structure Choose fd;k gSA  
+ 
+ 
+14 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Array ,d lcls ljy Data Structure gS ftl ij fofHkUu izdkj ds Operations djuk dkQh 
+vklku gksrk gSA Array dk iz;ksx rc fd;k tkrk gS tc Data ds Permanent Collection ij 
+fofHkUu Operations djus gksrs gSaA D;ksafd Array dh Size ,d gh ckj esa Set djuh iMrh gS 
+blfy, blesa tks Hkh Data gksrs gSa os Permanent gksrs gSaA ysfdu tc Data Structure dh 
+Size Changeable gksrh gS rc ge Array ds LFkku ij Linked List dk iz;ksx djrs gSaA 
+ 
+ 
+Algorithm : Time – Space Tradeoff and Complexity 
+fdlh leL;k ds lek/kku dks izkIr djus ds fy, fofHkUu Steps dh ,d Well Defined List dks 
+Algorithm dgrs gSaA Data dks Efficiently Process djus ds fy, ,d Efficient Algorithm 
+dh vko”;drk gksrh gSA dksbZ Algorithm fdruk Efficient gS ;kuh fdlh leL;k ds lek/kku ds 
+fy, Algorithm fdl rjg fy[kk x;k gS vkSj Algorithm esa fy[ks x, Steps fdruh Efficiently 
+Data dh Processing djrs gSa] bls nks rF;ksa Time o Space ds vk/kkj ij r; fd;k tkrk gSA  
+ 
+gj Algorithm esa Data ij fofHkUu rjhds ls Processing dh tkrh gSA blfy, ge gesa”kk Data 
+dks Process djus ds fy, lcls Efficient Algorithm dks Use ugha dj ldrsA dksbZ 
+Algorithm fdruk Efficiently Data ij Processing djsxk ;s ckr dqN vU; rF;ksa ij Hkh 
+fuHkZj djrh gSA tSlsfd ge fdl izdkj ds Data ij Processing dj jgs gSa vkSj Data ij 
+fofHkUu Operations djus ds fy, fdrus Steps ysus iMrs gSaA  
+ 
+Time – Space Tradeoff Use fd, tk jgs Data Structure ij fuHkZj djrk gSA ;kuh ;fn ge 
+Data dks Store djus ds fy, Space c<k nsa rks Data dh Processing esa yxus okyk le; 
+de gks tkrk gS vkSj ;fn Data dks Store djus ds fy, Use gksus okys Space dks de dj nsa] 
+rks Data dh Processing esa yxus okyk le; c< tkrk gSA Time–Space Tradeoff dks 
+le>us ds fy, ge ,d mnkgj.k ysrs gSaA  
+ 
+ekuyks fd ,d File esa fofHkUu Students dh Information gSaA File dks Name Wise Sort 
+djds vkSj Binary Searching Algorithm dks Use djds ge cgqr Efficient rjhds ls bl File 
+esa ls fdlh fo”ks’k uke ds Record dks izkIr ldrs gSaA  
+ 
+ysfdu ;fn gesa fdlh Student dk Serial Number fn;k x;k gks vkSj gesa ml Serial Number 
+okys Student ds Record dks Search djuk gks rks ge Binary Searching rjhds dks Use 
+djds Record dks ugha [kkst ldrs gSaA  
+ 
+D;ksafd Binary Searching Algorithm dks Use djus ds fy, gesa Sorted Records dh t:jr 
+gksrh gS vkSj fdlh File ds fofHkUu Records dks ;k rks Name Wise Sort djds j[k ldrs gSa 
+;k Serial Number ds vuqlkjA ge Name o SR_No nksuksa dks ,d lkFk Sort djds ugha j[k 
+ldrsA blfy, ;fn gesa SR_No ds vuqlkj fdlh Record dks [kkstuk gks rks gesa File ds gj 
+Record dks fdlh veqd SR_No ds fy, Check djuk gksxkA ;fn Search dh tkus okyh 
+File esa dkQh vf/kd Records gksa rks bl rjg dh Searching esa cgqr Time yxsxkA  
+ 
+ 
+15 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+bl leL;k dk ,d lek/kku ;s gks ldrk gS fd ge ,d vkSj File cuk, vkSj mls Serial 
+Number Wise Sort djds j[ksaA ysfdu ,slk djus ij leku izdkj ds Data dh nks File cu 
+tk,xh ftlls Memory esa nqxquk Space Use gksxkA blfy, bl rjhds dks Hkh ,d Efficient 
+rjhdk ugha dgk tk ldrkA  
+ 
+bl leL;k ds lek/kku ds :i esa ge ,d rjhdk vkSj viuk ldrs gSaA ge Main File dks 
+SR_No Number ds vuqlkj Sort dj nsrs gSa vkSj ,d vkSj Array ysrs gSa vkSj mlesa dsoy nks 
+Columns ,d uke ds fy, o nwljk Pointer ds fy, ysrs gSaA bl Array dks Name Wise Sort 
+dj ysrs gSaA bl Array ds gj SR_No dk ,d Pointer Main File ds fdlh Record dks 
+Point djrk gSA  
+ 
+bl rjhds esa gkykafd nwljs Array ds fy, Extra Space Use gks jgk gS ysfdu fQj Hkh bl 
+Array esa dsoy nks Fields gSa] blfy, bl rjhds esa de ls de Space Use gksxkA bl rjhds 
+ds Algorithm dks ge ,d Efficient Algorithm dg ldrs gSaA 
+ 
+fdlh Algorithm dh Complexity ,d Function gksrk gS tks fdlh Input Data ds vk/kkj ij 
+Data dh Processing esa yxus okyk le; ;k Space ;k nksuksa dks n”kkZrk gSA ;kuh fdlh 
+Algorithm dks Execute gksus esa fdruk le; yxsxk vkSj og Algorithm Memory esa fdruk 
+Space ysxk] bu nksuksa ;k nksuksa esa ls fdlh ,d ckr dks n”kkZus ds fy, ge ftl Function dks 
+Use djrs gSa] og Function crkrk gS fd dksbZ Algorithm fdruk Complex gS vkSj fdrus 
+le; esa fdlh Data dh Processing djsxk rFkk Data dh Processing ds fy, fdruk 
+Space Use djsxkA bu Functions }kjk ge Mathematically ;s tku ldrs gSa fd dksbZ 
+Algorithm fdlh vU; Algorithm dh rqyuk esa fdruk Efficient gSA  
+ 
+Computer Science esa Algorithms dks Analyze djuk ,d cgqr gh cMk o tfVy dke gSA 
+fdUgh Algorithms dh rqyuk djus ds fy, gekjs ikl dqN Criteria gksuk cgqr t:jh gksrk gS] 
+ftlls ge irk yxk ldsa fd dksbZ Algorithm fdruk Efficient gSA  
+ 
+;fn fdlh Data Structure esa n Data gksa rks Algorithm M ds Input Data dh Size n gksrh 
+gSA Input Data dh Size fdlh Hkh Algorithm dk igyk Criteria gksrk gSA ge fdlh 
+Algorithm ls fdl izdkj ds Steps dk iz;ksx djds Data Process djrs gSa] mu Steps dh 
+la[;k fdlh Algorithm dh Efficiency Kkr djus dk nwljk Criteria gksrk gSA  
+ 
+;kuh dksbZ Algorithm fdruk Efficient gS] ;s Input Data o Data dks Process djus ds fy, 
+Use fd, tkus okys Steps dh la[;k ;kuh Comparisons ij fuHkZj djrk gSA 
+ 
+dksbZ Algorithm fdlh leL;k dk lek/kku iznku djus ds fy, fdrus le; o Space dk 
+mi;ksx djrk gS] bu nksuksa rF;ksa ds vk/kkj ij ml Algorithm dh Efficiency dk irk pyrk 
+gSA ekuyks fd M ,d Algorithm gS vkSj mlds Input Data dh Size n gSA fdlh Searching 
+;k Sorting ds Algorithm esa ftrus Operations ds ckn Data Process gksrk gS] mu 
+Operations dh la[;k ds vk/kkj ij Algorithm ds Time dk irk pyrk gSA  
+ 
+ 
+16 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+tSls ekuyks fd ,d File esa 1000 Records gSa vkSj mu esa ls fdlh fo”ks’k uke ds Record dks 
+izkIr djuk gS] rks Algorithm dks okafNr Record izkIr djus ds fy, vf/kdre 1000 
+Comparisons djus iM ldrs gSaA bu vf/kdre 1000 Comparisons esa yxus okys le; dks 
+Algorithm }kjk Use fd;k tkus okyk le; dgrs gSa vkSj bu 1000 Comparisons esa 
+Algorithm ftruh Memory dks Use djrk gS] og Memory fdlh Algorithm }kjk Use dh 
+tkus okyh Space gksrh gSA 
+ 
+fdlh Algorithm M dh Complexity Kkr djus ds fy, ,d Function f(n) dk iz;ksx fd;k 
+tkrk gSA ;s Function fdlh Algorithm dh Complexity iznku djrk gS tgka n Input Data 
+dh Size gSA mnkgj.k ds fy, fdlh File esa dsoy 1 Record gS rks ml Record ls fdlh uke 
+ds Record dks Search djus ij Algorithm dh Complexity de gksxh tcfd mlh File esa 
+;fn 100 Record gksa rks Use gksus okys Algorithm dh Complexity vf/kd gksxhA ;fn okafNr 
+Record iwjh File esa dgha izkIr uk gks rks Algorithm dh Complexity vuUr gksxhA  
+ 
+ekuyks fd tks Record Search fd;k tk jgk gS og File esa igys LFkku ij gh miyC/k gks rks 
+Algorithm dh Complexity fcYdqy de gksxh vkSj Algorithm dks Best Case Algorithm 
+dgk tk,xkA ;fn Search fd;k tkus okyk Record File ds e/; esa gks rks Algorithm dks 
+Average Case Algorithm dgk tk,xk vkSj ;fn tks Record Search fd;k tk jgk gS og 
+Record iwjh File esa dgha uk gks rks ,sls Algorithm dks Worst Case Algorithm dgk tkrk 
+gSA 
+ 
+fdlh Worst Case Algorithm esa Record dks Search djus ds fy, mruh ckj Comparison 
+dk Operations djuk iMrk gS] ftrus File esa Records gSaA ekuyks fd File esa 100 Record gSa 
+rks Algorithm dks 100 ckj Comparison djuk iM ldrk gSA bls ge Mathematically 
+fuEukuqlkj iznf”kZr dj ldrs gSa% 
+ 
+ 
+C(n) = n 
+ 
+tgka C = Comparisons dh la[;k gS vkSj n = Input Data dh Size gSA fdlh Linear Search 
+Algorithm dh Worst Case Complexity esa C(n) = n gksrh gSA  
+ 
+Average Case Algorithm esa fdlh Data ds gj Location ij feyus dh lEHkkouk 1/n gksrh gS 
+tgka n Data Items dh la[;k gSA ;kuh ;fn fdlh Data Structure esa n Data Items gksa rks 
+Data 1 ls ysdj n rd esa fdlh Hkh LFkku ij gks ldrk gSA blfy, fdlh Data Item dks fdlh 
+List esa [kkstus ds fy, Algorithm dks dqy n Comparisons djus iM ldrs gSaA bls ge 
+fuEukuqlkj Mathematically n”kkZ ldrs gSa% 
+ 
+C(n)  
+= 1 X 1/n + 2 X 1/n + ... n X 1/n 
+ 
+ 
+= ( 1 + 2 + ... + n ) X 1/n 
+ 
+ 
+= n( n + 1 )/2 X 1/n  
+ 
+ 
+= n + 1/2 
+ 
+ 
+17 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+bl Probability Equation ls ge ns[k ldrs gSa fd fdlh Data ds List esa feyus dh lEHkkouk 
+yxHkx n/2 gksrh gS tgka n List ds dqy Data Items dh la[;k gSA 
+ 
+ 
+Algorithms 
+fdlh leL;k dk lek/kku Computer }kjk izkIr djus ds fy, gesa ,d fo”ks’k Øe esa fofHkUu 
+Steps Use djus gksrs gSaA Steps dh ,d Well Defined List ftlds vk/kkj ij fdlh Hkh 
+Computer Language esa Program Create djds fdlh Problem dks vPNh rjhds ls Solve 
+fd;k tk lds] Algorithm dgykrk gSA  
+ 
+nwljs “kCnksa esa dgsa rks ge dg ldrs gSa fd fdlh leL;k ds lek/kku ds fy, ftu Steps dks 
+Use fd;k tkrk gS] mu Steps dks ;fn ,d fuf”pr Øe esa ljy Hkk’kk esa fy[k fy;k tk,] rks 
+bu Steps dh List dks Algorithm dgk tk ldrk gSA  
+ 
+Algorithm dk gj Step ;s crkrk gS fd dc vkSj fdl dke ds ckn D;k dke gks jgk gSA 
+Algorithm fdlh Problem ds Solution dk ,d Specification gksrk gS ftlds vk/kkj ij 
+fdlh leL;k dks Solve fd;k tkrk gSA  
+ 
+fdlh Algorithm dks lhfer Instructions dh ,d Sequence ds :i esa ns[kk tk ldrk gS 
+ftlesa fuEUk xq.k gksrs gSa% 
+ 
+1 
+Algorithm “kq: gksus ls igys mls dqN Initial eku iznku fd, tkrs gSaA bu ekuksa dks 
+Input dgk tkrk gS vkSj bUgha Input ij dksbZ Algorithm Processing djrk gSA 
+ 
+2 
+Algorithm ds fofHkUu Steps brus ljy o le>us ;ksX; gksrs gSa fd ml Algorithm dk 
+iz;ksx djds ge fdlh Hkh Computer Language esa ml Algorithm ds vk/kkj ij 
+Program Create djds fdlh leL;k dk lek/kku izkIr dj ldrs gSaA   
+ 
+3 
+Algorithm dk gj Step bruk Clear gksuk pkfg, fd dksbZ Hkh O;fDr ml Algorithm 
+ds vk/kkj ij ,d lhfer le; esa ml leL;k dk lek/kku izkIr dj ys ftlds fy, 
+Algorithm dks fy[kk x;k gSA 
+ 
+4 fdlh Algorithm }kjk fdlh leL;k ds lek/kku ds fy, fy[ks x, lHkh Steps ,d 
+lhfer le; esa iwjs gksus pkfg,A dbZ ckj fdlh leL;k ds lek/kku ds fy, Repetitive 
+Steps Use fd, tkrs gSaA ;s Steps ,sls gksus pkfg, fd lhfer le; esa leL;k dk 
+lek/kku iznku dj ldsa ;kuh Loop Infinite ugha gksuk pkfg,A 
+ 
+5 ,d Algorithm dk de ls de ,d ;k ,d ls vf/kd Output gksuk pkfg,A Steps dk 
+dksbZ Hkh ,slk lewg tks fdlh izdkj dk dksbZ Result Provide uk djrk gks] mls 
+Algorithm ugha dgk tk ldrkA  
+ 
+ 
+18 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Analysis of Algorithm 
+tc Hkh ge dksbZ Algorithm fy[krs gSa rks ;s t:jh gks tkrk gS fd ge ;s Analyze djsa fd gekjs 
+}kjk fy[kk x;k Algorithm fdruk Efficient gSA Algorithm ds Analysis dk igyk rjhdk ;s gS 
+fd ge ;s Check djsa fd Algorithm lgh fy[kk x;k gS ;k ughaA blds fy, gesa fuEu dke 
+djus gksrs gSa& 
+ 
+1 
+Algorithm dh Tracing djukA ;kuh Algorithm ds gj Step dks Check djuk fd tks 
+dke tgka gksuk pkfg, og ogha gks jgk gS ;k ughaA 
+ 
+2 
+Algorithm dh Reading djukA ;kuh ;s irk yxkuk fd Algorithm Logically 
+Correct gS ;k ughaA  
+ 
+3 
+Algorithm dh Implementing o Testing djukA ;kuh Algorithm ds vk/kkj ij fdlh 
+Hkh Programming Language esa Program cukuk rFkk Check djuk fd Program 
+lgh Output iznku dj jgk gS ;k ughaA ;k fQj Mathematical Techniques }kjk 
+Algorithm dh Correctness dks Prove djukA 
+ 
+Algorithm ds Analysis dk nwljk rjhdk ;s gS ge Algorithm dks Simplest Form esa Create 
+djsaA ;fn Algorithm dks Simplest Form esa fy[kk x;k gks rks mls Implement djuk ;kuh 
+mlds vk/kkj ij Program Create djuk o ml Algorithm ij vU; izdkj ds Analysis djuk 
+ljy gksrk gSA fQj Hkh fdlh leL;k dks Solve djus ds fy, Use fd;k tkus okyk ljy o 
+lkQ&lqFkjk rjhdk dbZ ckj dqN T;knk vPNk rjhdk ugha gksrk gSA ,slk rc gksrk gS tc Use 
+fd;k tkus okyk ljy o lkQ&lqFkjk rjhdk ;k rks dkQh vf/kd Memory dk mi;ksx djrk gks 
+;k Solution iznku djus esa dkQh T;knk le; yxkrk gksA  
+ 
+bl fLFkfr esa ;s t:jh gksrk gS fd ;s Analyze fd;k tk, fd tks Algorithm fdlh leL;k ds 
+lek/kku ds fy, fy[kk x;k gS og de ls de fdruk Time o Space Use djrk gSA mnkgj.k 
+ds fy,] ;fn fdlh Company esa 120 Employees gSa vkSj gj Employee ds Record dks 
+Memory esa Load gksus esa 3 feuV yxrs gSa rks bl Algorithm dks Use ugha fd;k tk ldrk 
+D;ksafd ;fn fdlh fnu Company ds lHkh Employees dks Access djuk gqvk] rks lHkh 
+Employees ds Records dks Memory esa Load gksus esa gh 4 ?k.Vs yx tk,axs] fQj gj 
+Record dh Processing esa rks vkSj Hkh vf/kd le; yxsxkA blfy, dksbZ Algorithm fdruk 
+vPNk gS bls Time o Space ds vk/kkj ij gh ukik tk ldrk gSA 
+ 
+ 
+Rate of Growth  
+dksbZ Algorithm Perform gksus esa fdrus le; dk mi;ksx djsxk ;s Analyze djus dk dksbZ 
+lk/kkj.k rjhdk ugha gSA fdlh Hkh Algorithm ds Time Requirement dks izHkkfor djus okyh 
+lcls igyh Complexity rks ;s gS fd dksbZ Algorithm fdl Computer ij Perform gks jgk 
+gS] ml Computer ij gh Algorithm ds Perform gksus dk Time fuHkZj gksxkA  
+ 
+ 
+19 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ekuyks ;fn ge ,d gh Algorithm dks Pentium III Processor okys CPU ij Execute djrs 
+gSa vkSj mlh Algorithm dks Pentium IV ds Processor ij Execute djsa] rks nksuksa 
+Computer ij Algorithm ds Perform gksus ds le; esa vUrj jgsxkA ;kuh lcls igys rks dksbZ 
+Hkh Algorithm fdruk le; ysxk ;s ml Computer dh Speed ij fuHkZj djrk gS ftl ij 
+Algorithm dks Use fd;k tk jgk gSA  
+ 
+Algorithm ds Perform gksus ds Time dks izHkkfor djus okyh nwljh Complexity Input Data 
+Items dh la[;k ij fuHkZj djrh gSA mnkgj.k ds fy, ;fn fdlh Array esa 100 Data 
+Elements dks tksMuk gks rks de le; yxsxk tcfd ;fn Array esa 10000 Data Elements 
+gksa] rks mu lHkh dh tksM djus esa 100 Data dh rqyuk esa vf/kd le; yxsxkA  
+ 
+ifj.kkeLo:i dksbZ Algorithm Perform gksus esa vuqekur% fdruk le; ysxk] bls Input Data 
+Size ds Qyu ds :i esa Express fd;k tk ldrk gSA mnkgj.k ds fy, ;fn fdlh Array esa 
+Data Items dh la[;k n gks rks Algorithm }kjk n Data dh Processing esa yxus okys le; 
+dks Time T(n) o Space S(n) ds Qyu ds :i esa Express fd;k tk ldrk gS] tgka T o S 
+Input Data n ds Qyu gSaA 
+ 
+blls igys fd ge fdlh Algorithm dks Analyze djds mldh Efficiency Kkr djsa] dqN 
+Functions dks le>uk Bhd jgsxk] ftudk iz;ksx T o S dks Express djus ds fy, fd;k tkrk 
+gSA ;s dqN Standard Functions gSa tks Input Data Item n dh Size ds vk/kkj ij 
+Algorithm }kjk fy;k tkus okyk le; Kkr djus ds fy, Use fd, tkrs gSaA  
+ 
+mnkgj.k ds fy, eku yks fd fdlh Array esa 16 Data Items gSaA bu 16 Data Items dks 
+vyx&vyx rjg ls vyx&vyx dkeksa ds fy, Process djus ds fy, vyx&vyx 
+Algorithms dh t:jr gksrh gSA ;fn bu 16 Items ij Processing djus ds fy, ge f(n) = 
+2n Qyu dk iz;ksx djsa rks gesa Array ds 16 Elements dks Process djus ds fy, de ls de 
+216 Operations djus iMsaxs] ;kuh gesa dqy 65536 Operations djus gksaxsA  
+ 
+;fn bl Qyu dk Graph cuk;k tk,] rks cuus okyk Graph dkQh rsth ls c<sxkA ;kuh bl 
+Qyu ds c<us dh nj lcls rst gksrh gSA ;s Qyu fdlh Hkh Algorithm dh Complexity Kkr 
+djus dk lcls igyk Qyu gS tks fdlh Algorithm ds Perform gksus esa Algorithm }kjk fy, 
+tkus okys lcls vf/kd le; dks n”kkZrk gSA  
+ 
+;fn bl Qyu ds LFkku ij Algorithm f(n) = n3 Qyu dk iz;ksx djs] rks dqy Operations 
+dh la[;k 163 gksxhA ;fn bl Qyu dk Hkh xzkQ cuk;k tk, rks ;s xzkQ Hkh dkQh rsth ls c<sxk 
+ysfdu fQj Hkh ;s Graph igys okys Qyu dh rqyuk esa de rsth ls c<sxkA  
+ 
+fdlh Algorithm dh Complexity Kkr djus ds fy, Use fd;k tkus okyk rhljk Qyu f(n) = 
+n2 gSA ;fn blh 16 Element okys Array ds 16 Data dks Process djus ds fy, ;fn n2 
+Operations djus iMs rks] Algorithm dks dqy 256 Operation djus gksaxsA ;fn bl Qyu ds 
+Growth dk Graph cuk;k tk, rks ;s Graph Hkh dkQh rsth ls c<sxk ysfdu igys okys nksuksa 
+Qyuksa dh rqyuk esa dkQh de rsth ls c<sxkA  
+ 
+20 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+;fn Algorithm Perform gksus ds fy, f(n) = n log2 n Operations djrk gS rks bl Qyu dk 
+Growth Rate igys crk, x, lHkh Qyuksa ls de gksxkA ;kuh ;fn bl Qyu dk Graph cuk;k 
+tk, rks Graph dkQh /kheh xfr ls c<sxkA  
+ 
+;fn 16 Data Element ds Array ij Processing ds fy, n log2 n Operations djus iMsa rks 
+dqy Operations dh la[;k 16 X log2 16 = 16 X 4 = 64 gksxh tks fd igys ds lHkh Qyuksa dh 
+rqyuk esa dkQh de gSA  
+ 
+;fn tks Algorithm Use fd;k tk jgk gS og Algorithm 16 Elements dks Process djus esa 
+dsoy 16 gh Operations djs] rks Algorithm dh Complexity f(n) = n gksrh gSA ;fn bldk 
+Graph cuk;k tk,] rks ,d Linear Graph curk gS tks fd Data Elements n dh la[;k c<us 
+ds lkFk c<rk gS vkSj ?kVus ds lkFk ?kVrk gSA  
+ 
+fdlh Algorithm dh Complexity Kkr djus dk vfUre Qyu f(n) = log2 n gS ftlesa 16 Item 
+dks Process djus esa dsoy 4 Operations djus gksaxsA ;fn bu lHkh Qyuksa dk Graph cuk;k 
+tk, rks ;s Graph Øe ls vf/kd Complex Algorithm dks n”kkZ,axsA bl Graph dks fdlh 
+Algorithm dh Complexity dk Rate of Growth dgk tkrk gSA  
+ 
+dksbZ Algorithm Perform gksus ds le; fdl Qyu ds vuqlkj Operations djrk gS] blds 
+vk/kkj ij Algorithm dh Complexity fuHkZj djrh gSA ,d gh dke dks djus ds fy, fofHkUu 
+rjhds gks ldrs gSaA tks rjhdk de ls de Operations esa gesa gekjk Required Result iznku 
+dj nsrk gS og Algorithm de Complex vkSj vf/kd Efficient dgykrk gS tcfd blds foijhr 
+gksus ij Algorithm vf/kd Complex o de Efficient dgykrk gSA Algorithm dh Growth 
+fuEu Øe esa gksrh gS% 
+ 
+ 
+log2 n  
+n  
+n log2 n  n2  
+n3   
+2n 
+ 
+fdlh Hkh Algorithm dks Analyze djds ;s irk fd;k tkrk gS fd Algorithm dh Complexity 
+fdl Qyu ds vuqlkj Grow gks jgh gSA gesa ;gh dksf”k”k djuh pkfg, fd fdlh Hkh Algorithm 
+dh Complexity Linear Øe esa c<sA ,slk Algorithm dkQh Efficient gksrk gS ftldk Graph 
+Linearly c<rk gSA  
+ 
+ 
+Time Analysis 
+fuEu Algorithm }kjk fdlh Array ds N Elements dk TkksM fd;k tk ldrk gS&  
+ 
+Algorithm 
+SUMMETION(LA, N) 
+Here LA is a Linear Array and N is the size of LA. 
+ 
+1 
+SUM = 0, LB = 0, UB = N-1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[Initialization] 
+ 
+21 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+2 
+REPEATE STEP 3 WHILE I <= UB STEP I = I + 1 
+3 
+SUM = SUM + LA[I]  
+  
+ 
+ 
+ 
+ 
+[Sum the Values of Array’s All Elements ] 
+4 
+EXIT 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[Finish] 
+ 
+tSlkfd geus igys crk;k fd fdlh Hkh Algorithm dks Perform gksus esa fdruk le; yxsxk ;s 
+Kkr djuk dkQh eqf”dy gSA blfy, ge Algorithm dh Complexity dks Data Items dh 
+Size ds Qyu ds :i esa gh Kkr dj ldrs gSaA  
+ 
+Algorithm ds Time dks ge fdlh Algorithm }kjk Perform gksus okyh Comparisons la[;k 
+ds vk/kkj ij Kkr djrs gSaA dksbZ Algorithm Perform gksrs le; dqy fdrus Operations djrk 
+gS] mUgha Operations dh la[;k dks ge Algorithm ds Perform gksus ds Time ds :i esa eku 
+ysrs gSaA  
+ 
+;kuh ftrus vf/kd Operations Algorithm }kjk Perform gksrs gSa ml Algorithm dks Perform 
+gksus esa mruk gh vf/kd le; yxrk gSA Time Algorithm esa ekuyks fd Data Item dh la[;k 
+n=10 gS rks nlksa la[;kvksa dks tksMus ds fy, bl Algorithm esa dqy 10 Operations gksrs gSaA  
+ 
+bl fLFkfr esa bl Algorithm dks Perform gksus esa dqy 10 Operation djus iMrs gSa rks bl 
+Algorithm dh Complexity dk Qyu f(n)=n gksxkA ;kuh bl Algorithm dks Perform gksus esa 
+;fn Data Item dh la[;k N gS rks dqy Operation dh la[;k Hkh N gksxh vkSj gj Operation 
+esa 1/N le; yxrk gS vr% dqy le; Hkh N gh yxsxkA  
+ 
+ekuyks fd ;fn Array ds izFke Element dks nwljs Element ls tksMus esa ,d lsd.M yxrk gS 
+rks Data Item dh la[;k 10 gksus ij dqy nl ckj tksM gksxh vkSj yxus okyk le; 10 lsd.M 
+gksxkA  
+ 
+ 
+Complexity ( Big O Notation ) 
+nks Algorithms esa ls dkSulk Algorithm vf/kd Efficient gS ;s Analyze djus ds fy, gesa nksuksa 
+Algorithms ls izkIr gksus okys Results dks Compare djuk gksrk gSA ge nks Algorithms ls 
+izkIr gksus okys Results dks Compare dj ldsa blds fy, gesa “O” Notation dks tkuuk t:jh 
+gSA  
+ 
+dksbZ Algorithm fdrus Operations djus ds ckn Required dke dks iwjk djrk gS] ;s tkuus ds 
+fy, ge dqN Standard Function dk iz;ksx djrs gSa tks fd fuEukuqlkj gSa& 
+ 
+ 
+log2 n  
+n  
+n log2 n  n2  
+n3   
+2n 
+ 
+;s lHkh Functions ¼Qyu½ fdlh Algorithm dk vk;ke Kkr djus ds fy, Use gksrs gSaA ;kuh 
+n2 ls n3 dk vk;ke vf/kd gksrk gSA ;fn dksbZ ,d Algorithm n2 Operations ds ckn gesa 
+Required Results iznku djrk gS tcfd nwljk Algorithm n3 Operations ds ckn gesa 
+ 
+22 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Required Result Provide djrk gS] rks igys okys Algorithm ls nwljk okyk Algorithm vf/kd 
+Complex gksxkA ;s lHkh Function ,d fuf”pr Øe ds vuqlkj Input Data n ds fy, vk;ke 
+iznku djrs gSaA fofHkUu Functions tks vk;ke iznf”kZr djrs gSa mu lHkh vk;ke iznf”kZr djus okys 
+Functions dks Handle djus ds fy, ,d Notation dks Develop fd;k x;k gSA  
+ 
+,d Function f(n) dks O(g(n)) ds :i esa ifjHkkf’kr fd;k tk ldrk gSA ;kuh bls 
+f(n)=O(g(n)) fy[k ldrs gSa vkSj bl Qyu dks g(n) dk Øe dgk tkrk gSA ;kuh ;fn 
+fuEukuqlkj n0 o c Positive Constant gksa% 
+ 
+ 
+| f(n) | <= | g(n) | tcfd lHkh n > n0  
+ 
+rks ge bls “O” Notation ds vuqlkj fy[k ldrs gSaA tSls fuEu Qyuksa dk “O” Notation 
+fuEukuqlkj fy[kk tk ldrk gS& 
+ 
+100 n5   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dk “O” Notation O(n5) gksxkA 
+200n3 + 50n2 + 20n1 + 544n0   
+ 
+ 
+ 
+ 
+dk “O” Notation O(n3) gksxkA 
+1 + 2 +  . . .  + (n-1) + n = n(n+1)/2 = n2 + O(n) dk “O” Notation O(n2) gksxkA 
+3223   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dk “O” Notation O(1) ;k O(n) gksxkA 
+ 
+ljy “kCnksa esa dgsa rks ge dg ldrs gSa fd O(g) Qyuksa (Functions) dk ,d ,slk lewg gksrk gS 
+tks fd g ds vk/kkj ij Increase ;k Grow gksrk gS tgka Qyu g Qyu O(g) dk Upper 
+Bound gSA ge O(g) ds fofHkUu Qyuksa ds vk/kkj ij fofHkUu Algorithms dh Complexity Kkr 
+dj ldrs gSa vkSj nks vyx&vyx Algorithms dh Efficiency dh vkil esa rqyuk djds irk 
+yxk ldrs gSa fd dkSulk Algorithm vf/kd Efficient ;k de Complex gSA ;s Qyu 
+Computer ;k Programming Language ij fuHkZj ugha gksrs gSa] blfy, fdlh Algorithm dks 
+fcuk Implement fd, gq, ;kuh Algorithm ds vk/kkj ij fcuk Program cuk, gq, gh bu 
+Qyuksa }kjk ge ;s tku ldrs gSa fd dksbZ Algorithm fdruk Complex gSA  
+ 
+ 
+Properties of “O” Notation 
+fdlh Hkh “O” Notation dh dqN General fo”ks’krk,a gksrh gSa ftUgsa ge fuEukuqlkj le> ldrs gSa% 
+ 
+1 fdlh Hkh Algorithm dks tc Mathematically Represent fd;k tkrk gS rks mlds 
+ftrus Hkh Constant Factors gksrs gSa mUgsa Ignore fd;k tk ldrk gSA mnkgj.k ds fy, 
+;fn fdlh Array esa N Data Elements gSa vkSj dksbZ Algorithm Array ds lHkh 
+Elements dks Process djrk gS tcfd N dk eku 0 ls vf/kd gS rks bl Algorithm 
+dh Complexity O(n) gksxhA ;kuh 
+ 
+For All N > 0 , N f is O(n) 
+ 
+ 
+23 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+mnkgj.k ds fy, xz2 o yn2 nksuksa dh Complexity leku gS vkSj nksuksa dks “O” Notation 
+ds :i esa O(n2) gh fy[ksaxsA 
+ 
+ 
+2 
+n dh Higher Power ¼mPpre ?kkrkad½ Lower Power ¼fuEure ?kkrkad½ ls vf/kd rsth 
+ls Grow gksrk gSA ;kuh 
+ 
+200n3 + 50n2 + 20n1 + 544n0   
+ 
+ 
+ 
+ 
+dk “O” Notation O(n3) gksxkA 
+ 
+bl mnkgj.k esa ns[k ldrs gSa fd Qyu n0 Hkh gS vkSj n3 Hkh ysfdu bldk “O” 
+Notation O(n3) gh gS D;ksafd ;s mPpre ?kkrkad gS vkSj vU; lHkh ?kkrkadksa dh rqyuk esa 
+bldk eku cgqr gh T;knk rsth ls Grow gksxk vkSj ;s vU; ?kkrkadks dh rqyuk esa cgqr 
+gh T;knk Operations dks Represent djsxk] ftlls vU; ?kkrkadksa ds Operations dh 
+la[;k dks Ignore fd;k tk ldrk gSA  
+ 
+ 
+3 dqy Operations ds ;ksx ds c<us dh nj ogh gksrh gS tks lcls vf/kd Growth Term 
+dh gksrh gSA ;kuh ;fn fdlh Algorithm esa  
+ 
+an3 + bn4 + cn2 + dn1  
+ 
+Operations gksrs gSa rks bl Algorithm dh Complexity bn4 ds c<us dh nj ds cjkcj 
+gksxhA ;kuh bl Algorithm ds Operations dks “O” Notation ds :i esa ;fn fy[kk tk, 
+rks O(n4) gh fy[kuk gksxkA 
+ 
+ 
+4 ;fn Qyu f Qyu g dh rqyuk esa vf/kd rsth ls Grow gksrk gS vkSj Qyu g Qyu h 
+dh rqyuk es vf/kd rsth ls Grow gksrk gS rks Qyu f Qyu h dh rqyuk esa Hkh vf/kd 
+rsth ls c<rk gSA  
+ 
+ 
+5 fdlh Qyu ds Upper Bound ¼vf/kdre Operations dh la[;k½ dk fdlh vU; Qyu 
+ls xq.kk fd;k tkrk gS rks izkIr gksus okyk eku Upper Bound ¼vf/kdre Operations 
+dh la[;k½ dks Represent djrk gSA tSls  
+ 
+IF f is O( g ) and h is O( r ) then fh is O( gr ) 
+ 
+mnkgj.k ds fy,  
+ 
+IF f is O( n2 ) and h is O(  log n ) then fh is O( n2 log n ) 
+ 
+ 
+ 
+24 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+6 
+Exponential Qyu Power Qyu dh rqyuk esa vf/kd rsth ls c<rs gSaA tSls 
+ 
+nk is O(bn), tcfd b ds lkjs eku 1 ls cMs gksa vkSj k dk eku 0 ;k 0 ls cMk gksA 
+;kuh 
+nk is O(bn), For all b > 1 ; k >= 0 
+ 
+mnkgj.k ds fy,  
+ 
+n4 is O(2n), and n4 is O(exp(n)) 
+ 
+ 
+7 
+Logarithms Powers dh rqyuk esa cgqr gh /kheh xfr ls c<rs gSaA tSls 
+ 
+ 
+Logb n is O(nk) for all b > 1 ; k > 0 
+ 
+ 
+mnkgj.k ds fy, log2 n is O(n0.5) 
+ 
+ 
+fdlh Algorithm dks Analyze djrs le; gekjs lkeus nks lcls cMh leL;k,a gksrh gSa% 
+ 
+CPU Time 
+CPU dh Speed eq[; :i ls Algorithm }kjk gh izHkkfor ugha gksrh gS cfYd dqN vU; rF; Hkh 
+CPU dh Speed dks izHkkfor djrs gSaA buesa ls dqN rF; fuEukuqlkj gSa& 
+ 
+1 ge tks Computer Use dj jgs gSa ml Computer ds CPU dh Actual Speed D;k 
+gS vkSj ml Computer ij fdruk Load gSA ftl Computer esa ftrus vf/kd 
+Softwares Installed gksrs gSa] Computer mruk gh vf/kd Loaded gksrk gSA 
+ 
+2 ge dkSulh Programming Language Use dj jgs gSa vkSj dkSulk Compiler Use 
+dj jgs gSa bl ij Hkh Algorithm ds Perform gksus dh Speed fuHkZj djrh gSA tSls 
+;fn ge ,sls Compiler dks Use dj jgs gSa tks fd Directly Computer ds fofHkUu 
+Hardware dks Access djus esa l{ke gS rks Algorithm vf/kd rsth ls Perform gksxkA  
+ 
+“C” ,d ,slh gh Language gS ftlesa ge Computer ds fdlh Hkh Hardware dks 
+Directly Access dj ldrs gSaA tcfd Visual Basic esa ;fn Algorithm dks Perform 
+djus ds fy, Program fy[kk tk,xk rks ml Program dh Speed “C” ds Program 
+dh Speed ls de gksxhA 
+ 
+3 dqN vU; Factors Hkh gksrs gSa tks Algorithm dh Performance dks izHkkfor djrs gSaA 
+tSls ;fn Data Structure ds :i esa Array dks Use fd;k tkrk gS rks gesa gesa”kk 
+Algorithm esa ;s Check djuk gksrk gS fd Array esa Data Insert djus ds fy, Space 
+ 
+25 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+gS ;k ughaA ;kuh Array dh Bounding dks Check djuk t:jh gksrk gS vU;Fkk 
+Algorithm fdlh vU; Program ds Data dks Corrupt dj ldrk gSA fdlh Array dh 
+Indexing djus esa ;k fdlh Record dks Access djus esa tks Extra le; yxrk gS og 
+Algorithm dh Performance dks izHkkfor djrk gSA  
+ 
+tc ge gekjs Program esa cgqr ls Procedures ;kuh Functions Create djrs gSa] rks 
+gj Function ds Call gksus ij Program Control ,d LFkku ls nwljs LFkku ij Jump 
+djrk gSA bl Jumping esa Hkh dqN le; O;FkZ gksrk gSA ;s le; Hkh Algorithm ds 
+Performance ij vlj djrk gSA 
+ 
+ 
+Input / Output 
+Constant Time ds Algorithms ifjHkk’kk ds :i esa lHkh Input Data ij Processing ds fy, 
+leku le; ysrs gSaA ysfdu T;knkrj Algorithms Constant Time ugha gksrs gSaA ;kuh lHkh 
+Data dh Processing esa leku le; ugha ysrs gSaA  
+ 
+bl fLFkfr esa ge ,d fuf”pr vad ds :i esa fdlh Algorithm dh Efficiency dks ifjHkkf’kr ugha 
+dj ldrs gSaA blfy, gesa Algorithm dh Efficiency dks Input Data dh Size n ds Qyu ds 
+:i esa gh ifjHkkf’kr djuk iMrk gSA  
+ 
+igyh leL;k dk lek/kku ;s gS fd gesa Algorithm dh Efficiency dks Analytically Measure 
+djuk pkfg, uk fd Experimentally, D;ksafd nks vyx Computer ij leku Algorithm Hkh 
+vyx Time esa Perform gksxkA  
+ 
+vU; “kCnksa esa dgsa rks gesa Algorithm dks mldh Efficiency o ml Algorithm dks izHkkfor djus 
+okys rRoksa ds vk/kkj ij ifjHkkf’kr djuk gksrk gSA lkekU;r;k ge fdlh Algorithm dh 
+Efficiency Kkr djus ds fy, fuEu esa ls fdlh ,d dks Measure djrs gSa% 
+ 
+1 
+Numerical Algorithms ds fy, ge dqy Addition, Subtraction, Multiplication vkfn 
+dh la[;k Kkr djrs gSaA 
+2 
+Searching ;k Sorting ds Algorithm esa ge dqy Comparisons dh la[;k Kkr djrs 
+gSaA 
+3 
+Assignment Statements o Parameters ds vk/kkj ij Data Movement dh dqy 
+la[;k dks Kkr djrs gSaA 
+4 fdlh Algorithm ds fy, Required dqy Memory Space dh Limit dks Kkr djrs 
+gSaA 
+ 
+nwljh leL;k ds lek/kku ds fy, ge N Data Items ds fy, Algorithm dh Efficiency n”kkZus 
+okyk ,d Qyu Kkr djrs gSa ftlls fdlh Algorithm dh Efficiency ;k Complexity dks 
+Represent fd;k tkrk gSA 
+ 
+ 
+26 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+fdlh Algorithm dh Complexity ;k Efficiency dks Kkr djrs le; gesa lcls igys ;s r; 
+djuk gksrk gS fd ge Input dh fdl Property dks Measure djus tk jgs gSaA fdlh 
+Algorithm dh lcls vPNh Property og gksrh gS tks Algorithm ds Efficiency Factor dks 
+izHkkfor djrh gksA  
+ 
+ge ;gka ij Algorithm dh Key Property ds :i esa Input Size “kCn dks Use djds 
+Algorithm dks Analyze djsaxs vkSj Input Size dks Variable N ls Represent djsaxsA fQj Hkh 
+;s t:jh ugha gS fd ge dsoy ,d gh Property dk iz;ksx djsaA ge fdlh Algorithm dh 
+Efficiency dks dbZ Properties ds vk/kkj ij ,d Qyu ds :i esa Express dj ldrs gSaA  
+ 
+ysfdu dsoy ,d gh Property ds vk/kkj ij fdlh Algorithm dh Efficiency dks Express 
+djuk dkQh ljy rjhdk gksrk gS rFkk ,d gh Property dks lHkh Properties ds :i esa 
+Represent fd;k tk ldrk gSA blh rjhds dks lcls T;knk Use fd;k tkrk gSA  
+ 
+mnkgj.k ds fy, fdlh List ds fofHkUu Elements dks Sort djus ds fy, ftruk le; Use 
+gksrk gS mls List dh Length ds ,d Qyu ds :i esa fy[kk tk ldrk gSA Sorting ds fy, ge 
+ftl Algorithm dk iz;ksx djrs gSa og Typically ,d Quadratic Function gksrk gSA ;kuh  
+ 
+ 
+TIME(n) = n * n  
+ 
+MergeSort o QuickSort ds Algorithm vf/kd rst gksrs gSaA mudks Qyu ds :i esa fuEukuqlkj 
+fy[kk tk ldrk gS& 
+ 
+ 
+TIME(n) = n * log (n)  
+ 
+bl Algorithm dh Length Quadratic ls de ysfdu Linear ls vf/kd gksrh gSA  
+ 
+;s rjhdk vHkh Hkh nwljh leL;k dk tokc iznku ugha dj jgk gSA ekuyks ,d Algorithm fdlh 
+List esa ls fdlh Required eku dks Search dj jgk gSA ge ;s eku ysrs gSa fd tks Hkh eku 
+Search fd;k tk jgk gS og gesa”kk List esa miyC/k gksrk gSA ,slk dksbZ eku Search ugha fd;k 
+tkrk tks fd List esa miyC/k gh uk gksA bl fLFkfr esa Algorithm gesa”kk Successful gksrk gSA  
+ 
+vc bl Algorithm dh Speed dks izHkkfor djus okyk Factor og LFkku gS tgka ij Search 
+fd;k tkus okyk eku izkIr gksrk gSA ;fn Algorithm ogka ls “kq: gksrk gS tgka ij Search fd;k 
+tkus okyk eku miyC/k gS rks Algorithm cgqr gh tYnh lekIr gks tk,xkA tcfd ;fn Search 
+fd;k tkus okyk eku List esa dgha vU; LFkku ij gS] rks Algorithm dks vU; LFkkuksa ij Hkh 
+Search fd, tkus okys eku dks [kkstuk gksxkA  
+ 
+bl fLFkfr esa ge tks Qyu ;gka ij izkIr djuk pkgrs gSa og iwjk ugha gSA ;s Qyu Input Size n 
+ij fuHkZj gSA ;fn Search fd;k tkus okyk Data rqjUr izkIr gks tkrk gS rks ;s Best Case 
+fLFkfr gS ysfdu ;fn Search fd;k tkus okyk Data dkQh Comparisons ds ckn izkIr gksrk gS] 
+rks bls Worst Case fLFkfr dgsaxsA 
+ 
+27 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+gekjs bl Algorithm esa Best Case = Constant Time gksxk tcfd Worst Case = Length of 
+List ;k N-1 gksxkA Average Case esa Search fd;k tkus okyk Data List esa izFke o vfUre 
+LFkku ds vykok dgha Hkh izkIr gks ldrk gSA 
+ 
+vc tc ge nks Algorithms dks Compare djrs gSa rks gesa nks Algorithms ds Qyuksa dks 
+Compare djuk iMrk gSA bl Analysis esa gesa gesa”kk lko/kku jguk gksrk gS D;ksafd ;s Qyu 
+dbZ LFkkuksa ij ,d nwljs dks Cross dj ldrs gSaA  
+ 
+;kuh fdlh ,d Input ds fy, igyk Algorithm mi;qDr yxrk gS] tcfd fdlh nwljs Input ds 
+fy, igys ds LFkku ij nwljk Algorithm vf/kd mi;qDr yxrk gSA ;fn ,slk gksrk gS rks bldk 
+eryc gS fd nksuksa gh Algorithm lHkh Inputs ds fy, ,d nwljs ls vf/kd mi;qDr ;k Efficient 
+ugha gSaA 
+ 
+nks Algorithms dh okLro esa mfpr Comparing djus ds fy, t:jh gS fd gekjs ikl nksuksa 
+Algorithms ds mfpr Qyu gksa vkSj ge ;s irk dj ldsa fd nksuksa Algorithm fdl Input ds 
+fy, ,d nwljs dks Cross djrs gSaA izk;ksfxd :i ls ;s irk djuk cgqr gh eqf”dy dke gSA 
+blfy, ge nksuksa Algorithm ds Input dk yxHkx eku izkIr djrs gSa tgka ij nksuksa Algorithms 
+,d nwljs dks Cross djrs gSaA bl izfØ;k dks “Ballpark Estimate” dgk tkrk gSA  
+ 
+“Ballpark Estimate” fdlh Algorithm dk yxHkx Complexion gksrk gS ftls Asymptotic 
+Complexity dgk tkrk gSA Asymptotic Complexity fdlh Algorithm dk eq[; Term gksrk 
+gS ftlls fdlh Algorithm ds Qyu dh Limit dk irk pyrk gSA mnkgj.k ds fy, ekuyks fd 
+gekjs ikl nks Algorithms gSa% 
+ 
+Algorithm 
+1 
+A1 - Efficiency(n) = 29 [ Constant Time ] 
+2 
+A2 - Efficiency(n) = 3 + n/2 [ Linear Time ] 
+ 
+tc rd n = 52 gksrk gS rc rd A1(n) > A2(n) gksrk gSA ;kuh tc n dk eku 52 gksrk gS rc 
+nksuksa Algorithm dh Complexity leku gksrh gSA bl Limit ij nksuksa Algorithm ,d&nwljs dks 
+Cross djrs gSaA  
+ 
+gkykafd ,d cgqr gh NksVh List ds fy, A2 Algorithm dkQh Efficient gS ysfdu ;fn List cMh 
+gks rks A1 Algorithm A2 Algorithm dh rqyuk esa vf/kd Efficient jgrk gSA Asymptotic 
+Complexity ds ihNs ;gh Idea gSA  
+ 
+ekuyks fd ,d Array esa 52 Items ds lkFk 29 Operations djus ij Required dke gks tkrk 
+gSA bl fLFkfr esa nksuksa gh Algorithms dks ,d nwljs ds LFkku ij Use fd;k tk ldrk gSA 
+ysfdu ;fn Data Items dh la[;k 52 ls de gks rks igyk Algorithm vf/kd Efficient gksxk 
+tcfd ;fn Data Items dh la[;k 52 ls vf/kd gks rks nwljk Algorithm igys dh rqyuk esa 
+vf/kd Efficient gksxkA 
+ 
+28 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+Asymptotic Complexity esa Qyu ds lHkh Lower Order Terms o Constant Multipliers dks 
+Ignore dj fn;k tkrk gS] blfy, lHkh Linear Qyuksa dks “O” Notation esa O(n) fy[kk tkrk 
+gS vkSj lHkh Constant Time Qyu dks “O” Notation esa O(1) fy[kk tkrk gSA ;kuh A1 dh 
+Asymptotic Complexity O(1) gS tcfd A2 dh Asymptotic Complexity O(n) gSA  
+ 
+Li’V :i ls ge dg ldrs gSa fd Asymptotic Complexity rHkh mi;qDr gS tc gesa cgqr cMs 
+Input ds lkFk izfØ;k djuh gksA fdlh Application Program esa gesa rc vf/kd lVhdrk ls 
+Analysis djuk iMrk gS tc ge de Input Data ds lkFk izfØ;k dj jgs gksrs gSaA 
+ 
+geus vHkh rd fofHkUu izdkj ds Qyuksa dks ns[kk gSA bu lHkh Qyuksa }kjk ge fdlh Algorithm 
+dks Analyze djrs gSa vkSj Algorithm dh Efficiency ;k Complexity Kkr djrs gSaA 
+Efficiency ;k Complexity dks iznf”kZr djus ds fy, ge Capital Letter “O” dk iz;ksx djrs 
+gSaA fofHkUu izdkj ds Qyuksa dks Represent djus ds fy, ge “O” Notation dk iz;ksx djrs gSaA 
+bl “O” Notation dks Use djds fdlh Qyu dh Efficiency ;k Complexity dks Represent 
+djus dh izfØ;k dks Big – O Notation dgk tkrk gSA  
+ 
+tc ge Big – O Notation }kjk fdlh Algorithm dh Complexity ds Qyu dks Represent 
+djrs gSa rc Qyu ds fofHkUu Low – Order Terms, Dominant Terms o Constants 
+Coefficients dks Ignore dj nsrs gSa o dsoy Highest Power ;k Highest Value Represent 
+djus okys Notation dks gh Big – O Notation ds :i esa O;Dr djrs gSaA tSls Efficiency(n) 
+dks ;fn Big – O Notation ds :i esa O;Dr djuk gks rks ge bls dsoy O(n) fy[krs gSaA 
+ 
+ 
+Analyzing Algorithms 
+Analysis ds fy, gesa”kk Simple Statements Sequence dks vk/kkj cukuk pkfg,A lcls 
+igys ;s Note djsa fd Statements dh ,d Sequence tks fd ,d le; esa dsoy ,d ckj 
+Execute gksrh gS] mls Big – O Notation ds :i esa Represent djus ds fy, gesa dsoy O(1) 
+fy[kuk gksrk gSA D;ksafd ,d Statement Execute gksus esa ftruk le; yxkrk gS lHkh 
+Statements Execute gksus esa mlh vuqikr esa le; yxk,axsA mnkgj.k ds fy, ;fn fdlh Data 
+Item dh Size n dks fdlh Loop }kjk fuEukuqlkj Solve fd;k tk ldrk gS % 
+ 
+ 
+for(i=0; i<n; i++) 
+ 
+{ 
+ 
+ 
+Statement x; 
+ 
+} 
+ 
+rks bl Loop esa Statement x ,d O(1) Sequence Statement gS blfy, bl Loop dh 
+Time Complexity n O(1) ;k O(n) gksxhA 
+ 
+;fn gekjs ikl fuEukuqlkj nks Nested Loop gksa rks  
+ 
+29 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+for(i=0; i<n; i++) 
+ 
+{ 
+ 
+ 
+for(j=0; j<n; j++) 
+ 
+ 
+{ 
+ 
+ 
+ 
+Statement x; 
+ 
+ 
+} 
+ 
+} 
+ 
+bl fLFkfr esa Loop i ds gj Iteration esa Loop j n ckj Iterate gksrk gSA ;kuh ;s Nested 
+Loop n * n ckj pysxk blfy, bl Loop esa yxus okyk le; O(n2) ds cjkcj gksxkA fuEu 
+Loop rc rd pyrk gS tc rd fd n dk eku h ds eku ls cMk ;k cjkcj jgrk gS& 
+ 
+ 
+h = 1; 
+ 
+for(i=0; i<=n; i++) 
+ 
+{ 
+ 
+ 
+Statement x; 
+ 
+ 
+h = 2 * h; 
+ 
+} 
+ 
+bl Loop dh Complexity 1 + log n ds cjkcj gSA bls Big – O Notation ds :i esa O( log2 
+n ) fy[k ldrs gSaA  
+ 
+;fn Inner Loop Outer Loop ds Index ij fuHkZj gks rks Inner Loop esa j dk eku 0 ls n rd 
+pyrk gSA bl fLFkfr esa Loop dh Complexity fuEukuqlkj Kkr dh tk ldrh gS& 
+ 
+ 
+for(i=0; i<=n; i++) 
+ 
+{ 
+ 
+ 
+for(j=0; j<=i; j++) 
+ 
+ 
+{ 
+ 
+ 
+ 
+Statement x; 
+ 
+ 
+} 
+ 
+} 
+  
+ 
+f( j )  
+= 0 to n   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+;kuh  
+ 
+ 
+ 
+= 1 + 2 + 3 + 4 + . . . (n-2) + (n-1) + n  
+;kuh  
+ 
+ 
+ 
+= n * (n + 1) / 2 
+ 
+ 
+ 
+= (n2 + n)/2 
+ 
+bl Algorithm dh Complexity dks Big – O Notation ds :i esa ge O( n2 ) fy[k ldrs gSaA 
+;fn ge fuEukuqlkj fdlh t:jr ds vuqlkj Loop pykrs gSa% 
+ 
+ 
+ 
+30 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+h = n; 
+ 
+for(i=0; i<=h; i++) 
+ 
+{ 
+ 
+ 
+for(j=0; j<=n; j++) 
+ 
+ 
+{ 
+ 
+ 
+ 
+Statement x; 
+ 
+ 
+} 
+ 
+h = h/2; 
+ 
+} 
+ 
+rks ;gka Outer Loop esa log2 n Iterations gksaxs vkSj Inner Loop dh Complexity O( n ) gksxhA 
+bl fLFkfr esa dqy Complexity O( n log n) gksxhA ;s Complexity igys okys Loop dh 
+Complexity dh rqyuk esa vf/kd Efficient gSA  
+ 
+pfy,] vc ge dqN Program ns[krs gSa vkSj mudh Complexity Kkr djus dh dksf”k”k djrs gSaA 
+gkykafd bu Programs dk okLro esa dgha dksbZ mi;ksx ugha gSA ;s dsoy dqN Pattern ek= 
+Create djrs gSaA bu mnkgj.kksa esa Programs dh Efficiency printf() Function ds dqy 
+Executions dh la[;k ij vk/kkfjr gS tks fd n dk Qyu gSA  
+ 
+Example  
+ 
+main(){ 
+ 
+ 
+int i, j, n; 
+ 
+ 
+printf(“Enter the limit of Pattern”); 
+ 
+ 
+scanf(“%d”, &n); 
+ 
+ 
+ 
+for(i=0; i<n; i++){ 
+ 
+ 
+ 
+for(j=0; j<n; j++){ 
+ 
+ 
+ 
+ 
+printf(“%4d, %4d\n”, i, j); 
+ 
+ 
+ 
+} 
+ 
+ 
+} 
+ 
+ 
+getch(); 
+ 
+} 
+ 
+ge ns[k ldrs gSa fd nksuksa Loops esa dsoy Inner Loop esa gh Execute gksus okyk Statement 
+gS vkSj dsoy ,d gh Statement gSA gekjs Complexity Qyu gesa ;s crk,xk fd n ds Qyu ds 
+:i esa printf() Function fdruh ckj Execute gksxkA  
+ 
+bl iwjs Program dh Complexity Outer Loop dh Complexity ds cjkcj gS D;ksafd ;gh ,d 
+Top Level dk Statement gS ftlesa printf() Function Use fd;k x;k gSA fdlh Loop dh 
+Complexity dks ge fuEu lw= ls tku ldrs gSa& 
+ 
+    Complexity of Loop = (Number of Loop’s Repetitions) * (Complexity of each Iteration) 
+ 
+ 
+31 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ge eku ldrs gSa fd Loop ds gj Iteration dh Complexity leku gSA ,slk ge Outer Loop 
+ds fy, eku ldrs gSa bl Loop dh Complexity dks fuEukuqlkj Big – O Notation ds :i esa 
+fy[k ldrs gSa% 
+ 
+ 
+O( n ) * O( Complexity of Inner Loop ) 
+ 
+Inner Loop esa Hkh dsoy ,d gh printf() Statement gS blfy, Inner Loop ds fy, Hkh ;s ekuk 
+tk ldrk gS fd Inner Loop ds lHkh Iteration dh Complexity leku gSA ;kuh  
+ 
+ 
+Complexity of Inner Loop  
+= O( n ) * O( printf ) 
+ 
+Printf() Statement dsoy ,d gh ckj fy[kk x;k gS blfy, Lo;a printf() Statement dh 
+Complexity O(1) gSA lHkh ekuksa dks ,d lkFk fy[kus ij gesa bl Program dh Complexity 
+fuEukuqlkj izkIr gksrh gS& 
+ 
+ 
+f( n ) 
+= O( n ) * O( n ) * O( 1 ) 
+ 
+ 
+ 
+= O( n * n ) 
+ 
+ 
+ 
+= O( n2) 
+ 
+pfy,] ,d vkSj Sample Program dh Complexity Kkr djrs gSaA Program fuEukuqlkj gS% 
+ 
+Example  
+ 
+main() 
+ 
+{ 
+ 
+ 
+unsigned int i, j, n; 
+ 
+ 
+printf(“Enter a Nonzero Positive Value as a limit : ”); 
+ 
+ 
+scanf(“%d”, &n); 
+ 
+ 
+ 
+for( ; n>1; ) 
+ 
+ 
+{ 
+ 
+ 
+ 
+n = n/2; 
+ 
+ 
+ 
+printf(“%d\n”, n); 
+ 
+ 
+} 
+ 
+getch(); 
+ 
+} 
+ 
+bl Loop dh Complexity Kkr djus ds fy, Hkh ge ogh Formula Use dj ldrs gSa ftls 
+fiNys Program ds fy, Use fd;k gSA bl Loop ds gj Iteration dh Complexity leku gS 
+blfy, bls ge O(1) ds :i esa fy[k ldrs gSaA Loop fdruh ckj Iterate gksxk bls Kkr djus 
+ds fy, gesa ;s Kkr djuk gksxk fd ge fdlh Number n dks fdruh ckj nks Hkkxksa esa ckaV ldrs 
+gSa tcfd n dk eku 1 ls cMk jgsA ekuyks fd n ds gj eku dks K ckj nks Hkkxksa esa foHkkftr 
+fd;k tk ldrk gS rks bls ge fuEukuqlkj fy[k ldrs gSa% 
+ 
+ 
+32 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+2K <= n 
+ 
+;s rks fuf”pr gS fd tc ge 2K esa 2 dk Hkkx nsrs gSa rks K-1 ckj 2K dk eku 2 gksrk gS vkSj tc 
+ge bls ,d ckj vkSj 2 ls foHkkftr djrs gSa rks 2K dk eku 1 gks tkrk gSA 2K dk eku 1 gksrs 
+gh Loop Terminate gks tkrk gSA blfy, tc n dk eku 2K ds cjkcj gks ( n = 2K ) rc Loop 
+K ckj Repeat gksxkA  
+ 
+pwafd n = 2K  gS blfy, ;s Loop n ds fofHkUu ekuksa ds fy, dbZ ckj Repeat gksxk ysfdu ;s 
+Loop K + 1 Times Repeat ugha gks ldrk D;ksafd K dk eku K + 1 ds eku ls de gksrk gSA 
+blfy, ;fn n, K o ?kkr K+1 ls Bounded gS rks ;s Loop K ckj pyrk gSA K o n ds chp esa 
+;s lEca/k gS fd K ml log dk Integer Part gS ftldk vk/kkj 2 gSA blfy, bl mnkgj.k dh 
+Complexity fuEukuqlkj gksxh% 
+ 
+ 
+O( log n ) * O( 1 ) =  
+O( log n ) 
+ 
+;fn ge log ds vk/kkj 2 ds LFkku ij vk/kkj 10 dks Use djsa rks Hkh Complexity ij fdlh 
+izdkj dk dksbZ vlj ugha iMrk gSA 
+ 
+Example  
+ 
+main(){ 
+ 
+ 
+unsigned int i, j, n; 
+ 
+ 
+printf(“Enter a Nonzero Positive Value as a limit : ”); 
+ 
+ 
+scanf(“%d”, &n); 
+ 
+ 
+ 
+for( i=1, m=n+66; i<=m; i++ ) { 
+ 
+ 
+ 
+printf(“%d\n”, i ); 
+ 
+ 
+} 
+ 
+ 
+ 
+for( j=n/21, m=n/5; j<=m; j++ ) { 
+ 
+ 
+ 
+printf(“%d\n”, j ); 
+ 
+ 
+} 
+ 
+getch(); 
+ 
+} 
+ 
+ 
+;gka nks Independent Loops esa nks printf() Statements gSaA blfy, bl Program dh dqy 
+Complexity nksuksa printf() Statements dh dqy Complexity ds ;ksx ds cjkcj gksxhA ;fn bl 
+Program dks p ls iznf”kZr fd;k tk, rks bl Program dh Efficiency dks ge fuEukuqlkj 
+Big–O Notation ds :i esa iznf”kZr dj ldrs gSa& 
+ 
+ 
+Efficiency(p) = O( Outer Loop ) + O( Inner Loop ) 
+ 
+ 
+Outer Loop dh Efficiency  
+= 
+O(n) 
+ 
+33 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+Inner Loop dh Efficiency  
+= 
+O(n) 
+ 
+Total Efficiency  
+ 
+ 
+= 
+O(n) + O(n)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O(n) 
+ 
+pfy,] ,d vkSj mnkgj.k ns[krs gSaA ;s mnkgj.k lcls igys mnkgj.k ds leku gh gS ysfdu blesa 
+Loop ds Iteration Complexity esa vUrj gSA Program fuEukuqlkj gS% 
+ 
+ 
+Example  
+ 
+main() 
+ 
+{ 
+ 
+ 
+int i, j, n; 
+ 
+ 
+printf(“Enter the limit of Pattern”); 
+ 
+ 
+scanf(“%d”, &n); 
+ 
+ 
+ 
+for(i=1; i<=n; i++) 
+ 
+ 
+{ 
+ 
+ 
+ 
+for(j=1; j<=n; j++) 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+printf(“%4d, %4d\n”, i, j); 
+ 
+ 
+ 
+} 
+ 
+ 
+} 
+ 
+ 
+getch(); 
+ 
+} 
+ 
+bldh Efficiency ge fuEukuqlkj Kkr dj ldrs gSa& 
+ 
+ 
+Efficiency(Outer Loop)  = 
+SUM( i, 1, n ) of  ( Efficiency of Ith Iteration ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+SUM( i, 1, n ) of ( n-i ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+n * ( n-1 ) / 2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O( n * n )   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O( n2 ) 
+ 
+ 
+Inserting and Deleting 
+fdlh Array esa ;fn txg miyC/k gks rks ubZ bdkbZ dks Array ds vUr esa tksMuk dkQh vklku 
+gksrk gSA ysfdu tc gesa Array ds fdlh fo”ks’k Index Number ij eku dks Insert djuk gksrk 
+gS rks blds fy;s Array ds ftl Element ds ckn ubZ bdkbZ tksMuh gS] mlls ckn ds lkjs 
+Elements dks ,d&,d LFkku vkxs izfrLFkkfir fd;k tkrk gSA fQj u, eku dks Array esa tksMk 
+tkrk gSA  
+ 
+ 
+34 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+;fn ge Array esa eku Insert djus ls igys ftl LFkku ij eku Insert djuk gS] mlls vkxs ds 
+lHkh ekuksa dks izfrLFkkfir ugha djrs gSa rks gekjk u;k eku iqjkus eku ij Over Write gks tkrk 
+gSA  
+ 
+blh rjg ls fdlh Array ds vfUre Element dks Delete djuk dkQh vklku gksrk gS ysfdu 
+tc fdlh Array ds fdlh vU; Element dks Delete fd;k tkrk gS] rks Array ds ml 
+Element ls vkxs ds lHkh Elements dks ,d LFkku ihNs izfrLFkkfir djuk iMrk gSA ;fn ,slk 
+uk fd;k tk, rks ftl LFkku ds eku dks Delete fd;k x;k gS ml LFkku ij Garbage eku 
+Store gks tkrk gSA 
+ 
+ekuyks fd Name ,d 10 Elements dk Linear Array gS ftlesa 6 uke Stored gSaA ge pkgrs 
+gSa fd pkSFks uke ds ckn ,d u;k uke Add djsaA bl fLFkfr esa gesa Array ds pkSFks Data item ds 
+ckn ,d txg cukuh gksxhA txg cukus ds fy, Array ds ikapos o NBs Data Item dks Move 
+djds NBs o lkrosa LFkku ij Mode djuk gksxkA mlds ckn u, Data Item dks pkSFks LFkku ij 
+Insert djuk gksxkA bl iwjh izfØ;k dk Algorithm ge fuEukuqlkj fy[k ldrs gSa& 
+ 
+ekuk ,d Array LArray[N] gS ftlesa N Items gSaA bl Array ds Index Number K ij ,d 
+Element ITEM dks Insert djuk gS tcfd ge ;s eku dj pyrs gSa fd bl Array esa vHkh 
+bruk LFkku gS fd ge blesa u;k Item Insert dj ldsaA  
+ 
+pwafd gesa Index Number K ij u;k ITEM Insert djuk gS blfy, gesa Index Number K dks 
+[kkyh djuk gksxk rkfd u;k Data blesa Store gks ldsA pwafd u;k Data Store djus ds fy, 
+ge Index Number K ij txg cuk jgs gSa blfy, gesa Index Number K ls Array ds vfUre 
+Data Items rd ds lHkh Data Items dks ,d LFkku Right esa Move djuk gksxkA bl izfØ;k 
+dks ge fuEu fp= }kjk le> ldrs gSa% 
+ 
+10 
+25 
+32 
+45 
+95 
+75 
+ 
+ 
+ 
+ 
+ 
+ekuk K dk eku 4 gS rks gesa Index Number 4-1 = 3 dks [kkyh djuk gksxkA ,slk djus ij 
+Index Number 4 ds ckn ds lHkh Data Items dks ,d LFkku Right esa Move djuk gksxkA 
+,slk djus ij ;s Array fuEukuqlkj fn[kkbZ nsxk& 
+ 
+10 
+25 
+32 
+45 
+45 
+95 
+75 
+ 
+ 
+ 
+ 
+vc ge Index number 4 ij u;k ITEM Insert dj ldrs gSaA Insert djus dk Algorithm 
+fuEukuqlkj gks ldrk gS& 
+ 
+Algorithm of Inserting 
+1 
+START 
+2 
+DECLARE LArray[N], I, K, ITEM 
+ 
+35 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+3 
+REPEATE FOR I = N-1 TO I >= K STEP I = I - 1 
+4 
+SET LArray[I] = LArray[I-1] 
+ 
+ 
+ 
+[Shift Data Items to Right]  
+ 
+ 
+ 
+[End of the Loop] 
+5 
+SET LArray[K] = ITEM 
+ 
+ 
+ 
+[Insert Element] 
+6 
+END 
+ 
+ 
+blh rjg ekuk fd ,d Array LArray[N] gS ftlesa N Items gSaA bl Array ds Index 
+Number K ij fLFkr Element dks Delete djuk gSA pwafd ge Index Number K ij fLFkr 
+Item dks Delete dj jgs gSa blfy, gesa Index Number K ds ckn ds lHkh Data Items dks 
+,d LFkku ihNs dh rjQ Move djuk gksxkA bl izfØ;k dks ge fuEu fp= }kjk le> ldrs gSa& 
+ 
+10 
+25 
+32 
+100 
+45 
+95 
+75 
+ 
+ 
+ 
+ 
+;fn ge K dk eku 5 ekusa rks Index Number 5-1 = 4 ds Data Item dks  Delete djuk gSA 
+tc ge Index Number 4 ds Data Item dks Delete djuk pkgrs gSa rks gesa cl bruk gh djuk 
+gS fd Index Number 4 ds Data Item ij Index Number 5 ds Data Item dks Place dj 
+nsaA ;kuh Index Number 4 ds ckn ds lHkh Data Items dks ,d LFkku vkxs ljdk nsaA ,slk 
+djus ij ;s Array fuEukuqkj fn[kkbZ nsxk% 
+ 
+10 
+25 
+32 
+100 
+95 
+75 
+0 
+ 
+ 
+ 
+ 
+fdlh Linear Array ls Deletion dk Algorithm fuEukuqlkj gks ldrk gS& 
+ 
+Algorithm 
+1 
+START 
+2 
+DECLARE LArray[N], I, K 
+3 
+SET ITEM = LArray[K] 
+4 
+REPEATE FOR I = K TO N-1 STEP I = I + 1 
+5 
+SET LArray[I] = LArray[I+1]  
+[Shift Data Item to Left]  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[End of the Loop] 
+6 
+END 
+ 
+bu nksuksa Algorithms dk ge fuEukuqlkj iz;ksx djds Program cuk ldrs gSa& 
+ 
+Program 
+ 
+#include <stdlib.h> 
+ 
+#include <stdio.h> 
+ 
+#include <conio.h> 
+ 
+#define SIZE 10 
+ 
+main() 
+ 
+36 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+{ 
+ 
+ 
+int Array[SIZE] = {1,10,20,0}; 
+ 
+ 
+int i, j, item, id; 
+ 
+ 
+char choice; 
+ 
+ 
+ 
+while(1) 
+ 
+ 
+{ 
+ 
+ 
+ 
+printf("\n1.    Insert Data Item"); 
+ 
+ 
+ 
+printf("\n2.    Delete Data Item"); 
+ 
+ 
+ 
+printf("\n3.    Display Data Item"); 
+ 
+ 
+ 
+printf("\n4.    Exit"); 
+ 
+ 
+ 
+printf("\n\nEnter Your Choice  "); 
+ 
+ 
+ 
+scanf("%d", &choice); 
+ 
+ 
+ 
+switch(choice) 
+ 
+ 
+{ 
+ 
+ 
+ 
+case 1: 
+//Insertion Operation on the Array 
+ 
+ 
+ 
+ 
+printf("Enter Index Number [0 to 9] "); 
+ 
+ 
+ 
+ 
+Label: 
+ 
+ 
+ 
+ 
+fflush(stdin); 
+ 
+ 
+ 
+ 
+scanf("%d", &id); 
+ 
+ 
+ 
+ 
+if(id < 0 || id > SIZE-1) 
+ 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+ 
+ 
+printf("Index Number Must Be BETWEEN 0 to 9 "); 
+ 
+ 
+ 
+ 
+ 
+goto Label; 
+ 
+ 
+ 
+ 
+} 
+ 
+ 
+ 
+ 
+printf("Enter Value  "); 
+ 
+ 
+ 
+ 
+scanf("%d", &item); 
+ 
+ 
+ 
+ 
+for(i = SIZE-1; i >= id; i--) 
+ 
+ 
+ 
+ 
+Array[i] = Array[i-1]; 
+ 
+ 
+ 
+ 
+ 
+Array[i+1] = item; 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+ 
+case 2: 
+//Deletion Operation on the Array 
+ 
+ 
+ 
+ 
+printf("Enter ID  "); 
+ 
+ 
+ 
+ 
+scanf("%d", &id); 
+ 
+ 
+ 
+ 
+ 
+for(j=id; j<SIZE; j++) 
+ 
+ 
+ 
+ 
+Array[j] = Array[j+1]; 
+ 
+ 
+ 
+ 
+  Array[j-1] = 0; 
+ 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+ 
+case 3: 
+//Traversing Operation on the Array 
+ 
+37 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+ 
+ 
+for(i=0; i<SIZE; i++) 
+ 
+ 
+ 
+ 
+printf("Value at ID %d is %d \n", i, Array[i]); 
+ 
+ 
+ 
+break; 
+ 
+ 
+ 
+ 
+case 4: 
+ 
+ 
+ 
+ 
+exit(1); 
+ 
+ 
+ 
+} 
+ 
+ 
+} 
+ 
+} 
+ 
+ 
+Sorting 
+fdlh Data Structure ds lHkh Data dks ,d O;ofLFkr Øe esa j[kuk Sorting dgykrk gSA ;s 
+nks izdkj dh gksrh gS] vkjksgh Øe esa ;k vojksgh Øe esaA vkjksgh Øe esa lcls de eku dk Data 
+List dh “kq:vkr esa o lcls vf/kd eku dk Data List ds var esa Store gksrk gS] tcfd vojksgh 
+Øe esa Bhd blds foijhr fØ;k gksrh gSA ;kuh lcls vf/kd eku dk Data lcls igys o lcls 
+de eku dk Data List esa lcls ckn esa Store gksrk gSA Data Processing ds varxZr Sorting 
+dks eq[;r% rhu Hkkxksa esa ckaVk x;k gS% 
+ 
+Bubble Sort 
+;g vR;f/kd dke esa vkus okyh lcls lk/kkj.k rduhd gSA blesa fdlh Hkh Array ds izFke eku 
+dh rqyuk Array ds nwljs eku ls djrs gSaA ;fn Array dk nwljk eku izFke eku ls cMk gS] rks 
+vkjksgh Øe esa tekus ds fy;s nwljs Data dks izFke LFkku ij j[k fn;k tkrk gS o izFke LFkku ds 
+Data dks nwljs LFkku ijA  
+ 
+fQj Array ds nwljs eku dh rqyuk rhljs eku ls djrs gSa vkSj ;fn rhljk eku nwljs eku ls cMk 
+gS rks rhljs eku dh txg nwljk eku o nwljs eku dh txg rhljk eku j[k fn;k tkrk gSA ;fn 
+nwljk eku rhljs eku ls cMk ugha gS rks Array ds nwljs o rhljs ekuksa ds LFkku esa dksbZ ifjorZu 
+ugha fd;k tkrk gSA  
+ 
+ekuksa ds LFkku ifjorZu dk ;s Øe rc rd pyk;k tkrk gS] tc rd fd lkjs eku vkjksgh Øe esa 
+O;ofLFkr uk gks tk,A ;s Øe N-1 ckj pyk;k tkrk gS] tgka N Array ds dqy ekuksa dh la[;k gSA 
+Bubble Sort dk Algorithm fuEukuqlkj gS% 
+ 
+Algorithm 
+Here LArray[N] is an Array with N Elements. This Algorithm SORTS the Data Items of the 
+Array  
+ 
+1 
+START 
+2 
+REPEATE FOR I = 1 To N – 1 STEP I = I + 1 [ Outer Loop] 
+ 
+38 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+3 
+REPEATE FOR J = 1 To N – I STEP J = J + 1 [ Inner Loop ] 
+4 
+IF LArray[ J ] > LArray[ J + 1 ] 
+5 
+LArray[ J ] = LArray[ J + 1 ]  
+ 
+ 
+ 
+ 
+ 
+ 
+[ Interchange Data Items ] 
+ 
+[ End of Inner Loop ] 
+ 
+[ End of Outer Loop ] 
+6 
+End  
+ 
+ 
+Bubble Sort rc cgqr mi;ksxh gksrk gS tc List yxHkx Sorted gks vkSj dsoy dqN gh bdkbZ;ksa 
+dh Sorting djuh gksA tc bdkbZ;ksa dh la[;k vf/kd gksrh gS] rc bl fof/k esa Program dh 
+xfr dkQh de gks tkrh gS] D;ksafd N-1 ckj List dks O;ofLFkr djuk iMrk gSA bl Algorithm 
+dk iz;ksx djrs gq, ge fuEukuqlkj ,d Function cuk ldrs gSa ftls fdlh Hkh Main Function 
+esa Call fd;k tk ldrk gSA Function fuEukuqlkj gS% 
+ 
+Function 
+ 
+void BubbleSort(int *Array, int size) 
+ 
+{ 
+ 
+ 
+int i, j, temp; 
+ 
+   for(i=0; i<size; i++) 
+ 
+   { 
+    
+ 
+for(j=0; j<size-i; j++) 
+ 
+ 
+  { 
+        
+if(Array[j]>Array[j+1]) 
+ 
+ 
+ 
+ { 
+          
+ 
+temp = Array[j]; 
+ 
+ 
+ 
+ 
+Array[j] = Array[j+1]; 
+ 
+ 
+ 
+ 
+Array[j+1] =temp; 
+ 
+ 
+ 
+ } 
+ 
+ 
+  } 
+ 
+   } 
+ 
+} 
+ 
+ 
+bl Function esa nks Argument Calling Function ls vkrs gSaA igys Argument esa ,d Array 
+dk Base Address vkrk gS ftlds fofHkUu Elements dks Sorting Order esa j[kuk gS vkSj 
+nwljs Argument esa Array dh Size iznku dh tkrh gSA pwafd bl Function esa Array dk 
+Base Address vkrk gS blfy, bl Function }kjk tks Sorting gksrh gS og Calling 
+Function ds Array dh Sorting gksrh gSA  
+ 
+Bubble Sort ds Algorithm ls ge le> ldrs gSa fd ;s Algorithm List esa ls lcls NksVs Data 
+Item dks Search djrk gS vkSj ml Data Element dks mldh Final Position ij Place dj 
+nsrk gSA fQj nwljs Iteration esa nwljs Element ls “kq: djrk gS vkSj cps gq, Elements esa ls 
+lcls NksVs Data Item dks [kkst dj mldh Final Position ij Hkstrk gSA  
+ 
+ 
+39 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Algorithm esa ge ns[k ldrs gSa fd ;fn Data Items dh la[;k n gks rks Outer Loop n ckj 
+pyrk gS vkSj Outer Loop ds vk/kkj ij Smallest Data Find djus ds fy, Inner Loop n-i 
+ckj Comparison djrk gSA ;kuh dqy Comparisons dh la[;k fuEukuqlkj gksrh gS% 
+ 
+ 
+Elements E( n ) = 
+i = 1 To n SIGMA( n-i ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+(n-1) + (n-2) + (n-2) + . . . + 2 + 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+n(n-1)/2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O(n2) – O(n/2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O(n2) 
+lkjka”k esa dgsa rks Bubble Sort Algorithm dh Complexity O(n2) gksrh gSA 
+ 
+ 
+Selection Sort 
+bl izdkj dh Sorting esa List dh izFke bdkbZ ls “kq: djds iwjh List esa U;wure eku dks [kkstk 
+tkrk gSS vkSj ml eku dks List ds izkjaHk esa j[k fn;k tkrk gSA mlds ckn “ks’k List esa ls nwljs 
+LFkku ds fy;s U;wure eku dks [kkstk tkrk gS vkSj izkIr eku dks nwljs LFkku ij j[k fn;k tkrk 
+gSA fQj rhljs LFkku ds fy;s ;gh Øe viukrs gS vkSj rhljs LFkku ij “ks’k List esa ls izkIr U;wure 
+eku dks j[k fn;k tkrk gSA ;s Øe rc rd pyrk gS] tc rd fd iwjh List dh Sorting ugha gks 
+tkrhA bldk Algorithm fuEukuqlkj gksrk gS% 
+ 
+Algorithm 
+Here LArray[N] is an Array with N Elements. This Algorithm SORTS the Data Items of the 
+Array  
+ 
+1 
+START 
+2 
+REPEATE FOR I = 1 To N – 1 STEP I = I + 1  
+ 
+ 
+ 
+ 
+ 
+[Outer Loop] 
+3 
+REPEATE FOR J = I + 1 To N – 1 STEP J = J + 1 [ Inner Loop ] 
+4 
+IF LArray[ I ] > LArray[ J ] 
+5 
+LArray[ I ] = LArray[ J ]  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+[ Interchange Data Items ] 
+ 
+[ End of Inner Loop ] 
+ 
+[ End of Outer Loop ] 
+6 
+End  
+ 
+ 
+bl Algorithm dh Complexity bl ckr ij fuHkZj djrh gS fd Data Structure esa Data fdl 
+rjg ls Organized gSaA ;fn Data yxHkx Sorted gks rks bl Algorithm dh Complexity de 
+gksrh gSA ysfdu fQj Hkh bl Algorithm dh Complexity O(n2) ls vf/kd ugha gks ldrhA ;kuh 
+Data dk vf/kdre Comparison n2 ckj gks ldrk gSA bl Algorithm dk iz;ksx djds ge 
+fuEukuqlkj Sorting dk Function cukdj vius Program esa Use dj ldrs gSaA  
+ 
+Program 
+ 
+void SelectionSort(int *Array, int size) 
+ 
+40 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+{ 
+ 
+ 
+int i, j, temp; 
+ 
+   for(i=0; i<size; i++) 
+ 
+   { 
+    
+ 
+for(j=i+1; j<size; j++) 
+ 
+ 
+  { 
+        
+if(Array[i]>Array[j]) 
+ 
+ 
+ 
+ { 
+          
+ 
+temp = Array[i]; 
+ 
+ 
+ 
+ 
+Array[i] = Array[j]; 
+ 
+ 
+ 
+ 
+Array[j] =temp; 
+ 
+ 
+ 
+ } 
+ 
+ 
+  } 
+ 
+   } 
+ 
+} 
+ 
+Insertion Sort 
+bl Method esa lEiw.kZ List dks nks Hkkxksa Sorted Part o Unsorted Part es ckaVk tkrk gSA 
+List ds Unsorted Part ls ,d bdkbZ ysdj Sorted Part esa mi;qDr LFkku ij j[krs gSaA ;g 
+izfØ;k rc rd pykrs gSa tc rd fd Unsorted Part dh lHkh bdkbZ;ka Sorted Part esa 
+O;ofLFkr ugha gks tkrhA bldk Algorithm fuEukuqlkj gksrk gSA bl Method esa nks in gksrs gSaA  
+ 
+Sorted Hkkx dks i< dj ml LFkku dks fpfUgr djuk gksrk gS tgka ij Unsorted Hkkx ls bdkbZ 
+ykdj Insert djokuk gSA bl izfØ;k esa bdkbZ ds fy;s LFkku cukus ds fy;s “ks’k bdkbZ;ksa dks 
+Right Side esa Shift djuk gksrk gSA mlds ckn cuk, x, LFkku esa bdkbZ dks izos”k djok nsrs gSaA 
+bl Method dk Algorithm fuEukuqlkj gksrk gS% 
+ 
+Algorithm 
+Here LArray[N] is an Array with N Elements. This Algorithm SORTS the Data Items of the 
+Array  
+ 
+1 
+START 
+2 
+REPEATE FOR I = 1 To N – 1 STEP I = I + 1  
+ 
+ 
+[ Outer Loop ] 
+3 
+REPEATE FOR J = 0 To I STEP J = J + 1  
+ 
+ 
+ 
+[ Inner Loop ] 
+4 
+IF LArray[ J ] > LArray[ I ] 
+5 
+TEMP = LARRAY[ J ] 
+6 
+LArray[ J ] = LArray[ I ]  
+ 
+7 
+REPEATE FOR K = I To J STEP K = K + 1 
+ 
+ 
+ 
+[ Inner Loop ] 
+8 
+LARRAY[ K ] = LARRAY[ K – 1 ] 
+9 
+LARRAY[ K + 1 ] = TEMP 
+ 
+[ End of Inner Loop ] 
+ 
+[ End of Inner Loop ] 
+ 
+41 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+[ End of Outer Loop ] 
+10 End  
+ 
+ 
+bl fof/k ls Sorting rc dh tkuh pkfg;s tc bdkbZ;kssa dh la[;k de gksrh gSA tc bdkbZ;ksa dh 
+la[;k vf/kd gksrh gS] rc ;s fof/k Bhd ugha jgrh D;ksafd bdkbZ;ksa ds fy;s txg cukus esa le; 
+yxrk gS ftlls Program dh xfr de gks tkrh gSA bl Algorithm dh Complexity esa de ls 
+de n–1 ckj Comparison djuk iMrk gSA bl Algorithm dk iz;ksx djds ge fuEukuqlkj ,d 
+Function cuk ldrs gSa ftls fdlh Hkh Program esa Use fd;k tk ldrk gS% 
+ 
+Program 
+ 
+void sort(int *Array, int size) 
+ 
+{ 
+ 
+ 
+int i, j, k, temp; 
+ 
+   for(i=0; i<size; i++) 
+ 
+   { 
+    
+ 
+for(j=0; j<i; j++) 
+ 
+ 
+  { 
+        
+if(Array[j]>Array[i]) 
+ 
+ 
+ 
+ { 
+          
+ 
+temp = Array[j]; 
+ 
+ 
+ 
+ 
+Array[j] = Array[i]; 
+ 
+ 
+ 
+ 
+ 
+for(k=i; k>j; k--) 
+ 
+ 
+ 
+ 
+Array[k] = Array[k-1]; 
+ 
+ 
+ 
+ 
+ 
+Array[k+1] = temp; 
+ 
+ 
+ 
+ } 
+ 
+ 
+  } 
+ 
+   } 
+ 
+} 
+ 
+Insertion Algorithm dk iz;ksx rc fd;k tk ldrk gS tc Data Items n dh la[;k de gksA 
+bl Algorithm dk Inner Loop i-1 Comparisons djrk gSA ;kuh  
+ 
+ 
+Elements E( n ) = 
+i = 1 To n SIGMA( i-1 ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+1 + 2 + 3 + . . . + n-1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+n(n-1)/2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O(n2) – O(n/2) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O(n2) 
+ 
+Average Case esa bl Algorithm dh Complexity dks fuEukuqlkj n”kkZ;k tk ldrk gS% 
+ 
+ 
+Elements E( n ) = 
+i = 1 To n SIGMA( i-1 )/2 
+ 
+42 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+(1 + 2 + 3 + . . . + n-1)/2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+n(n-1)/4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+= 
+O(n2) 
+ 
+ge ns[k ldrs gSa fd nksuksa gh fLFkfr;ksa esa bl Algorithm dh Complexity O(n2) gksrh gSA 
+ 
+,d izksxzke cukvks tks nl vad Input ys vkSj mls vkjksgh dze esa Output esa Print djsaA 
+ 
+Program 
+ 
+#include<stdio.h> 
+ 
+main() 
+ 
+{ 
+ 
+int a[10], n, j, i; 
+ 
+clrscr(); 
+ 
+ 
+for(i=0;i<10;i++) 
+ 
+{ 
+ 
+ 
+printf("enter the a:"); 
+ 
+ 
+scanf("%d", &a[i]); 
+ 
+} 
+ 
+ 
+for(i=0;i<10;i++) 
+ 
+{ 
+ 
+ 
+for(j=0; j<=i; j++) 
+ 
+ 
+{ 
+ 
+ 
+ 
+if(a[i]<a[j]) 
+ 
+ 
+ 
+{ 
+ 
+ 
+ 
+   n=a[i]; 
+ 
+ 
+ 
+   a[i]=a[j]; 
+ 
+ 
+ 
+   a[j]=n; 
+ 
+ 
+ 
+} 
+ 
+ 
+} 
+ 
+} 
+ 
+for(i=0;i<10;i++) 
+ 
+ 
+printf("\n%d", a[i]); 
+ 
+getch(); 
+ 
+} 
+ 
+ 
+,d izksxzke cukvks tks nl vad Input ys vkSj mls vojksgh dze esa Output esa Print djsaA 
+ 
+Program 
+ 
+#include<stdio.h> 
+ 
+43 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+main() 
+ 
+{ 
+ 
+int a[10], n, i, j, sum = 0; 
+ 
+clrscr(); 
+ 
+for(i=0; i<10; i++) 
+ 
+{ 
+ 
+ printf("Enter the a:"); 
+ 
+ scanf("%d", &a[i]); 
+ 
+ } 
+ 
+ 
+for(i=0;i<10;i++) 
+ 
+{ 
+ 
+   for(j=0; j<=i; j++) 
+ 
+   { 
+ 
+ 
+ if(a[i]>a[j]) 
+ 
+ 
+ { 
+ 
+ 
+ n=a[i]; 
+ 
+ 
+ a[i]=a[j]; 
+ 
+ 
+ a[j]=n; 
+ 
+ 
+ } 
+ 
+   } 
+ 
+} 
+ 
+ 
+for(i=0;i<10;i++) 
+ 
+ 
+printf("%d\n", a[i]); 
+ 
+ 
+sum = sum + a[j+i]; 
+ 
+printf("sum = %d", sum); 
+ 
+ 
+getch(); 
+ 
+} 
+ 
+ 
+Searching 
+ftl izdkj ls fdlh Telephone Directory esa fdlh uke ls Telephone Number [kkstrs gSa 
+;k fdlh Telephone Number ls uke [kkstrs gSa] ;k fdlh student ds Roll Number }kjk 
+Student dk Record [kkstk tkrk gS] Bhd blh izdkj ls ,d Key }kjk fdlh Hkh Data 
+Structure ls ml Key ls lEcaf/kr lkjh tkudkjh izkIr dh tk ldrh gSA  
+ 
+tSls ;fn gesa Telephone Directory ls 223344 Number fdl O;fDr dk gS vkSj og O;fDr 
+dgka jgrk gS] ;s tkuuk gks] rks ge bl Number dks Telephone Directory ds gj Number 
+ls Compare djrs gSa] vkSj tgka ;s Comparison ,dne esy djrh gS] lEcaf/kr O;fDr dk uke 
+ 
+44 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+irk vkfn ge tku ysrs gSaA bl izdkj ls ;s Telephone Number ,d Key ds :i esa Use 
+fd;k tkrk gS] tks ckdh dh lEcaf/kr tkudkjh ns nsrk gSA ;gh izfØ;k ge Data Structure ds 
+lkFk Hkh djrs gSaA Computer esa Searching nks izdkj dh gksrh gS% 
+ 
+Internal Search  
+tc lHkh Records Computer dh Main Memory esa gksrs gSa] rks Main Memory ls dh tkus 
+okyh Searching Internal Search dgykrh gSA 
+ 
+External Search 
+tc Records cMs gksrs gSa o Records dh la[;k vf/kd gksrh gS] rc Records dks Hard disk 
+ij laxzfgr dj fy;k tkrk gSA fQj bl Hard Disk ls Searching dh tkrh gSA bl 
+Searching dks External Searching dgk tkrk gSA Internal Searching ds Hkh nks Hkkx gSaA 
+ 
+Linear Searching  
+ 
+ 
+fdlh vO;ofLFkr List esa ls Searching djus dh ;g lcls ljy fof/k gksrh gSA tSls fdlh 
+Data Structure Array esa gesa ;s [kkstuk gks] fd vad 10 mifLFkr gS ;k ughaA ;g tkuus ds 
+fy;s ,d Key Variable ysaxs vkSj ml Key dk eku 10 dj nsaxsA fQj Øe ls bl Key ds eku 
+dh rqyuk Array ds gj Element ls djsaxsA Array ds gj Element ls Key ds eku dh rqyuk 
+dk ;s Øe rc rd pyrk jgrk gS] tc rd fd Array ds fdlh Element dk eku 10 izkIr uk 
+gks tk, ;k fQj Array ds lHkh Elements dk var uk gks tk,A bldk Algorithm fuEukuqlkj 
+fy[k ldrs gSaA ekuk iq.kkZad ekuksa dk ,d Array ARRAY[N] gSA 
+ 
+Algorithm 
+1 
+LET COUNT = 1; and  FOUND =0; 
+2 
+While ( COUNT < N ) DO 
+ 
+ 
+If ARRAY[COUNT] =  VALUE then FOUND = COUNT 
+ 
+ 
+COUNT = COUNT + 1; 
+3 
+Print FOUND 
+4 
+END 
+ 
+;g ,d vPNh rduhd gS] ysfdu bl rduhd esa Array ds gj Element dks Check djuk 
+iMrk gS] ftlls Program dh xfr de gks tkrh gSA bls fuEu fp= esa fn[kk;k x;k gS& 
+ 
+ 
+ 
+45 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+bl Algorithm ij vk/kkfjr ,d izksxzke ns[krs gSa] ftlesa ,d Array esa Store fofHkUu vadksa esa ls 
+eupkgs vad dks [kkstuk gS] fd veqd vad List esa miyC/k gS ;k ugha\ 
+ 
+Program 
+ 
+#include<stdio.h> 
+ 
+main() 
+ 
+{ 
+ 
+int j, k[10] , key, found=-1; 
+ 
+clrscr(); 
+ 
+for ( j = 0; j<10; j++) 
+ 
+{ 
+ 
+ 
+printf("Enter %d digit  ", j+1); 
+ 
+ 
+scanf("%d", &k[j] ); 
+ 
+} 
+ 
+printf("\n Which Number Do you want to FIND "); 
+ 
+scanf("%d", &key); 
+ 
+ 
+for ( j = 0; j<10; j++) 
+ 
+{ 
+ 
+ 
+if( k[j] == key ) 
+ 
+ 
+found=key; 
+ 
+} 
+ 
+ 
+if(found > -1 ) 
+ 
+ 
+printf("\n Number is present in The List "); 
+ 
+if(found < 0) 
+ 
+ 
+printf("\n The Number is not Present in the List "); 
+ 
+getch(); 
+ 
+} 
+ 
+Output 1 
+Enter 1 digit  4 
+Enter 2 digit  344 
+Enter 3 digit  344 
+Enter 4 digit  34 
+Enter 5 digit  434 
+Enter 6 digit  434 
+Enter 7 digit  34 
+Enter 8 digit  555 
+Enter 9 digit  55 
+Enter 10 digit 5 
+Which Number Do you want to FIND 2 
+ 
+46 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+The Number is not Present in the List 
+ 
+Output 1 
+Enter 1 digit  1 
+Enter 2 digit  2 
+Enter 3 digit  3 
+Enter 4 digit  4 
+Enter 5 digit  5 
+Enter 6 digit  6 
+Enter 7 digit  7 
+Enter 8 digit  87 
+Enter 9 digit  89 
+Enter 10 digit  9 
+ 
+Which Number Do you want to FIND 9 
+ 
+Number is present in The List 
+ 
+ 
+bl izksxzke esa Linear Searching dh xbZ gSA lcls igys ,d Array esa ekuksa dks Input fd;k 
+x;k gSA fQj ,d Key uke ds Variable esa oks vad ysrs gSa ftls List esa [kkstuk gSA bl vad dks 
+Loop }kjk Array ds gj Element ls Check fd;k tkrk gSA  
+ 
+;fn key dk vad Array esa izkIr gksrk gS rks if condition lR; gks tkrh gS vkSj  Found uke ds 
+Variable esa key dk vad izkIr gks tkrk gSA ;fn key dk vad list esa izkIr ugha gksrk gS] rks 
+found dk eku -1 tks fd found dks Declare djrs le; gh ns fn;k x;k Fkk] jgrk gSA  
+ 
+;fn List esa key dk eku fey tkrk gS rks found dk eku -1 ls vf/kd jgrk gS vkSj Output esa 
+Massage feyrk gS fd List es vad miyC/k gSA ;fn List esa vad miyC/k ugha gksrk gS rks 
+found dk eku -1 gksus ds dkj.k 0 ls NksVk jgrk gSA blfy;s Output esa Massage izkIr gksrk 
+gS fd tks vad [kkstk tk jgk gS og vad List esa miyC/k ugha gSA bl izdkj ls Linear 
+Searching dh tkrh gSA 
+ 
+Linear Search Algorithm dh Complexity dks Hkh ge f(n) Function dk iz;ksx djds irk dj 
+ldrs gSaA ;fn fdlh Linear Data Structure esa n Data gksa rks ml Data Structure ls fdlh 
+ITEM dks Find djus ds fy, Worst Case Algorithm esa gesa vf/kdre n+1 ckj 
+Comparisons djus gksaxs] tcfd ;fn Data ITEM Data Structure ds vUr esa gks ;k ITEM 
+Data Structure esa uk gksA tcfd Average Case Algorithm esa ITEM ds izkIr gksus dh 
+lEHkkouk n+1/2 gksrh gSA 
+ 
+ 
+ 
+47 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+Binary Searching 
+;s vR;f/kd mi;qDr rduhd gS ysfdu bldk iz;ksx dsoy Sorted List ij gh fd;k tk ldrk 
+gSA Linear Searching dh rqyuk esa Binary Searching cgqr Fast xfr ls dke djrh gSA 
+ekuk fd  
+ 
+Lowest  
+= List dk U;wure eku 
+Highest  = List dk vf/kdre eku 
+Mid 
+ 
+= List dk e/;eku 
+ 
+Mid  
+ 
+= Lowest + Highest / 2 
+ 
+bl izfØ;k esa Key ds eku dh List ds e/;eku ls rqyuk dh tkrh gSA ;fn e/;eku Mid Key 
+ds eku ls vf/kd gksrk gS rks Key ds eku dh rqyuk List ds Lowest Hkkx ls dh tkrh gSA 
+ 
+Highest = Mid - 1 
+ 
+rFkk Mid ds u, eku dks okil Mid = Lowest + Highest / 2 }kjk izkIr fd;k tkrk gSA ;fn 
+Key dk eku Mid ds eku ls vf/kd gksrk gS] rks Key ds eku dks List ds Highest Hkkx esa [kkstk 
+tkrk gSA ;kuh 
+ 
+Lowest = Mid + 1 
+ 
+okil ls mijksDr lq= }kjk Mid dk u;k eku izkIr fd;k tkrk gSA ;s Øe rc rd pyrk jgrk gS 
+tc rd fd Key dk eku izkIr uk gks tk, ;k List lekIr uk gks tk,A Binary Search dh 
+Algorithm fuEukuqlkj gSA  
+ 
+ekuk N Elements dh ,d Sorted List int X[N] gSA ;fn Key dk eku List esa fey tkrk gS] 
+rks mls FOUND esa Store djuk gSA fuEu fp= }kjk bls le>kus dh dksf”k”k dh tk jgh gSA 
+ftlesa 1 dks [kkstk tk jgk gSA ;kuh x = 1 gSA 
+ 
+ 
+Array[10] 
+ 
+low = 0; 
+ 
+high = n-1; so high = 10-1 = 9  
+ 
+mid = 0 + 9 / 2  
+ 
+mid = 4 
+ 
+Index Number 4 ij eku 5 gS blfy, x dk eku array[mid] ;kuh Array[4] ds cjkcj ugha gSA  
+ 
+ 
+ 
+48 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+x dk eku mid ls NksVk gS blfy, Key dk eku Array ds Lower Part esa gksxkA blfy, Loop 
+ds Second Iteration esa low dk eku 0 gh jgsxk ysfdu high dk eku Change gksdj mid+1 gks 
+tk,xkA ;kuh  
+ 
+ 
+low = 0; 
+ 
+high = n-1; so high = 3-1 + 1 = 4 
+ 
+mid = 0 + 4 / 2  
+ 
+mid = 2 
+ 
+ 
+ 
+Index Number 3 ij fLFkr eku Key x ds eku ds cjkcj ugha gS] blfy, x ds eku dks okil 
+Check fd;k tkrk gS fd x dk eku mid ds eku ls de gS ;k vf/kdA pwafd x dk eku 1 gS 
+vkSj mid eku 3 gS blfy, okil x dk eku Array ds Lower Part esa gksxkA okil low ds eku 
+esa dksbZ ifjorZu ugha gksxk ysfdu high dk eku mid+1 gks tk,xkA ;kuh  
+ 
+ 
+low = 0; 
+ 
+high = n-1; ( mid + 1 )so high = 2-1 + 1 = 2 
+ 
+mid = 0 + 2 / 2  
+ 
+mid = 1 
+ 
+ 
+ 
+vxys Iteration esa x dk eku Array ds izFke Element ij izkIr gks tk,xkA Binary Search 
+dk Algorithm ge fuEukuqlkj fy[k ldrs gSa& 
+ 
+Algorithm:  
+1 
+Let LOWEST = 0 ; HIGHEST = N; FOUND = 0; and  flag = false; 
+2 
+WHILE [ ( LOWEST = HIGHEST ) .AND. ( flage = false)] 
+ 
+ 
+Perform steps 3 to 5  
+3 
+Mid  
+= 
+Lowest + Highest / 2 
+4 
+IF X[MID] = (‘A’) then [FOUND = MID; flage = true]; 
+5 
+IF X[mid] < ‘A’ then LOWEST = MID – 1; 
+ 
+ 
+ELSE HIGHEST = MID – 1; 
+6 
+IF ( flage = true ) then print FOUND 
+ 
+49 
+ 
+www.BccFalna.com 
+ 
+Data Structure with “c” in hinDi 
+ 
+ 
+ELSE ‘unsuccessful search’; 
+7 
+END 
+ 
+Program  
+ 
+#include<stdio.h> 
+ 
+#include<conio.h> 
+ 
+main() 
+ 
+{ 
+ 
+int j, n, x, found, count, a[10], low, high, mid; 
+ 
+clrscr(); 
+ 
+printf("Number of Elements in the Array ( <=10): "); 
+ 
+scanf("%d”,&n); 
+ 
+for(j=0; j<n; j++) 
+ 
+{ 
+ 
+printf("\n Enter The Elements:”); 
+ 
+scanf("%d”, &a[j]); 
+ 
+} 
+ 
+for(j=0; j<n; j++) 
+ 
+ 
+printf("\n The Entered Array is %d \t", a[j]); 
+ 
+ 
+printf("\n Enter The Element to be searched : "); 
+ 
+scanf("%d”, &x); 
+ 
+ 
+low = 0; 
+ 
+high=n-1; 
+ 
+found = -1; 
+ 
+ 
+while((low <= high ) && ( found == -1 )) 
+ 
+{ 
+ 
+mid=(low + high ) / 2; 
+ 
+if(a[mid] == x ) 
+ 
+ 
+found = mid; 
+ 
+ 
+else if(a[mid] < x ) 
+ 
+low = mid + 1; 
+ 
+ 
+else 
+ 
+high = mid -1; 
+ 
+} 
+ 
+ 
+printf("\n”); 
+ 
+if(found > -1) 
+ 
+ 
+printf("\n Position of the required element ( from 0 position ) is:  
+ 
+ 
+%d”, found); 
+ 
+else 
+How to Get Complete PDF EBook 
+आप Online Order करके  Online या Offline Payment करते हुए इस Complete EBook को तुरन् त 
+Download कर सकते हैं।  
+Order करने और पुस् तक को Online/Offline Payment करते हुए खरीदने की पूरी प्रक्रिया की क्रिस् तृत नानकारी प्रा‍ त 
+करने के  क्रिए आप BccFalna.com के  क्रनम् न Menu Options को Check Visit कर सकते हैं।  
+How to Make Order 
+How to Order? 
+ 
+How to Buy Online 
+How to Pay Online using PayUMoney 
+How to Pay Online using Instamojo 
+How to Pay Online using CCAvenue 
+ 
+How to Buy Offline 
+How to Pay Offline 
+Bank A/c Details 
+ 
+नक्र‍ क हरारे Old Buyers के  Reviews भी देख सकते हैं ताक्रक आप इस ‍ात का क्रनर्णय िे सकें  क्रक हरारे Buyers हरारे 
+PDF EBooks से क्रकतने Satisfied हैं और यक्रद आप एक से अक्रिक EBooks खरीदते हैं, तो Extra Discount की 
+Details भी Menubar से प्रा‍ त कर सकते हैं।  
+
