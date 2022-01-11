@@ -1,0 +1,5 @@
+<form action="/availability_enter/" method="POST">
+    {% csrf_token %}
+    <input type="text" name="book_id" placeholder="Enter Book ID" />
+    <input type="submit" name="submit" value="OK" />
+</form>

@@ -1,0 +1,99 @@
+.sidenav{
+    height: 100vh; 
+    width: 0; 
+    position: fixed; 
+    z-index: 5; 
+    top: 0;
+    left: -5px;
+    overflow-x: hidden; 
+    padding-top: 20px; 
+    transition: 0.5s; 
+    border-right:5px double rgb(200,200,200);
+	background: linear-gradient(to bottom, royalblue 0%, lightblue 100%); 
+}
+  
+  
+/* The navigation menu links */
+.sidenav p {
+    padding: 12.5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background:dodgerblue;
+    display: block;
+    font-weight:normal;
+	border-radius:2px 5px 5px 2px;
+	margin-top:5px;
+	margin-left:5%;
+	margin-right:20%;
+	width:220px;
+    transition: 0.3s;
+}
+
+.sidenav p b{
+    font-weight:bold;
+    font-size:30px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 12.5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+	border:1px solid white;
+	border-radius:2px 5px 5px 2px;
+	background:royalblue;
+	margin-top:5px;
+	margin-left:5%;
+	margin-right:20%;
+	width:220px;
+    transition: 0.3s;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color:var(--primary-color);
+	border-color:white;
+	background:linear-gradient(to right,white 0%,rgb(200,200,200) 80%);
+	width:250px;
+	font-weight:bold;
+}
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    font-size: 22px;
+    display:none;
+    width:20px;
+	border-radius:5px;
+	border:1px solid rgb(200,200,200);
+	background:orange;
+}
+.sidenav .closebtn:hover{
+	background:tomato;
+	border:1px solid tomato;
+	color:white;
+	width:20px;
+	
+}
+.sidenav_btn{
+      left:20px;
+      font-size:22px;
+}
+  
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width:980px){
+    .sidenav_btn{
+        left:5px;
+        display:block;
+    }
+}

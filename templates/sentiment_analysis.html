@@ -1,0 +1,33 @@
+<p>Sentiment analysis</p>
+
+<form action='/validate_sentiment_analysis/' method='post'>
+    {% csrf_token %}
+    <textarea type='text' name='text' placeholder='Type your text' ></textarea><br><br>
+    <button type='submit'>Validate</button>
+</form>
+
+<style>
+p{
+    font-size:30px;
+    color:dodgerblue;
+    font-weight:bold;
+}
+textarea{
+    height:200px;
+    width:500px;
+    font-size:22px;
+    padding:5px;
+    border-radius:5px;
+    border:2px solid dodgerblue;
+}
+button{
+    font-size:22px;
+    padding:10px;
+    width:300px;
+    border:none;
+    outline:none;
+    background:dodgerblue;
+    color:white;
+    border-radius: 5px;
+}
+</style>

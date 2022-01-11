@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+    
+    
+    
+html{
+    background: rgb(50,50,50);
+    font-family:'Cabin', sans-serif;
+}
+
+.container{
+    background: white;
+    border-radius:10px;
+    padding:20px;
+}
+
+#heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#btn{
+    margin-top:10px;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    width:400px;
+    padding:20px;
+    font-size:20px;
+    background:linear-gradient(to right, dodgerblue 0%, deepskyblue 100%);
+    color:white;
+    font-weight:bold;
+    font-family:'Cabin', sans-serif;
+}
+
+#btn:active{
+    transform:scale(0.95);
+}

@@ -1,0 +1,11 @@
+book_id,user_id,comment,result,sentiment
+2,2,Good book i personally recommend this book for everyone.,Positive,0.35
+2,2,Bad One. Hate this Book.,Negative,-0.75
+2,2,Nice one,Positive,0.6
+1,2,Nice Book,Positive,0.6
+2,2,Good book. I recommend to everyone.,Positive,0.7
+631,2,good book for investing related studies,Positive,0.35
+631,2,waste of time,Negative,-0.2
+258,2,good,Positive,0.7
+950,2,more informative,Positive,0.5
+876,2,more informative content,Positive,0.5

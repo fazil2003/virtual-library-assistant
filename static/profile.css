@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root{
+    --font-size-title:35px;
+    --font-size-very-high:24px;
+    --font-size-high:22px;
+    --font-size-medium:20px;
+    --font-size-small:18px;
+    --font-size-very-small:16px;
+    --font-family:'Nunito', sans-serif;
+    --primary-color:dodgerblue;
+    --secondary-color:white;
+}
+
+html{
+    font-family: var(--font-family);
+}
+button,input{
+    font-family: var(--font-family);
+}
+a{
+    text-decoration: none;
+}
+
+#body{
+    display: block;
+}
+.header{
+    height:70px;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,0.95);
+    border-bottom: 1px solid rgb(200,200,200);
+    color:var(--primary-color);
+    font-size:var(--font-size-title);
+    text-align:center;
+    position: fixed;
+    z-index:3;
+}
+.header .title{
+    top:15px;
+    left:100px;
+    position: fixed;
+    letter-spacing: 1px;
+    font-weight:bold;
+	font-size:35px;
+	font-family: 'Audiowide', cursive;
+}
+
+
+.top_buttons{
+    color:black;
+    background: transparent;
+    font-weight:bold;
+    height:30px;
+    top:15px;
+    font-size:20px;
+    padding:10px;
+    position: fixed;
+    z-index: 4;
+    font-weight: bold;
+    cursor:pointer;
+}
+.top_buttons:hover{
+    color:var(--primary-color);
+}
+
+.header .user_profile{
+    right:20px; 
+}
+
+/* CONTAINER */
+.container{
+    /* Header Ended at 70px */
+    margin-top: 90px;
+    /* width:1360px; */
+    width:80%;
+    background:rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding:40px;
+}
+
+#username{
+    font-size:30px;
+    font-weight:bold;
+}
+#username span{
+    font-size: 25px;
+    color:royalblue;
+}
+
+.buttons{
+    margin-top:10px;
+    font-size:22px;
+    color:white;
+    background:dodgerblue;
+    padding:10px;
+    border-radius:5px;
+    width:500px;
+    font-weight: bold;
+}
+.buttons:active{
+    transform:scale(0.95);
+}
+.logout{
+    background: tomato;
+}

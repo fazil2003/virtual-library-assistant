@@ -1,0 +1,166 @@
+#body_background{
+    background: #007bff;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:-1;
+}
+
+#loader { 
+    border: 10px solid #f3f3f3; 
+    border-radius: 50%; 
+    border-top: 10px solid dodgerblue; 
+    width: 70px; 
+    height: 70px; 
+    animation: spin 1s linear infinite; 
+} 
+      
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+} 
+      
+.center { 
+    position: fixed; 
+    top: 50%; 
+    left:50%;
+    margin-left:-41px;
+    margin-top:-41px;
+} 
+* { 
+    margin: 0; 
+    padding: 0; 
+} 
+
+/* To give the containers 
+in spherical shape */ 
+.dot { 
+    top:-350px;
+    position: relative;
+    border-radius: 50%; 
+    transform:scale(0.5);
+    opacity:0.6;
+} 
+
+.dot span { 
+    position: absolute; 
+    display: block; 
+    border: 5px; 
+    border-radius: 50%; 
+    animation: animate 3s ease-in-out infinite; 
+} 
+
+/*the animation*/ 
+@keyframes animate { 
+    0% { 
+        transform: translateY(-300px); 
+    } 
+
+    50% { 
+        transform: translateY(190px); 
+        width: -100px; 
+        height: +100px; 
+    } 
+
+    100% { 
+        transform: translateY(-300px); 
+    } 
+} 
+
+/* Each bubble is defined in a 
+separate section */ 
+/* Set the color, opacity, delay and 
+duration(i.e different speed) */ 
+.dot span:nth-child(1) { 
+    top: 300px; 
+    left: 250px; 
+    height: 160px; 
+    width: 160px; 
+    background-color: yellow; 
+    opacity: 0.7; 
+    animation-delay: 0.3s; 
+    animation-direction: reverse; 
+} 
+
+.dot span:nth-child(2) { 
+    top: 310px; 
+    left: 400px; 
+    height: 190px; 
+    width: 190px; 
+    background-color: green; 
+    opacity: 0.9; 
+    animation-delay: 0.3s; 
+    animation-direction: reverse; 
+    animation-duration: 2.3s; 
+} 
+
+.dot span:nth-child(3) { 
+    top: 300px; 
+    left: 700px; 
+    height: 140px; 
+    width: 140px; 
+    background-color: #a97f58; 
+    opacity: 0.9; 
+    animation-delay: 0.5s; 
+    animation-direction: reverse; 
+    animation-duration: 2.6s; 
+} 
+
+.dot span:nth-child(4) { 
+    top: 300px; 
+    left: 1080px; 
+    height: 200px; 
+    width: 200px; 
+    background-color: #FA58AC; 
+    opacity: 0.9; 
+    animation-delay: 0.7s; 
+    animation-direction: reverse; 
+    animation-duration: 2.3s; 
+}
+
+
+
+
+/* CHATBOT */
+
+.chatbot_button{
+    position: fixed;
+    font-size: 22px;
+    background:linear-gradient(to left,dodgerblue 0%,deepskyblue 100%);
+    color:white;
+    text-align: right;
+    min-width: 150px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow:2px 3px 5px white;
+    text-align: center;
+    right:50px;
+    bottom:30px;
+    z-index:2;
+    transition:transform 0.3s;
+}
+  
+.chatbot_button::after {
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    right: -15px;
+    border: 20px solid transparent;
+    border-top: 20px solid dodgerblue;
+    clear: both;
+}
+
+.chatbot_button:hover{
+    transform: scale(1.1);
+    transition:transform 0.3s;
+}
+
+

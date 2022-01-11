@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root{
+    --font-size-title:35px;
+    --font-size-very-high:24px;
+    --font-size-high:22px;
+    --font-size-medium:20px;
+    --font-size-small:18px;
+    --font-size-very-small:16px;
+    --font-family:'Nunito', sans-serif;
+    --primary-color:dodgerblue;
+    --secondary-color:white;
+}
+
+html{
+    font-family: var(--font-family);
+}
+button,input{
+    font-family: var(--font-family);
+}
+
+#body{
+    display: block;
+}
+.header{
+    height:170px;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,0.95);
+    border-bottom: 1px solid rgb(200,200,200);
+    color:var(--primary-color);
+    font-size:var(--font-size-title);
+    text-align:center;
+    position: fixed;
+    z-index:3;
+}
+.header .title{
+    top:15px;
+    left:100px;
+    position: fixed;
+    letter-spacing: 1px;
+    font-weight:bold;
+	font-size:35px;
+	font-family: 'Audiowide', cursive;
+}
+
+.header img{
+    margin-top: 15px;
+    height:140px;
+    width:140px;
+    object-fit: contain;
+}
+
+.container{
+    margin-top: 180px;
+    height:calc(100% - 300px);
+    /* background: rgba(255,255,255,0.85); */
+    width:60%;
+    text-align:center;
+    border-radius: 5px;
+    padding:10px;
+
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.footer{
+    position: fixed;
+    left:20%;
+    bottom:10px;
+    height:80px;
+    width:60%;
+    background:rgba(255,255,255,0.85);
+    border-radius: 5px;
+}
+
+.footer input{
+    font-size:22px;
+    padding:10px;
+    border-radius: 5px;
+    border:2px solid black;
+    outline:none;
+    width:70%;
+    margin-top:14px;
+}
+
+.footer button{
+    width:20%;
+    padding:10px;
+    outline:none;
+    border:none;
+    font-size:22px;
+    border-radius: 5px;
+    background:dodgerblue;
+    color:white;
+    margin-top:14px;
+}
+
+.message{
+    padding:7.5px;
+    font-size:22px;
+    margin-top:10px;
+    position: relative;
+    border-radius:2px 10px 10px 10px;
+    width:95%;
+    text-align:left;
+    border:1px solid white;
+}
+
+
+.message span{
+    font-size:18px;
+    font-weight:bold;
+}
+.user_message{
+    background:royalblue;
+    color:white;
+}
+.bot_message{
+    background: white;
+    color:black;
+}
+.bot_message span{
+    color:royalblue;
+}

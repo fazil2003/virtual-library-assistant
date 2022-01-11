@@ -1,0 +1,223 @@
+{% load static %}
+
+<!--CSS Files-->
+<link rel='stylesheet' href="{% static 'details.css' %}" />
+<link rel="stylesheet" href="{% static 'background.css' %}" />
+<link rel='stylesheet' href="{% static 'sidenav.css' %}" >
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--/CSS Files-->
+
+<div id='body_background'></div>
+
+<!-- JS Files -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ricostacruz.com/jquery.transit/jquery.transit.min.js'></script>
+<script src="{% static 'background.js' %}"></script>
+<script src="{% static 'sidenav.js' %}"></script>
+
+<!--Meta Tags-->
+<meta name='viewport' content='user-scalable=0,width=device-width,initial-scale=1'/>
+<meta name='theme-color' content='dodgerblue'/>
+<!--<link rel="shortcut icon" href="/image/logo.png" />-->
+<!--/Meta Tags-->
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Details Page - Library</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+</head>
+
+
+<!--LOADER-->
+<div id="loader" class="center"></div>
+<!--/LOADER-->
+
+
+
+<!--HEADER-->
+<div class='header'>
+    <center>
+       <div class='search'>
+
+            <form action='/results/' method='get'>
+                {% csrf_token %}
+                <input class='search-box' name='searchQuery' id='search-box' placeholder='Search for Books, Magazines, News...' autofocus required />
+                <button class='search-button' type='submit'>Search</button>
+            </form>
+
+        </div>
+    </center>  
+    
+    <span class='filters top_buttons'>
+        <i style='margin-right:5px;' class="fa fa-sliders" > </i> Filters
+    </span>
+</div>
+<!--/HEADER-->
+
+<center>
+    <!--CONTAINER-->
+    <div class='container'>
+        <center>
+            <div class='content'>
+                <div class='left'>
+                    <img src="{{ image_link }}" />
+                </div>
+                <div class='right'>
+                    <p class='title'>{{ title }}</p>
+                    <p class='author'>{{ author }}</p>
+                    <div class='description'>{{ description }}</div>
+                    <p class='score'>
+                        Score : <b>{{ score }}</b><br>
+                        Genre : <b>{{ genre }}</b><br>
+                        Mostly Taken by <b>{{ most_taken_by }}</b> Department
+                    </p>
+
+                    <br><br>
+                    <p class='author' style='color:black;'><b>Likes</b></p>
+                    {{ positive_negative_bar|safe }}
+
+                    <style>
+                        .positive_negative_bar{
+                            margin-top:20px;
+                            z-index:2;
+                            width:500px;
+                            height:40px;
+                            background-color: white;
+                            border:3px solid white;
+                            border-radius:5px;
+                        }
+
+                        .positive_negative_bar span{
+                            font-size:22px;
+                            top:5px;
+                            left:10px;
+                            position: relative;
+                        }
+
+                        .positive_negative_bar:hover{
+                            box-shadow:2px 3px 5px rgb(150,150,150);
+                        }
+
+                        .positive_negative_bar .positive{
+                            background: linear-gradient(to left, lightgreen 0%,seagreen 100%);
+                            height:100%;
+                            float:left;
+                            border-radius:5px;
+                        }
+
+                        .positive_negative_bar .negative{
+                            background: linear-gradient(to left,#FF0000 0%, #FFCC00 100%);
+                            height:100%;
+                            float:right;
+                            border-radius:5px;
+                        }
+                    </style>
+
+                    {% if availability %}
+                        <form class='availability-yes'>Available<br><button>Get it</button>
+                    {% else %}
+                        <form class='availability-no' action='http://127.0.0.1:8000/inform_me/?id={{ book_id_get }}' method='POST' >
+                        {% csrf_token %}
+                        <p>Not Available - Inform me when available.</p>
+                        <input type='text' name='mymail' placeholder='Enter your Mail' required />
+                        <button name='submit'>Inform Me</button>
+                    {% endif %}
+
+                    <p id='book_id_bot_button' >Search</p>
+                </form>
+                <style>
+                    a{
+                        color:white;
+                        text-decoration: none;
+                    }
+                </style>
+                        
+                        <script>
+                            function book_id_bot_fn(){
+                                var loc = location.href;
+                                var res = loc.replace("http://127.0.0.1:8000/details/?id=","");
+                                if(res === "494"){
+                                    document.getElementById("book_id_bot_button").style.display="block";
+                                    document.getElementById("book_id_bot_button").innerHTML="<a href='http://127.0.0.1:8000/book_bot/?id="+res+"'>Search</a>";
+                                }
+                                else if(res === "527"){
+                                    document.getElementById("book_id_bot_button").style.display="block";
+                                    document.getElementById("book_id_bot_button").innerHTML="<a href='http://127.0.0.1:8000/book_bot/?id="+res+"'>Search</a>";
+                                }
+                                else if(res === "631"){
+                                    document.getElementById("book_id_bot_button").style.display="block";
+                                    document.getElementById("book_id_bot_button").innerHTML="<a href='http://127.0.0.1:8000/book_bot/?id="+res+"'>Search</a>";
+                                }
+                                else{
+                                    document.getElementById("book_id_bot_button").style.display="none";
+                                }
+                            }
+                            book_id_bot_fn();
+                        </script>
+
+                </div>
+            </div>
+        </center>
+
+
+        <br><br>
+        <b style='color:white;font-size:22px;'>COMMENTS : </b>
+        <br><br>
+
+        {{ comments_text|safe }}
+
+
+        <br>
+        <form class='sentiment-analysis' action='/validate_sentiment_analysis/?book_id={{ book_id_get }}' method='post'>
+            {% csrf_token %}
+            <input type='text' name='text' placeholder='Type your Comment here...' required />
+            <button type='submit'>Submit</button>
+        </form>
+
+
+        <br><br>
+        <b style='color:white;font-size:22px;'>RECOMMENDATIONS : </b>
+        <br><br>
+
+        {{ recommendations_list|safe }}
+
+
+    </div>
+    <!--/CONTAINER-->
+</center>
+
+
+<!-- <div class='chatbot_button'>
+    Chat with Bot
+</div> -->
+
+
+<!--SIDE NAV-->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" id='close_button' onclick="closeNav()">
+        <i class="fa fa-arrow-left"></i>
+    </a>
+
+	<p><b>LIBRARY</b>
+	<br>Make Search Easier</p>
+	
+    <a class='select' href="http://127.0.0.1:8000/"><i class='fa fa-home'> </i> Home</a>
+    <a href="http://127.0.0.1:8000/search/"><i class='fa fa-search'> </i> Search</a>
+    <a href="http://127.0.0.1:8000/image_search/"><i class='fa fa-image'> </i> Image Search - Text</a>
+    <a href="http://127.0.0.1:5000"><i class='fa fa-image'> </i> Image Search - Images</a>
+
+    <a href="http://127.0.0.1:8000/book_bot/"><i class='fa fa-book'> </i> Book Search Bot</a>
+    <a href="http://127.0.0.1:8000/assignment_helper/"><i class='fa fa-question'> </i> Q/A Bot</a>
+
+    <a href="/profile/"><i class='fa fa-user'> </i> Profile</a>
+    <a href="/logout/"><i class='fa fa-sign-out'> </i> Logout</a>
+</div>
+  
+<!-- Use any element to open the sidenav -->
+<span class='sidenav_btn top_buttons' id='open_button' onclick="openNav()">
+    <i class="fa fa-bars"></i>
+</span>
+

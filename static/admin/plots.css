@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+:root{
+    --font-size-title:35px;
+    --font-size-very-high:24px;
+    --font-size-high:22px;
+    --font-size-medium:20px;
+    --font-size-small:18px;
+    --font-size-very-small:16px;
+    --font-family:'Cabin', sans-serif;
+
+    --primary-color:dodgerblue;
+    --secondary-color:white;
+}
+
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --primary-color:black;
+    }
+}
+
+html{
+    font-family: var(--font-family);
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 100%);
+    background-image: url('images/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+input,button{
+    font-family: var(--font-family);
+}
+
+.header{
+    height:70px;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,0.95);
+    border-bottom: 1px solid rgb(200,200,200);
+    color:var(--primary-color);
+    font-size:var(--font-size-title);
+    text-align:center;
+    position: fixed;
+    z-index:2;
+}
+.header .title{
+    top:12.5px;
+    left:100px;
+    position: fixed;
+    letter-spacing: 2px;
+    font-weight:bold;
+    
+    background: -webkit-linear-gradient(rgb(100,100,100) 0%,rgb(100,100,100) 100%);
+    background: -webkit-linear-gradient(dodgerblue, deepskyblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top_buttons{
+    color:black;
+    background: transparent;
+    font-weight:bold;
+    height:30px;
+    top:15px;
+    font-size:20px;
+    padding:10px;
+    position: fixed;
+    z-index: 4;
+    font-weight: bold;
+    cursor:pointer;
+}
+.top_buttons:hover{
+    color:var(--primary-color);
+}
+
+.header .filters{
+    right:20px;
+    border:1px solid rgb(200,200,200);
+    border-radius:5px;
+    padding:10px 30px 10px 30px;
+    font-weight:normal;
+}
+
+.header .filters:hover{
+    background: var(--primary-color);
+    color:white;
+}
+
+.search{
+    font-size:22px;
+    border:1px solid rgb(200,200,200);
+    border-radius: 10px;
+    width:70%;
+    height:50px;
+    background: white;
+    display: inline-block;
+    margin-top:10px;
+}
+.search:hover{
+    border-color:var(--primary-color);
+    box-shadow:2px 3px 5px rgb(200,200,200);
+}
+
+.search .search-box{
+    padding:10px 20px 10px 20px;
+    width:80%;
+    height:50px;
+    font-size:22px;
+    float:left;
+    color:rgb(75,75,75);
+    border-radius:10px 0px 0px 10px;
+    outline:none;
+    border:none;
+    transition:color 0.7s;
+}
+
+.search .search-box:hover{
+    transition:color 0.7s;
+}
+
+.search .search-button{
+    padding:10px 0 10px 0;
+    height:51px;
+    width:18%;
+    font-size:22px;
+    float:right;
+    border:none;
+    outline:none;
+    border-radius:0 10px 10px 0;
+    color:var(--secondary-color);
+    background:var(--primary-color);
+}
+.search .search-button:hover{
+    background: linear-gradient(to right,dodgerblue 0%,deepskyblue 100%);
+}
+
+
+
+/* CONTAINER */
+.container{
+    /* Header Ended at 70px */
+    margin-top: 20px;
+    /* width:1360px; */
+    width:96%;
+    height:100%;
+}
+#plot_img{
+    width:100%;
+    height:80%;
+    object-fit: contain;
+}
+
+.header2{
+    margin-top: 70px;
+    height:70px;
+    width:100%;
+    background: white;
+    border-bottom: 1px solid grey;
+}
+
+
+.header2 #options{
+    width:23%;
+    height:100%;
+    font-family: var(--font-family);
+    font-size: var(--font-size-high);
+    color:var(--primary-color);
+    font-weight:bold;
+    border-radius: 5px;
+    background: transparent;
+    outline:none;
+    border:none;
+}
+
+.navbar{
+    margin-top: 0px;
+    height:70px;
+    width:100%;
+    background: white;
+    
+}
+
+.navbar #options{
+    width:23%;
+    height:100%;
+    font-family: var(--font-family);
+    font-size: var(--font-size-high);
+    color:var(--primary-color);
+    text-align: center;
+    font-weight:bold;
+    border-radius: 5px;
+    background: transparent;
+    outline:none;
+    border:none;
+}
+
+
+@media screen and (max-width:980px){
+    .navbar .search{
+        width:100%;
+    }
+    .container{
+        width:100%;
+    }
+}
+
+.container .content{
+    width:96%;
+    
+    display: inline-block;
+    padding:15px;
+    margin:10px;
+    border-radius: 10px;
+    /* background: var(--secondary-color); */
+    background: rgba(255,255,255,0.7);
+    border:1px solid white;
+    box-shadow:2px 3px 5px rgb(200,200,200);
+}
+

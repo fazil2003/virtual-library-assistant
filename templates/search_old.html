@@ -1,0 +1,15 @@
+{% include 'hello.html' %}
+{% load static %}
+
+<link rel='stylesheet' href="{% static 'main.css' %}" />
+<meta name='viewport' content='user-scalable=0,width=device-width'/>
+
+<form action='/results/' method='get'>
+    {% csrf_token %}
+    <input type='text' placeholder='Search' name='searchQuery' id='searchBox' />
+    <button type='submit'>Search</button>
+</form>
+
+{% for i in li %}
+    {{i}}
+{% endfor %}

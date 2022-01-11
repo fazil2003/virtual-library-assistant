@@ -1,0 +1,144 @@
+id,isbn,isbn13,name,num_pages,language,genre,edition,year,author,author_rating,average_rating,ratings_count,impressions,clicks,level
+
+1,1597496553,9781597496551,"The Basics of Hacking and Penetration Testing: Ethical Hacking and Penetration Testing Made Easy",159,"english","ethical hacking",1,2011,"Patrick Engebretson",3.94,3.92,670,0,0,"beginner"
+
+2,0521880378,9780521880374,"Advanced Data Structures",456,"english","data structures",1,2008,"Peter Brass",4.29,4.26,27,0,0,"advanced"
+
+3,3,3,"Data Structures, Automation & Problem Solving, Programming & Design",135,"english","data structures",1,2015,"R.M.Z. Trigo",3.03,3.33,12,0,0,"intermediate"
+
+4,4,4,"Python & Algorithms 2.0 A Guide to Learn how to Fly",244,"english","python",2,2014,"Marina Wahl",3.0,3.0,1,0,0,"beginner"
+
+5,1484237323,9781484237328,"Applied Natural Language Processing with Python: Implementing Machine Learning and Deep Learning Algorithms for Natural Language Processing",158,"english","machine learning",1,2018,"Taweh Beysolow II",2.83,3.5,17,0,0,"intermediate"
+
+6,1484225406,9781484225400,"Beginning Ethical Hacking with Python",197,"english","ethical hacking",1,2017,"Sanjib Sinha",2.67,2.27,45,0,0,"beginner"
+
+7,1118891457,9781118891452,"Beginning Programming with Python for Dummies",411,"english","python",1,2014,"John Paul Mueller",3.58,3.61,32,0,0,"beginner"
+
+8,1788835212,9781788835213,"C++ Data Structures and Algorithms: Learn how to write efficient code to build scalable and robust applications in C++",391,"english","data structures",1,2018,"Wisnu Anggoro",3.29,3.00,91,0,0,"intermediate"
+
+9,1904811302,9781904811305,"Creating Your MySQL Database: Practical Design Tips and Techniques",105,"english","database",1,2006,"Marc DeLisle",3.66,3.30,10,0,0,"intermediate"
+
+10,1976503302,9781976503306,"Data Structures & Algorithms In Go",666,"english","data structures",1,2017,"Hemant Jain",4.25,3.67,6,0,0,"advanced"
+
+11,11,11,"Data Structures and Algorithms",19,"english","data structures",1,2016,"tutorialsPoint",4.5,4.5,100,0,0,"beginner"
+
+12,0486172627,9780486172620,"Data Structures and Algorithm Analysis in C++",613,"english","data structures",3,2011,"Clifford A. Shaffer",3.76,3.71,7,0,0,"intermediate"
+
+13,0201498405,9780201498400,"Data Structures and Algorithm Analysis in C",570,"english","data structures",2,1996,"Mark Allen Weiss",3.77,3.86,126,0,0,"beginner"
+
+14,0486485811,9780486485812,"Data Structures and Algorithm Analysis in Java",601,"english","data structures",3,2011,"Clifford A. Shaffer",3.76,4.00,15,0,0,"intermediate"
+
+15,1118290275,9781118290279,"Data Structures and Algorithms in Python",770,"english","data structures",1,2013,"Michael T. Goodrich",3.92,4.09,99,0,0,"advanced"
+
+16,1942878486,9781942878483,"Data Structures and Algorithms in Swift",328,"english","data structures",1,2018,"Kelvin Lau",4.26,4.09,11,0,0,"beginner"
+
+17,17,17,"Data structures and Algorithms using Java",290,"english","data structures",1,2014,"OReilly Media",4.5,4.5,100,0,0,"advanced"
+
+18,0521670152,9780521670159,"Data Structures and Algorithms Using C#",366,"english","data structures",1,2007,"Michael McMillan",3.78,3.11,19,0,0,"intermediate"
+
+19,8176567418,9788176567411,"Data Structures Through C In Depth",272,"english","data structures",2,2011,"Deepali Srivastava",4.13,4.13,732,0,0,"advanced"
+
+20,0470618299,9780470618295,"Data Structures and Algorithms Using Python",540,"english","data structures",1,2010,"Rance D. Necaise",4.02,3.81,21,0,0,"advanced"
+
+21,0321541405,9780321541406,"Data Structures and Problem Solving Using Java",949,"english","data structures",4,2014,"Mark Allen Weiss",3.77,3.52,29,0,0,"beginner"
+
+22,0619159073,9780619159078,"Data Structures Using C++",945,"english","data structures",2,2003,"D.S. Malik",4.0,4.04,97,0,0,"intermediate"
+
+23,23,23,"Data Structure with C in hindi",51,"hindi","data structures",1,2011,"Kuldeep Chand Agnihotri",4.28,3.5,3,0,0,"beginner"
+
+24,24,24,"Database management system tutorial",80,"english","data structures",1,2016,"tutorialsPoint",4.5,4.5,100,0,0,"beginner"
+
+25,0471738840,9780471738848,"Data Structures and Algorithms in Java",738,"english","data structures",6,2005,"Michael T. Goodrich",3.92,3.83,254,0,0,"advanced"
+
+26,26,26,"Ethical Hacking: Research and Course Compilation",49,"english","ethical hacking",1,2016,"Ida Matero",3.5,3.5,10,0,0,"beginner"
+
+27,27,27,"Ethical Hacking",92,"english","ethical hacking",1,2018,"tutorialsPoint",4.5,4.5,100,0,0,"advanced"
+
+28,8193296028,9788193296028,"Fundamentals of Data Structures",502,"english","data structures",1,2016,"Ellis Horowitz",3.84,3.84,390,0,0,"intermediate"
+
+29,29,29,"Hacking: The Ultimate Guide for You to Learn the Hidden secrets of Hacking",153,"english","ethical hacking",1,2015,"Emily Goldstein",2.91,3.25,4,0,0,"advanced"
+
+30,0133024415,9780133024418,"Hands-On Database: An Introduction to Database Design and Development",214,"english","database",1,2012,"Steve Conger",3.4,3.38,16,0,0,"intermediate"
+
+31,1719528403,9781719528405,"Machine Learning: Step-by-Step Guide To Implement Machine Learning Algorithms with Python",103,"english","machine learning",1,2018,"Rudolph Russell",3.29,1.00,1,0,0,"advanced"
+
+32,1484228650,9781484228654,"Mastering Machine Learning with Python in Six Steps: A Practical Implementation Guide to Predictive Data Analytics Using Python",374,"english","machine learning",1,2017,"Manohar Swamynathan",4.00,4.00,13,0,0,"intermediate"
+
+33,1484242661,9781484242667,"Natural Language Processing Recipes: Unlocking Text Data with Machine Learning and Deep Learning Using Python",253,"english","machine learning",1,2019,"Akshay Kulkarni",3.0,3.0,2,0,0,"beginner"
+
+34,8122418589,9788122418583,"Principles Of Data Structures Using C And C++",375,"english","data structures",1,2008,"Vinu V. Das",3.92,4.00,2,0,0,"advanced"
+
+35,1590280539,9781590280539,"Problem Solving with Algorithms and Data Structures Using Python",240,"english","data structures",1,2013,"Bradley N. Miller",3.92,4.07,160,0,0,"beginner"
+
+36,1590280539,9781590280539,"Problem Solving with Algorithms and Data Structures Using Python",241,"english","data structures",2,2013,"Bradley N. Miller",3.92,4.07,160,0,0,"intermediate"
+
+37,1430232374,9781430232377,"Python Algorithms: Mastering Basic Algorithms in the Python Language",303,"english","python",2,2010,"Magnus Lie Hetland",3.94,4.00,98,0,0,"advanced"
+
+38,1884777813,9781884777813,"Python and Tkinter Programming",684,"english","python",1,1999,"John E. Grayson",3.5,3.53,15,0,0,"advanced"
+
+39,1593276036,9781593276034,"Python Crash Course: A Hands-On, Project-Based Introduction to Programming",562,"english","python",1,2016,"Eric Matthes",4.34,4.34,1290,0,0,"beginner"
+
+40,1545479119,9781545479117,"Python Programming An In-Depth Guide Into The Essentials Of Python Programming",121,"english","python",1,2016,"The Code Academy",3.47,3.35,20,0,0,"advanced"
+
+41,1598631128,9781598631128,"Python Programming for the Absolute Beginner",480,"english","python",1,2003,"Michael Dawson",3.94,3.90,452,0,0,"beginner"
+
+42,1597496553,9781597496551,"The Basics of Hacking and Penetration Testing: Ethical Hacking and Penetration Testing Made Easy",159,"english","ethical hacking",2,2013,"Patrick Engebretson",3.94,3.92,283,0,0,"beginner"
+
+43,1849687226,9781849687225,"Oracle Advanced PL/SQL Developer Professional Guide",428,"english","database",2,2016,"Saurabh Gupta",4.31,4.31,35,0,0,"beginner"
+
+44,0857292986,9780857292988,"Introduction to Artificial Intelligence",356,"english","artificial intelligence",2,2011,"Wolfgang Ertel",3.44,3.41,22,0,0,"beginner"
+
+45,1789539463,9781789539462,"Python Artificial Intelligence Projects for Beginners: Get up and running with Artificial Intelligence using 8 smart and exciting AI applications",155,"english","artificial intelligence",1,2018,"Joshua Eckroth",4.33,4.33,3,0,0,"beginner"
+
+46,1119467659,9781119467656,"Artificial Intelligence For Dummies",339,"english","artificial intelligence",1,2018,"John Paul Mueller",3.58,3.58,57,0,0,"intermediate"
+
+47,0321204662,9780321204660,"Artificial Intelligence: A Guide to Intelligent Systems",435,"english","artificial intelligence",2,2005,"Michael Negnevitsky",4.21,4.13,63,0,0,"advanced"
+
+48,3319141414,9783319141411,"Data Mining: The Textbook",746,"english","data science",1,2015,"Charu C. Aggarwal",4.07,4.44,16,0,0,"beginner"
+
+49,1306772516,9781306772518,"Big Data, Data Mining, and Machine Learning: Value Creation for Business Leaders and Practitioners",289,"english","machine learning",1,2014,"Jared Dean",3.3,3.53,15,0,0,"advanced"
+
+50,1449361323,9781449361327,"Data Science for Business: What you need to know about data mining and data-analytic thinking",409,"english","data science",1,2013,"Foster Provost",4.16,4.16,1752,0,0,"intermediate"
+
+51,1521031193,9781521031193,"A Level Physics MCQs: Multiple Choice Questions and Answers (Quiz & Tests with Answer Keys)",211,"english","physics",1,2017,"Arshad Iqbal",3.82,3.82,102,0,0,"beginner"
+
+52,52,52,"General Knowledge Quiz Book",386,"english","general knowledge",1,2014,"Capella",4.0,4.0,2,0,0,"beginner"
+
+53,1535192976,9781535192972,"Python: Practical Python Programming For Beginners and Experts",161,"english","python",1,2016,"Jonathan Yates",3.79,3.50,8,0,0,"beginner"
+
+54,1484209591,9781484209592,"Python Data Analytics: Data Analysis and Science Using Pandas, Matplotlib and the Python Programming Language",350,"english","python",1,2015,"Fabio Nelli",3.45,3.14,7,0,0,"beginner"
+
+55,55,55,"Object-Oriented Programming (OOP) with Java",3341,"english","java",1,2016,"Dick Baldwin",4.22,4.20,5,0,0,"intermediate"
+
+56,0194316173,9780194316170,"Oxford Business English Dictionary for Learners of English",643,"english","english",1,2006,"Joseph Noble",4.7,4.63,8,0,0,"advanced"
+
+57,1789538670,9781789538670,"Hands-On Deep Learning for Images with TensorFlow: Build intelligent computer vision applications using TensorFlow and Keras",135,"english","machine learning",1,2018,"Will Ballard",4.5,4.5,50,0,0,"advanced"
+
+58,1465461884,9781465461889,"Coding Projects in Python",226,"english","python",1,2017,"D.K. Publishing",4.13,4.17,72,0,0,"beginner"
+
+59,0199539537,9780199539536,"Oxford Dictionary of Proverbs",625,"english","english",1,2015,"Jennifer Speake",4.17,4.14,36,0,0,"intermediate"
+
+60,0816051240,9780816051243,"Encyclopedia of Mathematics",577,"english","mathematics",1,2005,"James Stuart Tanton",4.25,4.50,2,0,0,"intermediate"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
