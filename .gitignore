@@ -2,7 +2,7 @@
 python_files/assignment_helper
 python_files/book_bot/models
 # python_files/extract
-python_files/search_engine
+python_files/search_engine/bert-base-multilingual-uncased
 python_files/word2vec
 
 models
